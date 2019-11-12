@@ -29,8 +29,6 @@ and open the template in the editor.
 
     <?php
     require '../includes/header1.php';
-
-
     ?>
     <main>
         <!-- <div class="spacer20"></div> -->
@@ -63,10 +61,7 @@ and open the template in the editor.
                     <div><span class="boothbay__span">Packed with fresh picked&nbsp;flavor</span></div>
                 </div>
                 <div class="top-box sarah-pic">
-                    <!-- <img src="../images/sarah_circle1.png" alt="Sarah Brewer proprieter of Slice&nbsp;O'&nbsp;Country." <?php echo $styleSarah ?>> -->
-                    <img src="../images/sarah_circle1.png" alt="Sarah Brewer" <?php echo $styleSarah ?>>
-
-
+                    <img src="../images/sarah_circle1.png" alt="Sarah Brewer proprieter of Slice O' Country">
                     <div class="top-box sarah-cert">
                         <div>Sarah Brewer,</div>
                         <div>certified&nbsp;home&nbsp;processor</div>
@@ -93,21 +88,21 @@ and open the template in the editor.
             </div>
             <div class="middle-box large-jam">
                 <!-- large -->
-                <img src="../images/straw_rhubard_8oz1.jpg" alt="8 ounce jar" <?php echo $styleJars; ?>
+                <img src="../images/straw_rhubard_8oz1.jpg" alt="Sample 8 ounce jar of jam.">
                 <div class="spec-text">8 ounces</div>
                 <div class="spec-text">$8.75</div>
             </div>
 
             <div class="middle-box small-jam">
                 <!-- small -->
-                <img src="../images/rhubarb.jpg" alt="1 & 1/2 oz jar." <?php echo $styleJars; ?>
+                <img src="../images/rhubarb.jpg" alt="Sample 1 and 1/2 ounce jar of jam.">
                 <div class="spec-text">1.5 ounces</div>
                 <div class="spec-text">$3.50</div>
             </div>
 
             <div class="middle-box medium-jam">
                 <!-- medium -->
-                <img src="../images/4oz_raspberry.jpg" alt="4 oz jar." <?php echo $styleJars; ?>
+                <img src="../images/4oz_raspberry.jpg" alt="Sample 4 ounce jar of jam.">
                 <div class="spec-text">4 ounces</div>
                 <div class="spec-text">$5.00</div>
             </div>
@@ -119,7 +114,7 @@ and open the template in the editor.
 
             <!-- 1 -->
             <div class="jam-box image">
-                <img src="../images/blueberry.jpg" alt="Jar of wild Maine blueberry&nbsp;jam." <?php echo $styleJams ?>>
+                <img src="../images/blueberry.jpg" alt="Jar of wile Maine blueberry jam.">
             </div>
             <div class="jam-box copy">
                 <!-- <div class="logo">Slice O’ Country</div> -->
@@ -145,7 +140,7 @@ and open the template in the editor.
 
             <!-- 2 -->
             <div class="jam-box image">
-                <img src="../images/strawberry_8oz.jpg" alt="Jar of farm fresh stawberry jam." <?php echo $styleJams ?>>
+                <img src="../images/strawberry_8oz.jpg" alr="Jar of farm fresh stawberry jam.">
             </div>
             <div class="jam-box copy">
                 <?php
@@ -168,7 +163,7 @@ and open the template in the editor.
 
             <!-- 3 -->
             <div class="jam-box image">
-                <img src="../images/raspberry.png" alt="Jar of wild Maine raspberry jam." <?php echo $styleJams ?>>
+                <img src="../images/raspberry.png" alt="Jar of wild Maine raspberry jam.">
             </div>
             <div class="jam-box copy">
                 <?php
@@ -189,7 +184,7 @@ and open the template in the editor.
             </div>
             <!-- 4 -->
             <div class="jam-box image">
-                <img src="../images/rhubarb_8oz.jpg" alt="Jar of heirloom rhubarb jam."  <?php echo $styleJams ?>>
+                <img src="../images/rhubarb_8oz.jpg" alt="Jar of heirloom rhubarb jam.">
             </div>
             <div class="jam-box copy">
                 <?php
@@ -212,7 +207,7 @@ and open the template in the editor.
 
             <!-- 5 -->
             <div class="jam-box image">
-                <img src="../images/strawrhubard300.jpg" alt="Jar of strawberry rhubarb jam."  <?php echo $styleJams ?>>
+                <img src="../images/strawrhubard300.jpg" alt="Jar of strawberry rhubarb jam.">
             </div>
             <div class="jam-box copy">
                 <?php
@@ -236,7 +231,7 @@ and open the template in the editor.
 
             <!-- 6 -->
             <div class="jam-box image">
-                <img src="../images/pickles1.jpg" alt="Jars of Slice O Country pickles."  <?php echo $styleJams ?>>
+                <img src="../images/pickles1.jpg" alr="Several jars of Slice O Country pickles.">
             </div>
             <div class="jam-box copy">
                 <?php

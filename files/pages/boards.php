@@ -58,7 +58,7 @@ and open the template in the editor.
                     <div>Food Safe Finish</div>
                 </div>
                 <div class="top-box sarah-pic">
-                    <img src="../images/sarah_circle1.png" alt="Sarah Brewer proprieter of Slice O' Country">
+                    <img src="../images/sarah_circle1.png" alt="Sarah Brewer owner"  <?php echo $styleSarah ?>>
                     <div class="top-box sarah-cert">
                         <div>Sarah Brewer,</div>
                         <div>certified&nbsp;home&nbsp;processor</div>
@@ -77,7 +77,8 @@ and open the template in the editor.
         <div class="boards">
             <!-- 1 -->
             <div class="board-box image">
-                <img src="../images/pig_board2.jpg" alt="Maple cutting board in the shape of a pig.">
+                <img src="../images/pig_board2.jpg" 
+                alt="Pig shaped cutting board."  <?php echo $styleSarah ?>>
             </div>
             <div class="board-box copy">
                 <!-- <div class="logo">Slice O’ Country</div> -->
@@ -103,7 +104,8 @@ and open the template in the editor.
 
             <!-- 2 -->
             <div class="board-box image">
-                <img src="../images/little_pig_board2.jpg" alt="Maple cutting board in the shape of a rounded pig.">
+                <img src="../images/little_pig_board2.jpg" 
+                alt="Rounded pig cutting board."  <?php echo $styleSarah ?>>
             </div>
             <div class="board-box copy">
                 <?php
@@ -127,7 +129,8 @@ and open the template in the editor.
 
             <!-- 3 -->
             <div class="board-box image">
-                <img src="../images/maple_leaf_board2.jpg" alt="Maple cutting board in the shape of maple leaf.">
+                <img src="../images/maple_leaf_board2.jpg" 
+                alt="Maple leaf shaped cutting board."  <?php echo $styleSarah ?>>
             </div>
             <div class="board-box copy">
                 <?php
@@ -152,7 +155,8 @@ and open the template in the editor.
 
             <!-- 4 -->
             <div class="board-box image">
-                <img src="../images/lobster_board2.jpg" alt="Round maple cutting board with lobster image burned on.">
+                <img src="../images/lobster_board2.jpg" 
+                alt="Round board with lobster."  <?php echo $styleSarah ?>>
             </div>
             <div class="board-box copy">
                 <?php
@@ -175,7 +179,8 @@ and open the template in the editor.
 
             <!-- 5 -->
             <div class="board-box image">
-                <img src="../images/apple_board2.jpg" alt="Maple cutting board in the shape of an apple.">
+                <img src="../images/apple_board2.jpg" 
+                alt="Apple shaped cutting board."  <?php echo $styleSarah ?>>
             </div>
             <div class="board-box copy">
                 <?php
@@ -199,6 +204,8 @@ and open the template in the editor.
             <div class="board-box image filler">
                 <img src="../images/pig_board2.jpg">
             </div>
+
+            
             <div class="board-box copy filler">
                 <!-- <div class="logo">Slice O’ Country</div> -->
                 <?php

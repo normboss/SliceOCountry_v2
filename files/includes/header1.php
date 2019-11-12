@@ -1,3 +1,14 @@
+<?php    
+    $styleSarah = 'style="color: black; font-size: 22px; font-family: Arial;"';
+
+    $styleJams = 'style="text-align: center; display: block; font-size: 24px; 
+                font-style: italic; font-family: Arial; font-weight: normal;"';
+    // $styleJams = '""';  
+
+    $styleJars = 'style="margin: 0 auto; width: 100%; height: auto; text-align: center; display: block; font-size: 16px; 
+                font-style: normal; font-family: Arial;">';
+?>
+    
     <header class="header">
         <div class="header-logo">
             <span class="header-logo__title"><span class="s-font">S</span>lice O&#39; Country</span>

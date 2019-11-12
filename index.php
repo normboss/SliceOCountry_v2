@@ -59,7 +59,9 @@ and open the template in the editor.
                 </div>
 
                 <div class="box box2">
-                    <img src="./files/images/products.png" alt="Pig cutting board and assortment of jams in different size jars.">
+                    <img src="./files/images/products.png" 
+                    alt="Pig cutting board and assortment of jams in different size jars."
+                    <?php echo $styleSarah ?>
                 </div>
 
                 <div class="box box21">
@@ -70,14 +72,16 @@ and open the template in the editor.
                     </div>
                 </div>
                 <div class="box box3">
-                    <img src="./files/images/sarah_circle.png" alt="Sarah Brewer proprieter of Slice O' Country">
+                    <img src="./files/images/sarah_circle.png" 
+                    alt="Sarah Brewer proprieter of Slice&nbsp;O'&nbsp;Country"  <?php echo $styleSarah ?>
                     <div class="box32">
                         <div class="small">Sarah Brewer, </div>
                         <div class="small">certified home&nbsp;processor</div>
                     </div>
                 </div>
                 <div class="box box31">
-                    <img src="./files/images/sarah_circle.png" alt="Sarah Brewer proprieter of Slice O' Country">
+                    <img src="./files/images/sarah_circle.png" 
+                    alt="Sarah Brewer proprieter of Slice&nbsp;O'&nbsp;Country"  <?php echo $styleSarah ?>
                     <div class="box32">
                         <div class="small">Sarah Brewer, </div>
                         <div class="small">certified home&nbsp;processor</div>
