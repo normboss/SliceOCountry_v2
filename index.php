@@ -99,21 +99,19 @@ and open the template in the editor.
 
         <div class="links">
             <a href="./files/pages/jams.php">
-                <div class="box-links jams-mobile" 
-                title="Link to the jams page." <?php echo $styleSarah ?>>
+                <div class="box-links jams-mobile" title="Link to the jams page." <?php echo $styleSarah ?>>
                     <div class=" spacer20"></div>
                     Jams & Preserves
                 </div>
             </a>
-        </div>
-        <div class="spacer10"></div>
-        <a href="./files/pages/boards.php">
-            <div class="box-links boards-mobile" 
-            title="Link to the cutting boards page." <?php echo $styleSarah ?>>
-                <div class="spacer20"></div>
-                Maine Made Cutting Boards
-            </div>
-        </a>
+
+            <div class="spacer10"></div>
+            <a href="./files/pages/boards.php">
+                <div class="box-links boards-mobile" title="Link to the cutting boards page." <?php echo $styleSarah ?>>
+                    <div class="spacer20"></div>
+                    Maine Made Cutting Boards
+                </div>
+            </a>
         </div>
 
         <div class="content-lower">
