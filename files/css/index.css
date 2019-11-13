@@ -1598,6 +1598,7 @@ main .links .spacer10 {
 }
 
 main .links .box-links {
+  border: 1px dashed black;
   width: 400px;
   height: 288px;
   color: white;
@@ -1628,10 +1629,12 @@ main .links .box-links {
 }
 
 main .links .jams-mobile {
+  border: 1px solid black;
   background-image: url("../images/jams.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  font-size: 28px;
 }
 
 main .links .boards-mobile {
@@ -1639,6 +1642,7 @@ main .links .boards-mobile {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  font-size: 28px;
 }
 
 main .content-lower {
