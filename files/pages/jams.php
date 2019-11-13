@@ -119,7 +119,8 @@ and open the template in the editor.
 
             <!-- 1 -->
             <div class="jam-box image">
-                <img src="../images/blueberry.jpg" alt="Jar of wild Maine blueberry&nbsp;jam." <?php echo $styleJams ?>>
+                <img src="../images/blueberry.jpg" 
+                alt="Jar of wild Maine blueberry&nbsp;jam." <?php echo $styleSarah ?>>
             </div>
             <div class="jam-box copy">
                 <!-- <div class="logo">Slice O’ Country</div> -->
@@ -145,7 +146,8 @@ and open the template in the editor.
 
             <!-- 2 -->
             <div class="jam-box image">
-                <img src="../images/strawberry_8oz.jpg" alt="Jar of farm fresh stawberry jam." <?php echo $styleJams ?>>
+                <img src="../images/strawberry_8oz.jpg" 
+                alt="Jar of farm fresh stawberry jam." <?php echo $styleSarah ?>>
             </div>
             <div class="jam-box copy">
                 <?php
@@ -168,7 +170,8 @@ and open the template in the editor.
 
             <!-- 3 -->
             <div class="jam-box image">
-                <img src="../images/raspberry.png" alt="Jar of wild Maine raspberry jam." <?php echo $styleJams ?>>
+                <img src="../images/raspberry.png" 
+                alt="Jar of wild Maine raspberry jam." <?php echo $styleSarah ?>>
             </div>
             <div class="jam-box copy">
                 <?php
@@ -189,7 +192,8 @@ and open the template in the editor.
             </div>
             <!-- 4 -->
             <div class="jam-box image">
-                <img src="../images/rhubarb_8oz.jpg" alt="Jar of heirloom rhubarb jam."  <?php echo $styleJams ?>>
+                <img src="../images/rhubarb_8oz.jpg" 
+                alt="Jar of heirloom rhubarb jam."  <?php echo $styleSarah ?>>
             </div>
             <div class="jam-box copy">
                 <?php
@@ -212,7 +216,8 @@ and open the template in the editor.
 
             <!-- 5 -->
             <div class="jam-box image">
-                <img src="../images/strawrhubard300.jpg" alt="Jar of strawberry rhubarb jam."  <?php echo $styleJams ?>>
+                <img src="../images/strawrhubard300.jpg" 
+                alt="Jar of strawberry rhubarb jam."  <?php echo $styleSarah ?>>
             </div>
             <div class="jam-box copy">
                 <?php
@@ -236,7 +241,8 @@ and open the template in the editor.
 
             <!-- 6 -->
             <div class="jam-box image">
-                <img src="../images/pickles1.jpg" alt="Jars of Slice O Country pickles."  <?php echo $styleJams ?>>
+                <img src="../images/pickles1.jpg" 
+                alt="Jars of Slice O Country pickles."  <?php echo $styleSarah ?>>
             </div>
             <div class="jam-box copy">
                 <?php
@@ -272,31 +278,6 @@ and open the template in the editor.
                     </div>
                 </div>
 
-                <!-- New stuff to do -->
-                <div class="jam-box image filler">
-                    <img src="../images/blueberry.png">
-                </div>
-                <div class="jam-box copy filler">
-                    <!-- <div class="logo">Slice O’ Country</div> -->
-                    <?php
-                    require '../includes/small-logo.php'
-                    ?>
-                    <div class="name">Wild Maine Blueberry Jam</div>
-                    <div class="spacer10"></div>
-                    <div class="text">
-                        Wild Maine berries gathered locally and gently processed in
-                        small batches make my blueberry spread delicious.
-                        Great for perking up that morning toast or drizzled on top
-                        of vanilla ice cream for a sweet finish to the day.
-                        <br>
-                        <div class="spacer10"></div>
-
-                        <div class="spacer10"></div>
-                    </div>
-                    <div class="button-box">
-                        <button class="jam-button">Order from Sarah</button>
-                    </div>
-                </div>
 
             </div>
             <div class="spacer30"></div>

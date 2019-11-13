@@ -506,6 +506,7 @@ main {
 
         .box-links {
             // border: 3px solid red;
+            border: 1px dashed black;
             width: 400px;
             height: 288px;
             color: white;
@@ -526,16 +527,19 @@ main {
             }
         }
         .jams-mobile {
+            border: 1px solid black;
             background-image: url("../images/jams.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            font-size: 28px;
         }
         .boards-mobile {
             background-image: url("../images/pig_board3.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            font-size: 28px;
         }
     }
 

@@ -23,9 +23,9 @@
             <?php
             // echo __DIR__;
             if ($_SESSION['pagename'] == "index") {
-                echo '<img src="./files/images/facebook.png">';
+                echo '<img src="./files/images/facebook.png" alt="FB">';
             } else {
-                echo '<img src="../images/facebook.png">';
+                echo '<img src="../images/facebook.png" alt="FB">';
             }
             ?>
         </a>

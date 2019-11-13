@@ -1,5 +1,5 @@
 <?php    
-    $styleSarah = 'style="color: black; font-size: 22px; font-family: Arial;"';
+    $styleSarah = 'style="color: black; font-size: 22px; font-family: Arial; font-weight: bold"';
 
     $styleJams = 'style="text-align: center; display: block; font-size: 24px; 
                 font-style: italic; font-family: Arial; font-weight: normal;"';

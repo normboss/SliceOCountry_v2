@@ -59,9 +59,7 @@ and open the template in the editor.
                 </div>
 
                 <div class="box box2">
-                    <img src="./files/images/products.png" 
-                    alt="Cutting board and jars of jam."
-                    <?php echo $styleSarah; ?>>
+                    <img src="./files/images/products.png" alt="Cutting board and jars of jam." <?php echo $styleSarah; ?>>
                 </div>
 
                 <div class="box box21">
@@ -72,16 +70,14 @@ and open the template in the editor.
                     </div>
                 </div>
                 <div class="box box3">
-                    <img src="./files/images/sarah_circle.png" 
-                    alt="Sarah Brewer"  <?php echo $styleSarah; ?>>
+                    <img src="./files/images/sarah_circle.png" alt="Sarah Brewer" <?php echo $styleSarah; ?>>
                     <div class="box32">
                         <div class="small">Sarah Brewer, </div>
                         <div class="small">certified home&nbsp;processor</div>
                     </div>
                 </div>
                 <div class="box box31">
-                    <img src="./files/images/sarah_circle.png" 
-                    alt="Sarah Brewer"  <?php echo $styleSarah; ?>>
+                    <img src="./files/images/sarah_circle.png" alt="Sarah Brewer" <?php echo $styleSarah; ?>>
                     <div class="box32">
                         <div class="small">Sarah Brewer, </div>
                         <div class="small">certified home&nbsp;processor</div>
@@ -103,18 +99,21 @@ and open the template in the editor.
 
         <div class="links">
             <a href="./files/pages/jams.php">
-                <div class="box-links jams-mobile">
-                    <div class="spacer20"></div>
+                <div class="box-links jams-mobile" 
+                title="Link to the jams page." <?php echo $styleSarah ?>>
+                    <div class=" spacer20"></div>
                     Jams & Preserves
                 </div>
             </a>
-            <div class="spacer10"></div>
-            <a href="./files/pages/boards.php">
-                <div class="box-links boards-mobile">
-                    <div class="spacer20"></div>
-                    Maine Made Cutting Boards
-                </div>
-            </a>
+        </div>
+        <div class="spacer10"></div>
+        <a href="./files/pages/boards.php">
+            <div class="box-links boards-mobile" 
+            title="Link to the cutting boards page." <?php echo $styleSarah ?>>
+                <div class="spacer20"></div>
+                Maine Made Cutting Boards
+            </div>
+        </a>
         </div>
 
         <div class="content-lower">
@@ -130,13 +129,13 @@ and open the template in the editor.
                 <div>The Boothbay Crafters Group</div>
                 <br>
                 <div>October though December find Sarah at various festivals and holiday events.<br>
-                Follow her on 
-                <a href="https://www.facebook.com/Slice-O-Country-2291668391082762/">Facebook</a>
-                to see where you can find her.
+                    Follow her on
+                    <a href="https://www.facebook.com/Slice-O-Country-2291668391082762/">Facebook</a>
+                    to see where you can find her.
                 </div>
                 <br>
-                <div>Available at Browns Farm Stand in Boothbay Harbor, Capers Deli & Catering.  
-                Also featured at Shannon's Unshelled.</div>
+                <div>Available at Browns Farm Stand in Boothbay Harbor, Capers Deli & Catering.
+                    Also featured at Shannon's Unshelled.</div>
                 <br>
 
             </div>
