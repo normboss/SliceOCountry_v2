@@ -70,7 +70,7 @@ and open the template in the editor.
                     </div>
                 </div>
                 <div class="box box3">
-                    <img src="./files/images/sarah_circle.png" alt="Sarah Brewer" <?php echo $styleSarah; ?>>
+                    <img src="./files/images/sarah_circle.png" alt="Sarah Brewer owner of Slice o' Country." <?php echo $styleSarah; ?>>
                     <div class="box32">
                         <div class="small">Sarah Brewer, </div>
                         <div class="small">certified home&nbsp;processor</div>

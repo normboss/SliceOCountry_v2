@@ -63,8 +63,8 @@ and open the template in the editor.
                     <div><span class="boothbay__span">Packed with fresh picked&nbsp;flavor</span></div>
                 </div>
                 <div class="top-box sarah-pic">
-                    <!-- <img src="../images/sarah_circle1.png" alt="Sarah Brewer proprieter of Slice&nbsp;O'&nbsp;Country." <?php echo $styleSarah ?>> -->
-                    <img src="../images/sarah_circle1.png" alt="Sarah Brewer" <?php echo $styleSarah ?>>
+                    <img src="../images/sarah_circle1.png" alt="Sarah Brewer proprieter of Slice&nbsp;O'&nbsp;Country." <?php echo $styleSarah ?>>
+                    <!-- <img src="../images/sarah_circle1.png" alt="Sarah Brewer" <?php echo $styleSarah ?>> -->
 
 
                     <div class="top-box sarah-cert">
