@@ -21,7 +21,7 @@ and open the template in the editor.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="../css/jams.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/jams2.css" media="screen" rel="stylesheet" type="text/css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Allura|Dancing+Script|Zeyada" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
@@ -66,31 +66,37 @@ and open the template in the editor.
             </div>
         </section>
 
+        <!-- <div class="size-text-narrow">
+            <div>Available in three sizes:</div>
+        </div> -->
+
         <div class="middle-section">
             <h2>Available in three sizes:</h2>
 
             <div class="middle-box">
-                <div class="jar-size">
+                <div class="jar-size large-jar">
                     <!-- small -->
                     <img src="../images/rhubarb.jpg" alt="1 & 1/2 oz jar.">
                     <div class="spec-text">1.5 ounces</div>
                     <div class="spec-text">$3.50</div>
                 </div>
-                <div class="jar-size">
+                <div class="jar-size medium-jar">
                     <!-- medium -->
                     <img src="../images/raspberry_4oz1.jpg" alt="4 oz jar.">
                     <div class="spec-text">4 ounces</div>
                     <div class="spec-text">$5.00</div>
                 </div>
-                <div class="jar-size">
+                <div class="jar-size small-jar">
                     <!-- large -->
-                    <img src="../images/straw_rhubard_8oz1b.jpg" alt="8 ounce jar">
+                    <img src="../images/straw_rhubard_8oz1a.jpg" alt="8 ounce jar">
                     <div class="spec-text">8 ounces</div>
                     <div class="spec-text">$8.75</div>
                 </div>
             </div>
         </div>
 
+        <!-- <div class="spacer20"></div> -->
+        <br>
         <div class="jams">
 
             <!-- 1 -->

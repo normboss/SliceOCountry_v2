@@ -22,11 +22,7 @@
         <a href="https://www.facebook.com/Slice-O-Country-2291668391082762/">
             <?php
             // echo __DIR__;
-            if ($_SESSION['pagename'] == "index") {
-                echo '<img src="./files/images/facebook.png" alt="FB">';
-            } else {
-                echo '<img src="../images/facebook.png" alt="FB">';
-            }
+            echo '<img src="../images/facebook.png" alt="FB">';
             ?>
         </a>
     </div>

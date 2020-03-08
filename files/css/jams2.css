@@ -1319,7 +1319,6 @@ main .middle-section {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 50px;
 }
 
 main .middle-section h2 {
@@ -1371,13 +1370,6 @@ main .middle-section .middle-box .jar-size img {
 }
 
 @media screen and (max-width: 600px) {
-  main .middle-section .middle-box .jar-size img {
-    width: 200px;
-    height: 200px;
-  }
-}
-
-@media screen and (max-width: 600px) {
   main .middle-section .middle-box .jar-size {
     margin-bottom: 20px;
   }
@@ -1403,7 +1395,6 @@ main .middle-section .spec-text {
 }
 
 main .jams {
-  margin-top: 0;
   width: 100%;
   margin: 0 auto;
   display: -ms-grid;
@@ -1555,4 +1546,4 @@ main .copy .button-box .jam-button {
   border-radius: 15px;
   color: white;
 }
-/*# sourceMappingURL=jams.css.map */
+/*# sourceMappingURL=jams2.css.map */

@@ -286,7 +286,7 @@ main {
             padding-bottom: 60px;
         }
     }
-    
+
     .middle-section {
         // border: 3px solid blue;
         padding-top: 25px;
@@ -326,8 +326,8 @@ main {
                         height: 150px;
                     }
                     @include max-mixin(600px) {
-                        width: 200px;
-                        height: 200px;
+                        // width: 250px;
+                        // height: 250px;
                     }
                         }
                 @include max-mixin(600px) {
@@ -355,15 +355,12 @@ main {
                 // display: none;
             }
         }
-
-        margin-bottom: 50px;
     }
 
     // ********************************************************************
     $breakpt1: 700px;
     .jams {
         // border: 3px solid blue;
-        margin-top: 0;
         width: 100%;
         margin: 0 auto;
         display: grid;
