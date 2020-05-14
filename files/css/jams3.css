@@ -1108,214 +1108,72 @@ main {
       font-family: 'Zeyada', cursive;*/
 }
 
-main .content {
-  display: none;
-  width: 100%;
-  height: auto;
-  padding-bottom: 40px;
-  max-width: 850px;
-  margin: 0 auto;
-  padding-right: 100px;
-  width: 100%;
-  height: 55%;
-  opacity: 0.75;
-  position: relative;
-  z-index: 5;
-  top: 45%;
-  font-family: "Raleway", sans-serif;
-  padding-bottom: 25px;
+main .php-output {
+  color: red;
+  font-family: Arial;
+  font-size: 22px;
 }
 
-@media screen and (max-width: 500px) {
-  main .content {
-    padding-right: 50px;
-    margin: 0 auto;
-  }
+main .text .large-text {
+  font-size: 62px;
 }
 
-main .content .tag-line {
-  font-size: 24px;
-  font-weight: bold;
-  font-family: "Chilanka", cursive;
-  font-weight: bold;
-}
-
-@media screen and (max-width: 550px) {
-  main .content .tag-line {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  main .content .tag-line {
-    font-size: 16px;
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  main .content .tag-line {
-    width: 80%;
-  }
-}
-
-main .content .heading {
-  font-size: 38px;
-  font-family: "Raleway", sans-serif;
-}
-
-main .content .upper-grid {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 3fr 1fr 1fr;
-}
-
-@media screen and (max-width: 400px) {
-  main .content .upper-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-main .content .upper-grid img {
-  width: 70%;
-}
-
-main .content .upper-grid .boothbay {
-  font-size: 28px;
-  text-align: left;
-  justify-self: center;
-  align-self: center;
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 1;
-}
-
-main .content .upper-grid .sarah {
-  font-size: 20px;
-  text-align: left;
-  align-self: center;
-  grid-column: 2 / span 2;
-  grid-row: 2 / span 1;
-}
-
-@media screen and (max-width: 500px) {
-  main .content .upper-grid .sarah {
-    grid-column: 1 / span 2;
-    justify-self: center;
-  }
-}
-
-main .content .box0 .board-image {
-  width: 100%;
-  height: 100%;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-main .content .box0 .inner-box .heading {
-  font-size: 32px;
-  padding-left: 0;
-  padding-bottom: 25px;
-}
-
-@media screen and (max-width: 550px) {
-  main .content .box0 .inner-box .heading {
-    font-size: 24px;
-  }
-}
-
-main .content .box0 .inner-box .upper-grid .boothbay {
-  width: 90%;
-  text-align: center;
-  font-size: 28px;
-}
-
-@media screen and (max-width: 600px) {
-  main .content .box0 .inner-box .upper-grid .boothbay {
-    font-size: 22px;
-    padding-left: 15px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  main .content .box0 .inner-box .upper-grid .boothbay {
-    display: none;
-    font-size: 16px;
-  }
-}
-
-main .content .box0 .inner-box .upper-grid .pic {
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
-  justify-self: center;
-  padding-left: 100px;
-}
-
-main .content .box0 .inner-box .upper-grid .pic img {
-  min-width: 150px;
-}
-
-main .content .box0 .inner-box .upper-grid .sarah {
+main .text .under-construction {
   font-size: 16px;
-  padding-left: 0px;
 }
 
-@media screen and (max-width: 500px) {
-  main .content .box0 .inner-box .upper-grid .sarah {
-    display: none;
-  }
-}
-
-main .tag-line2 {
-  font-size: 20px;
+main .small-text {
+  font-size: 28px;
+  letter-spacing: 2px;
+  word-spacing: -10px;
   font-weight: bold;
-  font-family: "Chilanka", cursive;
-  font-weight: bold;
-  padding-left: 10px;
-  padding-top: 17px;
-  height: 50px;
-  text-align: left;
-  background-color: rgba(19, 83, 76, 0.3);
-  color: #13534c;
 }
 
-main .top-content {
-  border: 3px solid green;
-  background-image: url("../images/pig_board1.jpg");
+main .top-section {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
-  padding: 20px;
-  color: #13534c;
-  max-width: 800px;
-  min-width: 720px;
-  width: 80%;
-  margin: 0 auto;
-  display: grid;
-  padding-left: 100px;
-  grid-template-areas: "tag-line tag-line tag-line tag-line" "bheading bheading bheading bheading" "boothbay boothbay sarah-pic sarah-pic" "boothbay boothbay sarah-pic sarah-pic" "boothbay boothbay sarah-cert sarah-cert";
+  background-position: center;
+  background-image: url("../images/rake2.png");
+  height: 550px;
+  height: 500px;
 }
 
 @media screen and (max-width: 600px) {
-  main .top-content {
-    grid-template-areas: "tag-line" "bheading" "sarah-pic" "sarah-pic" "boothbay" "boothbay";
+  main .top-section {
+    background-image: url("../images/blueberry copy.png");
   }
 }
 
-@media screen and (max-width: 400px) {
-  main .top-content {
-    width: 100%;
+main .top-section .top-content {
+  padding: 20px;
+  color: white;
+  max-width: 1200px;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  display: grid;
+  padding-left: 100px;
+  grid-template-areas: "tag-line tag-line sarah-pic sarah-pic" "bheading bheading sarah-pic sarah-pic" "bheading bheading top-box top-box" "bheading bheading top-box top-box" "boothbay boothbay boothbay boothbay";
+}
+
+@media screen and (max-width: 600px) {
+  main .top-section .top-content {
+    grid-template-areas: "tag-line" "bheading" "sarah-pic" "boothbay";
+    min-width: 250px;
   }
 }
 
-main .top-content .top-box {
-  grid-area: top-box;
+@media screen and (max-width: 925px) {
+  main .top-section .top-content {
+    padding-left: 0;
+  }
 }
 
-main .top-content .tag-line1 {
+main .top-section .top-content .tag-line1 {
   display: none;
   width: 100%;
+  height: 300px;
   grid-area: tag-line;
   font-size: 24px;
   font-weight: bold;
@@ -1326,64 +1184,272 @@ main .top-content .tag-line1 {
   text-align: left;
 }
 
-main .top-content .boards-heading {
+main .top-section .top-content .jams-heading {
   width: 100%;
+  width: auto;
   grid-area: bheading;
   font-size: 40px;
   font-family: "Raleway", sans-serif;
-  text-align: left;
+  text-align: center;
   font-weight: bold;
 }
 
-main .top-content .boothbay {
+main .top-section .top-content .jams-heading .jams-heading__text {
+  background-color: rgba(19, 83, 76, 0.5);
+}
+
+@media screen and (max-width: 800px) {
+  main .top-section .top-content .jams-heading {
+    padding-left: 0px;
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .top-section .top-content .jams-heading {
+    padding-left: 0px;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .top-section .top-content .jams-heading {
+    font-size: 24px;
+  }
+}
+
+main .top-section .top-content .boothbay {
   grid-area: boothbay;
-  width: 70%;
-  text-align: left;
+  background-color: rgba(19, 83, 76, 0.5);
+  width: 100%;
+  text-align: center;
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
   align-self: center;
 }
 
-main .top-content .sarah-pic {
-  grid-area: sarah-pic;
-  width: 100%;
-  text-align: left;
-  margin: 0 auto;
-  justify-self: center;
-  padding-top: 20px;
-}
-
-main .top-content .sarah-pic img {
-  min-width: 150px;
-  max-width: 150px;
-}
-
-main .top-content .sarah-pic .sarah-cert {
-  grid-area: sarah-cert;
-  width: 100%;
-  font-size: 20px;
-  font-family: Helvetica Neue;
-  padding-left: 0px;
-  justify-self: right;
-  text-align: left;
+main .top-section .top-content .boothbay .boothbay__span {
+  height: auto;
+  width: auto;
+  background-color: rgba(19, 83, 76, 0.5);
 }
 
 @media screen and (max-width: 600px) {
-  main .top-content .sarah-pic .sarah-cert {
+  main .top-section .top-content .boothbay {
+    font-size: 22px;
+    padding-left: 15px;
+    text-align: center;
+  }
+}
+
+main .top-section .top-content .sarah-pic {
+  grid-area: sarah-pic;
+  width: 100%;
+  text-align: right;
+  margin: 0 auto;
+  justify-self: center;
+}
+
+main .top-section .top-content .sarah-pic img {
+  min-width: 150px;
+  max-width: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  main .top-section .top-content .sarah-pic {
+    text-align: right;
+  }
+}
+
+main .top-section .top-content .sarah-pic .sarah-cert {
+  background-color: rgba(19, 83, 76, 0.5);
+  grid-area: sarah-cert;
+  width: 100%;
+  font-size: 16px;
+  font-family: Helvetica Neue;
+  padding-left: 0px;
+  justify-self: right;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+main .size-text-narrow {
+  border: 3px solid green;
+  display: none;
+  height: 0;
+  font-family: Raleway;
+  font-size: 24px;
+  color: #000000;
+  font-weight: normal;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  main .size-text-narrow {
+    display: block;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  main .size-text-narrow {
+    padding-bottom: 60px;
+  }
+}
+
+main .middle-section {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-content: end;
+  column-gap: 25px;
+  max-width: 1100px;
+  max-height: 500px;
+}
+
+@media screen and (max-width: 750px) {
+  main .middle-section {
+    column-gap: 2px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main .middle-section {
+    max-height: 180px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main .middle-section {
+    max-height: 180px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .middle-section {
+    max-height: 150px;
+  }
+}
+
+main .middle-section .size-text {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+  width: 100%;
+  font-size: 32px;
+  font-family: Raleway;
+  font-weight: normal;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-self: center;
+}
+
+@media screen and (max-width: 1020px) {
+  main .middle-section .size-text {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main .middle-section .size-text {
     display: none;
   }
 }
 
-main .boards {
+main .middle-section .small-jam {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+main .middle-section .small-jam img {
+  width: 164px;
+  height: 164px;
+  width: 75%;
+  height: auto;
+  align-self: center;
+}
+
+main .middle-section .medium-jam {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+main .middle-section .medium-jam img {
+  width: 210px;
+  height: 210px;
+  width: 75%;
+  height: auto;
+  align-self: center;
+}
+
+main .middle-section .large-jam {
+  width: 100%;
+  height: 100%;
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+main .middle-section .large-jam img {
+  width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+main .middle-section .spec-text {
+  font-family: Raleway;
+  font-size: 24px;
+  color: #000000;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 800px) {
+  main .middle-section .spec-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .middle-section .spec-text {
+    font-size: 16px;
+  }
+}
+
+main .jams {
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 800px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 1600px;
+}
+
+@media screen and (max-width: 1450px) {
+  main .jams {
+    grid-template-columns: 1fr 1fr;
+    max-width: 770px;
+  }
 }
 
 @media screen and (max-width: 700px) {
-  main .boards {
+  main .jams {
     padding-left: 0px;
     grid-template-columns: 1fr;
     margin: 0 auto;
@@ -1393,15 +1459,13 @@ main .boards {
 }
 
 @media screen and (max-width: 350px) {
-  main .boards {
+  main .jams {
     justify-items: left;
     text-align: left;
   }
 }
 
-main .boards .board-box {
-  width: 350px;
-  height: 350px;
+main .jams .jam-box {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -1409,12 +1473,10 @@ main .boards .board-box {
   margin: 0 auto;
   text-align: left;
   justify-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 @media screen and (max-width: 700px) {
-  main .boards .board-box {
+  main .jams .jam-box {
     padding-left: 0px;
     text-align: left;
     justify-items: left;
@@ -1440,17 +1502,19 @@ main .image img {
 }
 
 main .copy {
+  max-width: 350px;
   text-align: left;
   border: 1px solid black;
-  margin-bottom: 15px;
   padding-left: 10px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+  height: 350px;
 }
 
 @media screen and (max-width: 350px) {
   main .copy {
-    padding-left: 0;
-    text-align: left;
-    justify-items: left;
+    height: 340px;
+    width: 300px;
   }
 }
 
@@ -1464,10 +1528,17 @@ main .copy {
   }
 }
 
+main .copy .small-logo {
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
 main .copy .name {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 32px;
   font-weight: bold;
+  padding-left: 15px;
+  padding-right: 5px;
 }
 
 @media screen and (max-width: 350px) {
@@ -1478,6 +1549,19 @@ main .copy .name {
 
 main .copy .text {
   font-size: 16px;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+main .copy .text--special {
+  width: 350px;
+  font-size: 16px;
+  text-align: center;
+}
+
+main .copy .text--special a {
+  text-decoration: inherit;
+  color: inherit;
 }
 
 main .copy .button-box {
@@ -1486,13 +1570,13 @@ main .copy .button-box {
   align-items: center;
 }
 
-main .copy .button-box .board-button {
+main .copy .button-box .jam-button {
   background-color: #13534c;
-  width: 193px;
+  width: 250px;
   height: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   border-radius: 15px;
   color: white;
 }
-/*# sourceMappingURL=boards_old.css.map */
+/*# sourceMappingURL=jams3.css.map */

@@ -8,6 +8,7 @@
         font-weight: 800;
         font-size: 48px;
         word-spacing: 10px;
+        line-height: 90%;
         @include max-mixin(400px) {
             font-size: 48px;
         }
@@ -54,7 +55,7 @@
 }
 
 .header-logo {
-    // border: 3px solid red;
+    border: 3px solid red;
     background-color: $menu-background-color;
     color: white;
     font-weight: bold;
@@ -64,7 +65,7 @@
     @include max-mixin(400px) {
         padding-left: 0px;
     }
-    padding-top: 35px;
+    padding-top: 25px;
     @include max-mixin(800px) {
         // padding-left: 10px;
         // padding-top: 0px;
@@ -74,7 +75,7 @@
     justify-content: center;
 
     &__title {
-        // border: 3px solid red;
+        border: 3px solid red;
         font-family: "Parisienne";
         font-weight: normal;
         font-size: 48px;

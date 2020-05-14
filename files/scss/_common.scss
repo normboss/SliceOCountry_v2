@@ -34,7 +34,7 @@ $font-nothing:      'Nothing You Could Do', cursive;
 $font-acumin-wide:  acumin-pro-wide, sans-serif;
 $font-acumin:       acumin-pro, sans-serif;
 $font-marydale:     marydale, sans-serif;
-$banner-height: 170px;
+$banner-height: 140px;
 
 .html {
     box-sizing: border-box;
@@ -570,5 +570,6 @@ $font-size: 16px;
 @import "menu2";
 @import "logo";
 // @import "footer";
+@import "banner";
 @import "footer1";
 @import "header";

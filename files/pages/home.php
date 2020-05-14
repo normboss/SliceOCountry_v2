@@ -15,7 +15,6 @@ and open the template in the editor.
 <head>
 <?php
     require '../includes/globalSiteTag.html';
-    require '../includes/keywords.php';
     ?>
 
     <meta charset="UTF-8">
