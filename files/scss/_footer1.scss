@@ -10,6 +10,8 @@ and open the template in the editor.
 $footBreakPt: 700px;
 .foot {
     // border: 3px solid blue;
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     row-gap: 0;
     grid-template-columns: 1fr 1fr 1fr;

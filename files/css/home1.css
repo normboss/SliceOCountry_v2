@@ -657,6 +657,8 @@ and open the template in the editor.
     Author     : Norm
 */
 .foot {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   row-gap: 0;
   grid-template-columns: 1fr 1fr 1fr;
