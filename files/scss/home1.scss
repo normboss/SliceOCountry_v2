@@ -12,6 +12,11 @@ and open the template in the editor.
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap"); // $menu-background-color: #13534C;
 @import "common";
 // $menu-background-color: #DBE3F6;
+body {
+    background-color: #f0f0f0;
+}
+
+
 .header-logo {
     // border: 3px solid red;
     background-color: $menu-background-color;
