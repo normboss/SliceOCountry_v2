@@ -53,7 +53,7 @@ main {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url("../images/rake2.png");
+        background-image: url("../images/rake2.jpg");
         @include max-width-mixin(600px) {
             background-image: url("../images/blueberry copy.png");
         }

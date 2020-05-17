@@ -1163,7 +1163,7 @@ main .top-section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../images/rake2.png");
+  background-image: url("../images/rake2.jpg");
 }
 
 @media screen and (max-width: 600px) {

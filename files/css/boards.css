@@ -1414,7 +1414,7 @@ main .boards1 .image img {
 
 main .boards1 .copy {
   background-color: white;
-  opacity: 1;
+  opacity: .8;
   width: 60%;
   text-align: left;
   border: 1px solid black;
