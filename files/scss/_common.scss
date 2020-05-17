@@ -34,9 +34,10 @@ $font-nothing:      'Nothing You Could Do', cursive;
 $font-acumin-wide:  acumin-pro-wide, sans-serif;
 $font-acumin:       acumin-pro, sans-serif;
 $font-marydale:     marydale, sans-serif;
-$banner-height: 140px;
+$banner-height: 120px; //140px;
 
 .html {
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
     box-sizing: border-box;
 
 }
@@ -44,34 +45,45 @@ $banner-height: 140px;
     box-sizing: border-box;
   }
 
-@mixin min-mixin($arg) {
+@mixin min-width-mixin($arg) {
     @media screen and (min-width: $arg ) {
         @content;
     }
 }
 
-@mixin min-max-mixin($arg1, $arg2) {
+@mixin min-max-width-mixin($arg1, $arg2) {
     @media screen and (min-width: $arg1 ) and (max-width: $arg2) {
         @content;
     }
 }
 
-@mixin max-mixin($arg) {
+@mixin max-width-mixin($arg) {
     @media screen and (max-width: $arg ) {
         @content;
     }
 }
 
+@mixin max-height-mixin($arg) {
+    @media screen and (max-height: $arg ) {
+        @content;
+    }
+}
+
+@mixin min-height-mixin($arg) {
+    @media screen and (min-height: $arg ) {
+        @content;
+    }
+}
 
 .menu-icon > .line {
     background-color: #292929;
     height: 2px;
     display: block;
     width: 75px;
-    @include max-mixin(700px) {
+    @include max-width-mixin(700px) {
         width: 60px;
     }    
-    @include max-mixin(600px) {
+    @include max-width-mixin(600px) {
         width: 45px;
     }    
 
@@ -175,16 +187,16 @@ font-family: 'Open Sans', sans-serif;
 %font-h1 {
     font-family: Zapfino, arial;
     font-size: 120px;
-    @include max-mixin(1000px) {
+    @include max-width-mixin(1000px) {
         font-size: 80px;
         /*color: red;*/
         /*padding-top: 25px;*/
     }    
-    /*    @include max-mixin(650px) {
+    /*    @include max-width-mixin(650px) {
           font-size: 64px;
           color: blue;
         }    */
-    @include max-mixin(700px) {
+    @include max-width-mixin(700px) {
         /*font-size: 64px;*/
         /*color: green;*/
         padding-top: 0px;
@@ -273,7 +285,7 @@ font-family: 'Open Sans', sans-serif;
     span {
         text-align: right;
     }
-    @include max-mixin(400px) {
+    @include max-width-mixin(400px) {
         font-size: 16px;
         width: 100%;
     }
@@ -290,7 +302,7 @@ font-family: 'Open Sans', sans-serif;
     span {
         text-align: right;
     }
-    @include max-mixin(400px) {
+    @include max-width-mixin(400px) {
         font-size: 16px;
         width: 100%;
     }
@@ -318,7 +330,7 @@ font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     font-size: 20px;
     color: #83653b;
-    @include max-mixin(400px) {
+    @include max-width-mixin(400px) {
         font-size: 16px;
         width: 100%;
     }
@@ -547,19 +559,19 @@ font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 }
 
-@mixin min-mixin($arg) {
+@mixin min-width-mixin($arg) {
     @media screen and (min-width: $arg) {
         @content;
     }
 }
 
-@mixin min-max-mixin($arg1, $arg2) {
+@mixin min-max-width-mixin($arg1, $arg2) {
     @media screen and (min-width: $arg1) and (max-width: $arg2) {
         @content;
     }
 }
 
-@mixin max-mixin($arg) {
+@mixin max-width-mixin($arg) {
     @media screen and (max-width: $arg) {
         @content;
     }

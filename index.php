@@ -3,7 +3,6 @@
 <head>
 <?php
     require 'files/includes/globalSiteTag.html';
-    require 'files/includes/keywords.php';
     ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +17,7 @@
 <body>
     <a href="./files/pages/home.php">Click to enter</a>
     <script>
-        window.location.href = "./files/pages/home.php";
+        window.location.href = "./files/pages/home1.php";
     </script>
 </body>
 </html>

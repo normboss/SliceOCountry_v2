@@ -1,4 +1,4 @@
-$banner-height1: 85px;
+$banner-height1: 100px; //85px;
 $breakPoint1: 700px;
 
 .banner {
@@ -17,53 +17,71 @@ $breakPoint1: 700px;
         // border: 3px solid red;
         color: white;
         padding-left: 20px;
+        line-height: .8;
+        padding-top: 5px;
 
         // border: 3px solid red;
         font-family: "Parisienne";
         font-weight: normal;
         font-size: 48px;
+        @include max-width-mixin(450px) {
+            font-size: 36px;
+        }
         .s-font {
             font-family: "Great Vibes", cursive;
             font-weight: normal;
+        }
+        .special-font {
+            font-family: "Great Vibes", cursive;
+            font-weight: normal;
+        }
+    }
+    .sub-title {
+        // border: 3px solid red;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        font-size: 14px;
+        @include max-width-mixin(450px) {
+            font-size: 10px;
         }
     }
 
     &-menu {
         &-wide {
-            // @include min-mixin(800px) {
-                // display: none;
-                // border: 3px solid red;
-                color: white;
-                // @include menu-wide();
-                ul {
-                    list-style: none;
-                    display: flex;
-                    li {
-                        padding-right: 20px;
-                    }
-                }
-                a {
-                    text-decoration: none;
-                    color: white;
-                    font-weight: normal;
+            // @include min-width-mixin(800px) {
+            // display: none;
+            // border: 3px solid red;
+            color: white;
+            // @include menu-wide();
+            ul {
+                list-style: none;
+                display: flex;
+                li {
                     padding-right: 20px;
-
-                    // text-align: left;
-                    // font: Bold 10px/12px Arial;
-                    font-family: Arial;
-                    letter-spacing: 0px;
-                    color: #ffffff;
-                    opacity: 1;
                 }
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                font-weight: normal;
+                padding-right: 20px;
+
+                // text-align: left;
+                // font: Bold 10px/12px Arial;
+                font-family: Arial;
+                letter-spacing: 0px;
+                color: #ffffff;
+                opacity: 1;
+            }
             // }
-            @include max-mixin(800px) {
+            @include max-width-mixin(800px) {
                 display: none;
             }
         }
 
         &-narrow {
             display: none;
-            @include max-mixin(800px) {
+            @include max-width-mixin(800px) {
                 // border: 3px solid red;
                 z-index: 10;
                 flex-direction: column;

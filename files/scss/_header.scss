@@ -17,7 +17,6 @@ $text-color: white;
 $text-color: red;
 
 
-
 .header {
     * {
         box-sizing: border-box;
@@ -35,7 +34,7 @@ $text-color: red;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50px;
     z-index: 10;
-    @include max-mixin($breakPoint1) {
+    @include max-width-mixin($breakPoint1) {
         // grid-template-areas: "banner menu-narrow ";
         // grid-template-columns: 3fr 1fr;
         grid-template-areas: "menu-narrow banner ";
@@ -46,16 +45,16 @@ $text-color: red;
     .elemental-shift {
         grid-area: banner;
         text-align: center;
-        @include max-mixin($breakPoint1) {
+        @include max-width-mixin($breakPoint1) {
             text-align: left;
         }    
         /*border: 3px solid red;*/
         @extend %font-h1;
         font-size: 73px;
-        @include max-mixin(450px) {
+        @include max-width-mixin(450px) {
             font-size: 60px;
         }
-        @include max-mixin(400px) {
+        @include max-width-mixin(400px) {
             font-size: 48px;
         }
 
@@ -68,7 +67,7 @@ $text-color: red;
             color: white;
             grid-area: menu-wide;
             @extend %menu-style-wide;
-            @include max-mixin($breakPoint1) {
+            @include max-width-mixin($breakPoint1) {
                 display: none;
             }
             a {
@@ -84,7 +83,7 @@ $text-color: red;
             grid-area: menu-narrow;
             display: none;
             @extend %menu-style-narrow;
-            @include max-mixin($breakPoint1) {
+            @include max-width-mixin($breakPoint1) {
                 display: flex;
             }
             padding-bottom: 10px;

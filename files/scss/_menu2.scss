@@ -5,9 +5,9 @@ $text-color: white;
 
 .nav {
     box-sizing: border-box;
-    border: 3px solid red;
+    // border: 3px solid red;
     display: block;
-    @include max_mixin(600px) {
+    @include max-width-mixin(600px) {
         .nav__narrow {
             display: block;
         }
@@ -15,7 +15,7 @@ $text-color: white;
             display: none;
         }
     }
-    @include min_mixin(600px) {
+    @include min-width-mixin(600px) {
         .nav__narrow {
             display: none;
         }

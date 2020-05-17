@@ -33,7 +33,7 @@ main {
         max-width: 850px;
         margin: 0 auto;
         padding-right: 100px;
-        @include max-mixin(500px) {
+        @include max-width-mixin(500px) {
             padding-right: 50px;
             margin: 0 auto;
         }
@@ -45,15 +45,15 @@ main {
             // font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
             font-family: "Chilanka", cursive;
             font-weight: bold;
-            @include max-mixin(550px) {
+            @include max-width-mixin(550px) {
                 font-size: 20px;
             }
-            @include max-mixin(400px) {
+            @include max-width-mixin(400px) {
                 font-size: 16px;
                 width: 90%;
                 // padding-left: 10px;
             }
-            @include max-mixin(320px) {
+            @include max-width-mixin(320px) {
                 width: 80%;
             }
         }
@@ -78,7 +78,7 @@ main {
             width: 100%;
             display: grid;
             grid-template-columns: 3fr 1fr 1fr;
-            @include max-mixin(400px) {
+            @include max-width-mixin(400px) {
                 grid-template-columns: 1fr;
             }
             img {
@@ -102,7 +102,7 @@ main {
                 text-align: left;
                 align-self: center;
                 grid-column: 2 / span 2;
-                @include max-mixin(500px) {
+                @include max-width-mixin(500px) {
                     grid-column: 1 / span 2;
                     justify-self: center;
                 }
@@ -124,7 +124,7 @@ main {
                 .heading {
                     font-size: 32px;
                     padding-left: 0;
-                    @include max-mixin(550px) {
+                    @include max-width-mixin(550px) {
                         font-size: 24px;
                     }
                     padding-bottom: 25px;
@@ -135,15 +135,15 @@ main {
                         width: 90%;
                         text-align: center;
                         font-size: 28px;
-                        @include max-mixin(600px) {
+                        @include max-width-mixin(600px) {
                             font-size: 22px;
                             padding-left: 15px;
                         }
-                        @include max-mixin(500px) {
+                        @include max-width-mixin(500px) {
                             display: none;
                             font-size: 16px;
                         }
-                        // @include max-mixin(400px) {
+                        // @include max-width-mixin(400px) {
                         //     font-size: 16px;
                         //     padding-left: 10px;
                         // }
@@ -162,7 +162,7 @@ main {
                         // border: 3px solid red;
                         font-size: 16px;
                         padding-left: 0px;
-                        @include max-mixin(500px) {
+                        @include max-width-mixin(500px) {
                             display: none;
                         }
                     }
@@ -189,17 +189,17 @@ main {
         color: rgba(19, 83, 76, 1);
         // border-radius: 15px;
 
-        @include max-mixin(600px) {
+        @include max-width-mixin(600px) {
         }
-        // @include max-mixin(550px) {
+        // @include max-width-mixin(550px) {
         //     font-size: 20px;
         // }
-        // @include max-mixin(400px) {
+        // @include max-width-mixin(400px) {
         //     font-size: 16px;
         //     width: 90%;
         //     // padding-left: 10px;
         // }
-        // @include max-mixin(320px) {
+        // @include max-width-mixin(320px) {
         //     width: 80%;
         // }
     }
@@ -230,7 +230,7 @@ main {
             "boothbay boothbay sarah-pic sarah-pic"
             "boothbay boothbay sarah-cert sarah-cert";
 
-        @include max-mixin(600px) {
+        @include max-width-mixin(600px) {
             grid-template-areas:
                 "tag-line"
                 "bheading"
@@ -239,7 +239,7 @@ main {
                 "boothbay"
                 "boothbay";
         }
-        @include max-mixin(400px) {
+        @include max-width-mixin(400px) {
             width: 100%;
         }
 
@@ -270,17 +270,17 @@ main {
             // padding-left: 10px;
             // padding-left: 10px;
 
-            @include max-mixin(600px) {
+            @include max-width-mixin(600px) {
             }
-            // @include max-mixin(550px) {
+            // @include max-width-mixin(550px) {
             //     font-size: 20px;
             // }
-            // @include max-mixin(400px) {
+            // @include max-width-mixin(400px) {
             //     font-size: 16px;
             //     width: 90%;
             //     // padding-left: 10px;
             // }
-            // @include max-mixin(320px) {
+            // @include max-width-mixin(320px) {
             //     width: 80%;
             // }
         }
@@ -306,15 +306,15 @@ main {
             font-family: Arial, Helvetica, sans-serif;
             align-self: center;
 
-            // @include max-mixin(600px) {
+            // @include max-width-mixin(600px) {
             //     font-size: 22px;
             //     padding-left: 15px;
             // }
-            // @include max-mixin(500px) {
+            // @include max-width-mixin(500px) {
             //     display: none;
             //     font-size: 16px;
             // }
-            // @include max-mixin(400px) {
+            // @include max-width-mixin(400px) {
             //     font-size: 16px;
             //     padding-left: 10px;
             // }
@@ -343,10 +343,10 @@ main {
                 justify-self: right;
                 text-align: left;
                 // padding-left: 400px;
-                @include max-mixin(900px) {
+                @include max-width-mixin(900px) {
                     // padding-left: 300px;
                 }
-                @include max-mixin(600px) {
+                @include max-width-mixin(600px) {
                     display: none;
                 }
             }
@@ -361,14 +361,14 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         max-width: 800px;
-        @include max-mixin($breakpt1) {
+        @include max-width-mixin($breakpt1) {
             padding-left: 0px;
             grid-template-columns: 1fr;
             margin: 0 auto;
             text-align: center;
             justify-items: center;
         }
-        @include max-mixin(350px) {
+        @include max-width-mixin(350px) {
             justify-items: left;
             text-align: left;
         }
@@ -385,7 +385,7 @@ main {
             margin: 0 auto;
             text-align: left;
             justify-items: center;
-                @include max-mixin($breakpt1) {
+                @include max-width-mixin($breakpt1) {
                 padding-left: 0px;
                 text-align: left;
                 justify-items: left;
@@ -395,13 +395,13 @@ main {
         }
     }
     .image {
-        @include max-mixin(350px) {
+        @include max-width-mixin(350px) {
             padding-left: 0;
         }
         img {
             height: 350px;
             width: 350px;
-            @include max-mixin(350px) {
+            @include max-width-mixin(350px) {
                 height: 300px;
                 width: 300px;
             }
@@ -413,13 +413,13 @@ main {
         border: 1px solid black;
         margin-bottom: 15px;
         padding-left: 10px;
-        @include max-mixin(350px) {
+        @include max-width-mixin(350px) {
             // max-width: 300px;
             padding-left: 0;
             text-align: left;
             justify-items: left;
         }
-        @include max-mixin($breakpt1) {
+        @include max-width-mixin($breakpt1) {
             padding-left: 0px;
             text-align: left;
             justify-items: left;
@@ -434,7 +434,7 @@ main {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 32px;
             font-weight: bold;
-            @include max-mixin(350px) {
+            @include max-width-mixin(350px) {
                 font-size: 28px;
             }
         }

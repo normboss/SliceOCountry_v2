@@ -24,6 +24,7 @@ and open the template in the editor.
 @import url("https://fonts.googleapis.com/css?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Chilanka|Raleway:400,700&display=swap");
 .html {
+  font-size: 62.5%;
   box-sizing: border-box;
 }
 
@@ -136,7 +137,7 @@ font-family: 'Open Sans', sans-serif;
 .header .elemental-shift {
   font-family: Zapfino, arial;
   font-size: 120px;
-  /*    @include max-mixin(650px) {
+  /*    @include max-width-mixin(650px) {
           font-size: 64px;
           color: blue;
         }    */
@@ -179,7 +180,6 @@ font-family: 'Open Sans', sans-serif;
 
 .nav {
   box-sizing: border-box;
-  border: 3px solid red;
   display: block;
   /*header a {
       font-size: 1rem 20px;
@@ -372,11 +372,10 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .header-logo {
-  border: 3px solid red;
   background-color: #13534C;
   color: white;
   font-weight: bold;
-  height: 140px;
+  height: 120px;
   padding-left: 25px;
   padding-top: 25px;
   display: flex;
@@ -391,7 +390,6 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .header-logo__title {
-  border: 3px solid red;
   font-family: "Parisienne";
   font-weight: normal;
   font-size: 48px;
@@ -522,7 +520,7 @@ font-family: 'Open Sans', sans-serif;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  height: 85px;
+  height: 100px;
   background-color: #13534c;
   position: relative;
   display: flex;
@@ -533,14 +531,39 @@ font-family: 'Open Sans', sans-serif;
 .banner-logo {
   color: white;
   padding-left: 20px;
+  line-height: .8;
+  padding-top: 5px;
   font-family: "Parisienne";
   font-weight: normal;
   font-size: 48px;
 }
 
+@media screen and (max-width: 450px) {
+  .banner-logo {
+    font-size: 36px;
+  }
+}
+
 .banner-logo .s-font {
   font-family: "Great Vibes", cursive;
   font-weight: normal;
+}
+
+.banner-logo .special-font {
+  font-family: "Great Vibes", cursive;
+  font-weight: normal;
+}
+
+.banner .sub-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 450px) {
+  .banner .sub-title {
+    font-size: 10px;
+  }
 }
 
 .banner-menu-wide {
@@ -972,7 +995,7 @@ and open the template in the editor.
   color: white;
   font-weight: bold;
   background-color: #13534C;
-  height: 140px;
+  height: 120px;
   /*.dropdown-content a:hover {background-color: #f1f1f1}*/
 }
 
@@ -1025,7 +1048,7 @@ and open the template in the editor.
 .header .nav .nav__narrow {
   z-index: 10;
   flex-direction: column;
-  height: 140px;
+  height: 120px;
   text-align: right;
   align-self: right;
   padding-bottom: 25px;

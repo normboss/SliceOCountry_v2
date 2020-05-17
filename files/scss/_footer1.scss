@@ -27,7 +27,7 @@ $footBreakPt: 700px;
      }
 
 
-    @include max-mixin($footBreakPt) {
+    @include max-width-mixin($footBreakPt) {
         grid-template-columns: 1fr;
         // height: auto;
     }
@@ -39,7 +39,7 @@ $footBreakPt: 700px;
         color: white;
         font-size: 23px;
         padding-bottom: 15px;
-        @include max-mixin(500px) {
+        @include max-width-mixin(500px) {
             // height: 25px;
             margin: 0 auto;
             text-align: center;
@@ -50,13 +50,13 @@ $footBreakPt: 700px;
         padding-top: 20px;
         grid-column: 1 / span 3;
         grid-row: 1 / span 1;
-        @include max-mixin($footBreakPt) {
+        @include max-width-mixin($footBreakPt) {
             grid-column: 1 / span 1;
         }
         color: white;
         text-align: center;
         // font-size: 32px;
-        @include max-mixin(500px) {
+        @include max-width-mixin(500px) {
             margin: 0 auto;
             text-align: center;
         }
@@ -72,7 +72,7 @@ $footBreakPt: 700px;
         text-align: left;
         // padding-top: 25px;
         font-size: 20px;
-        @include max-mixin(500px) {
+        @include max-width-mixin(500px) {
             font-size: 16px;
             height: auto;
             margin: 0 auto;
@@ -84,7 +84,7 @@ $footBreakPt: 700px;
     .stuff3 {
         // padding-top: 25px;
         font-size: 20px;
-        @include max-mixin(500px) {
+        @include max-width-mixin(500px) {
             font-size: 16px;
         }
         display: flex;
@@ -92,7 +92,7 @@ $footBreakPt: 700px;
         justify-content: center;
         text-align: center;
         // height: 50px;
-        @include max-mixin($footBreakPt) {
+        @include max-width-mixin($footBreakPt) {
             grid-column: 1 / span 1;
             grid-row: 2 / span 1;
         }
@@ -100,7 +100,7 @@ $footBreakPt: 700px;
     .stuff4 {
         // padding-top: 25px;
         font-size: 20px;
-        @include max-mixin(500px) {
+        @include max-width-mixin(500px) {
             font-size: 16px;
         }
         display: flex;
@@ -108,7 +108,7 @@ $footBreakPt: 700px;
         justify-content: center;
         text-align: center;
         // height: 50px;
-        @include max-mixin($footBreakPt) {
+        @include max-width-mixin($footBreakPt) {
             grid-column: 1 / span 1;
             grid-row: 3 / span 1;
         }
@@ -136,14 +136,14 @@ $footBreakPt: 700px;
             // display: inline-block;
             font-size: 20px;
             color: white;
-            @include max-mixin(870px) {
+            @include max-width-mixin(870px) {
                 display: none;
             }
         }
         a img {
             width: 35px;
         }
-        @include max-mixin(500px) {
+        @include max-width-mixin(500px) {
             font-size: 16px;
             a img {
                 width: 20px;
@@ -154,7 +154,7 @@ $footBreakPt: 700px;
             padding-top: 0px;
         }
         text-align: center;
-        @include max-mixin($footBreakPt) {
+        @include max-width-mixin($footBreakPt) {
             grid-column: 1 / span 1;
             grid-row: 4 / span 1;
         }
@@ -164,7 +164,7 @@ $footBreakPt: 700px;
         //   border: 2px solid red;
         grid-column: 1 / span 3;
         grid-row: 3 / span 1;
-    @include max-mixin($footBreakPt) {
+    @include max-width-mixin($footBreakPt) {
             grid-column: 1 / span 1;
             grid-row: 5 / span 1;
         }

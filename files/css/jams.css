@@ -24,6 +24,7 @@ and open the template in the editor.
 @import url("https://fonts.googleapis.com/css?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Chilanka|Raleway:400,700&display=swap");
 .html {
+  font-size: 62.5%;
   box-sizing: border-box;
 }
 
@@ -136,7 +137,7 @@ font-family: 'Open Sans', sans-serif;
 .header .elemental-shift {
   font-family: Zapfino, arial;
   font-size: 120px;
-  /*    @include max-mixin(650px) {
+  /*    @include max-width-mixin(650px) {
           font-size: 64px;
           color: blue;
         }    */
@@ -179,7 +180,6 @@ font-family: 'Open Sans', sans-serif;
 
 .nav {
   box-sizing: border-box;
-  border: 3px solid red;
   display: block;
   /*header a {
       font-size: 1rem 20px;
@@ -372,11 +372,10 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .header-logo {
-  border: 3px solid red;
   background-color: #13534C;
   color: white;
   font-weight: bold;
-  height: 140px;
+  height: 120px;
   padding-left: 25px;
   padding-top: 25px;
   display: flex;
@@ -391,7 +390,6 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .header-logo__title {
-  border: 3px solid red;
   font-family: "Parisienne";
   font-weight: normal;
   font-size: 48px;
@@ -522,7 +520,7 @@ font-family: 'Open Sans', sans-serif;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  height: 85px;
+  height: 100px;
   background-color: #13534c;
   position: relative;
   display: flex;
@@ -533,14 +531,39 @@ font-family: 'Open Sans', sans-serif;
 .banner-logo {
   color: white;
   padding-left: 20px;
+  line-height: .8;
+  padding-top: 5px;
   font-family: "Parisienne";
   font-weight: normal;
   font-size: 48px;
 }
 
+@media screen and (max-width: 450px) {
+  .banner-logo {
+    font-size: 36px;
+  }
+}
+
 .banner-logo .s-font {
   font-family: "Great Vibes", cursive;
   font-weight: normal;
+}
+
+.banner-logo .special-font {
+  font-family: "Great Vibes", cursive;
+  font-weight: normal;
+}
+
+.banner .sub-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 450px) {
+  .banner .sub-title {
+    font-size: 10px;
+  }
 }
 
 .banner-menu-wide {
@@ -972,7 +995,7 @@ and open the template in the editor.
   color: white;
   font-weight: bold;
   background-color: #13534C;
-  height: 140px;
+  height: 120px;
   /*.dropdown-content a:hover {background-color: #f1f1f1}*/
 }
 
@@ -1025,7 +1048,7 @@ and open the template in the editor.
 .header .nav .nav__narrow {
   z-index: 10;
   flex-direction: column;
-  height: 140px;
+  height: 120px;
   text-align: right;
   align-self: right;
   padding-bottom: 25px;
@@ -1134,12 +1157,13 @@ main .small-text {
 
 main .top-section {
   width: 100%;
+  height: calc(var(--vh, 1vh) * 89);
+  height: 89vh;
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../images/rake2.png");
-  height: 550px;
-  height: 500px;
 }
 
 @media screen and (max-width: 600px) {
@@ -1149,103 +1173,123 @@ main .top-section {
 }
 
 main .top-section .top-content {
-  padding: 20px;
   color: white;
   max-width: 1200px;
   width: 100%;
-  height: 500px;
   margin: 0 auto;
-  display: grid;
-  padding-left: 100px;
-  grid-template-areas: "tag-line tag-line sarah-pic sarah-pic" "bheading bheading sarah-pic sarah-pic" "bheading bheading top-box top-box" "bheading bheading top-box top-box" "boothbay boothbay boothbay boothbay";
-}
-
-@media screen and (max-width: 600px) {
-  main .top-section .top-content {
-    grid-template-areas: "tag-line" "bheading" "sarah-pic" "boothbay";
-    min-width: 250px;
-  }
-}
-
-@media screen and (max-width: 925px) {
-  main .top-section .top-content {
-    padding-left: 0;
-  }
 }
 
 main .top-section .top-content .tag-line1 {
   display: none;
   width: 100%;
   height: 300px;
-  grid-area: tag-line;
   font-size: 24px;
   font-weight: bold;
   font-family: "Chilanka", cursive;
-  font-weight: bold;
-  justify-content: left;
-  justify-self: left;
-  text-align: left;
 }
 
 main .top-section .top-content .jams-heading {
-  width: 100%;
-  width: auto;
-  grid-area: bheading;
-  font-size: 40px;
+  font-size: 38px;
   font-family: "Raleway", sans-serif;
-  text-align: center;
   font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 14.8%;
+}
+
+@media screen and (max-width: 700px) {
+  main .top-section .top-content .jams-heading {
+    font-size: 30px;
+  }
 }
 
 main .top-section .top-content .jams-heading .jams-heading__text {
   background-color: rgba(19, 83, 76, 0.5);
 }
 
+@media screen and (max-width: 700px) {
+  main .top-section .top-content .jams-heading {
+    top: 45%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   main .top-section .top-content .jams-heading {
-    padding-left: 0px;
-    font-size: 36px;
+    left: 5%;
   }
 }
 
-@media screen and (max-width: 600px) {
-  main .top-section .top-content .jams-heading {
-    padding-left: 0px;
-    font-size: 32px;
-    width: 100%;
-    text-align: center;
-    padding-top: 40px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  main .top-section .top-content .jams-heading {
-    font-size: 24px;
-  }
-}
-
-main .top-section .top-content .boothbay {
-  grid-area: boothbay;
+main .top-section .top-content .small-batches {
   background-color: rgba(19, 83, 76, 0.5);
-  width: 100%;
-  text-align: center;
+  max-width: 1200px;
+  width: auto;
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
-  align-self: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-align: left;
+  position: absolute;
+  bottom: 0%;
+  transform: translateY(-50%);
+  left: 14.5%;
 }
 
-main .top-section .top-content .boothbay .boothbay__span {
-  height: auto;
-  width: auto;
-  background-color: rgba(19, 83, 76, 0.5);
-}
-
-@media screen and (max-width: 600px) {
-  main .top-section .top-content .boothbay {
-    font-size: 22px;
-    padding-left: 15px;
-    text-align: center;
+@media screen and (max-width: 700px) {
+  main .top-section .top-content .small-batches {
+    font-size: 28px;
   }
+}
+
+@media screen and (max-width: 800px) {
+  main .top-section .top-content .small-batches {
+    left: 5%;
+  }
+}
+
+main .top-section .top-content .sarah-info {
+  width: 280px;
+  height: 300px;
+  position: absolute;
+  top: 0%;
+  right: 0px;
+}
+
+@media screen and (max-width: 700px) {
+  main .top-section .top-content .sarah-info {
+    width: 225px;
+  }
+}
+
+main .top-section .top-content .sarah-info .sarah-image {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  color: white;
+}
+
+main .top-section .top-content .sarah-info .sarah-image .box32 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main .top-section .top-content .sarah-info .sarah-image img {
+  width: 240px;
+  width: 7em;
+  width: 90%;
+}
+
+main .top-section .top-content .sarah-info .sarah-text {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  font: Regular 24px/29px Raleway;
+  background-color: rgba(19, 83, 76, 0.5);
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
 }
 
 main .top-section .top-content .sarah-pic {
@@ -1388,94 +1432,128 @@ main .middle-section .spec-text {
   }
 }
 
-main .jams {
-  margin-top: 0;
-  width: 100%;
+main .jams1 {
+  width: 80%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  max-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
 }
 
-@media screen and (max-width: 1450px) {
-  main .jams {
-    grid-template-columns: 1fr 1fr;
-    max-width: 770px;
+@media screen and (max-width: 1000px) {
+  main .jams1 {
+    width: 80%;
   }
 }
 
-@media screen and (max-width: 700px) {
-  main .jams {
-    padding-left: 0px;
-    grid-template-columns: 1fr;
-    margin: 0 auto;
-    text-align: center;
-    justify-items: center;
+@media screen and (max-width: 900px) {
+  main .jams1 {
+    width: 90%;
   }
 }
 
-@media screen and (max-width: 350px) {
-  main .jams {
-    justify-items: left;
-    text-align: left;
+@media screen and (max-width: 800px) {
+  main .jams1 {
+    width: 100%;
   }
 }
 
-main .jams .jam-box {
+@media screen and (max-width: 400px) {
+  main .jams1 {
+    max-width: 300px;
+  }
+}
+
+main .jams1 .jam-block {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 750px) {
+  main .jams1 .jam-block {
+    flex-direction: column;
+  }
+}
+
+main .jams1 .jam-block .jam-box1 {
+  height: 350px;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   padding-left: 0px;
   margin: 0 auto;
-  text-align: left;
   justify-items: center;
+  margin-bottom: 15px;
 }
 
-@media screen and (max-width: 700px) {
-  main .jams .jam-box {
-    padding-left: 0px;
+@media screen and (max-width: 750px) {
+  main .jams1 .jam-block .jam-box1 {
+    width: 350px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .jams1 .jam-block .jam-box1 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .jams1 .image {
+    max-width: 300px;
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+main .jams1 .image img {
+  height: 350px;
+  width: 350px;
+}
+
+@media screen and (max-width: 400px) {
+  main .jams1 .image img {
+    height: 300px;
+    width: 300px;
+    width: 100%;
+  }
+}
+
+main .jams1 .jam-copy {
+  width: 60%;
+  text-align: left;
+  border: 1px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  height: 100%;
+  padding-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 400px) {
+  main .jams1 .jam-copy {
+    max-width: 300px;
+    padding-left: 0;
     text-align: left;
     justify-items: left;
   }
 }
 
-@media screen and (max-width: 350px) {
-  main .image {
-    padding-left: 0;
-  }
-}
-
-main .image img {
-  height: 350px;
-  width: 350px;
-}
-
-@media screen and (max-width: 350px) {
-  main .image img {
-    height: 300px;
+@media screen and (max-width: 400px) {
+  main .jams1 .jam-copy {
     width: 300px;
-  }
-}
-
-main .copy {
-  max-width: 350px;
-  text-align: left;
-  border: 1px solid black;
-  padding-left: 10px;
-  padding-top: 20px;
-  margin-bottom: 50px;
-  height: 350px;
-}
-
-@media screen and (max-width: 350px) {
-  main .copy {
-    height: 340px;
-    width: 300px;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 700px) {
-  main .copy {
+  main .jams1 .jam-copy {
     padding-left: 0px;
     text-align: left;
     justify-items: left;
@@ -1484,49 +1562,58 @@ main .copy {
   }
 }
 
-main .copy .small-logo {
+main .jams1 .jam-copy .small-logo {
   padding-left: 15px;
   padding-right: 5px;
 }
 
-main .copy .name {
+main .jams1 .jam-copy .name {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 32px;
   font-weight: bold;
   padding-left: 15px;
   padding-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 350px) {
-  main .copy .name {
+@media screen and (max-width: 400px) {
+  main .jams1 .jam-copy .name {
     font-size: 28px;
   }
 }
 
-main .copy .text {
+main .jams1 .jam-copy .text {
   font-size: 16px;
   padding-left: 15px;
   padding-right: 5px;
+  margin-bottom: 20px;
 }
 
-main .copy .text--special {
+main .jams1 .jam-copy .text--special {
   width: 350px;
   font-size: 16px;
   text-align: center;
 }
 
-main .copy .text--special a {
+main .jams1 .jam-copy .text--special a {
   text-decoration: inherit;
   color: inherit;
 }
 
-main .copy .button-box {
+main .jams1 .jam-copy .button-box {
   text-align: center;
   margin: 0 auto;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-main .copy .button-box .jam-button {
+main .jams1 .jam-copy .button-box .jam-button {
   background-color: #13534c;
   width: 250px;
   height: 30px;

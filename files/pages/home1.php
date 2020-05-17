@@ -1,8 +1,7 @@
 <?php
 if (!session_id())
     session_start();
-require __DIR__ . '/../includes/root.php';
-$_SESSION['pagename'] = "index";
+$_SESSION['pagename'] = "home";
 ?>
 <!DOCTYPE html>
 <!--
@@ -40,7 +39,7 @@ and open the template in the editor.
     <main>
 
         <div class="container">
-        <h1>A Taste of Home and a Touch of Country</h1>
+            <h1>A Taste of Home and a Touch of Country</h1>
 
             <div class="content">
 
@@ -51,24 +50,18 @@ and open the template in the editor.
                         Local<br>Specials
                     </div>
                 </div>
+                <?php
+                require '../includes/sarah-info.php'
+            ?>
 
-                <div class="sarah-info">
-                    <div class="sarah-image">
-                        <img class="sarah-round" src="../images/sarah_circle.png" alt="Sarah Brewer owner of Slice o' Country.">
-                    </div>
-                    <div class="sarah-text">
-                        Sarah Brewer,<br> certified home&nbsp;processor
-                    </div>
-                </div>
                 <div class="wild-gathered">
                     Wild Gathered and Farm&nbsp;Fresh<br>Ingredients&nbsp;are&nbsp;My&nbsp;Secret.
-                    </Wild>
                 </div>
             </div>
         </div>
 
         <div class="links">
-            <a href="jams.php">
+            <!-- <a href="jams.php">
                 <div class="box-links jams-mobile">
                     Jams & Preserves
                 </div>
@@ -78,7 +71,20 @@ and open the template in the editor.
                 <div class="box-links boards-mobile">
                     Maine Made Cutting Boards
                 </div>
-            </a>
+            </a> -->
+
+            <div class="link-block">
+                <a href="jams4.php">
+                    <img src="../images/jamsa.jpg" alt="">
+                    <h2>Jams & Preserves</h2>
+                </a>
+            </div>
+            <div class="link-block">
+                <a href="boards.php">
+                    <img src="../images/pig_board3a.jpg" alt="">
+                    <h2>Maine Made Cutting Boards</h2>
+                </a>
+            </div>
 
         </div>
 
@@ -111,10 +117,21 @@ and open the template in the editor.
     <?php
     require '../includes/footer1.php'
     ?>
-
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script>
-        var tagLine = document.getElementsByClassName('header-logo__sub-title');
-        tagLine[0].style.display = "none";
+        // var x = 0;
+        // $(document).ready(function() {
+        //     $(window).resize(function() {
+        //         $(".content").css("border", "3px solid red");
+        //         // "ul.topnav > li"
+        //         $(".container > h1").css("border", "3px solid red");
+        //         $(".container > h1").css("font-size", "30px");
+        //     });
+        // });
+    </script>
+    <script>
+        // var tagLine = document.getElementsByClassName('header-logo__sub-title');
+        // tagLine[0].style.display = "none";
 
         // var menuItems = document.getElementsByClassName('nav');
         // for ( var i=0; i < menuItems.length; i++ ) {

@@ -24,6 +24,7 @@ and open the template in the editor.
 @import url("https://fonts.googleapis.com/css?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Chilanka|Raleway:400,700&display=swap");
 .html {
+  font-size: 62.5%;
   box-sizing: border-box;
 }
 
@@ -136,7 +137,7 @@ font-family: 'Open Sans', sans-serif;
 .header .elemental-shift {
   font-family: Zapfino, arial;
   font-size: 120px;
-  /*    @include max-mixin(650px) {
+  /*    @include max-width-mixin(650px) {
           font-size: 64px;
           color: blue;
         }    */
@@ -179,7 +180,6 @@ font-family: 'Open Sans', sans-serif;
 
 .nav {
   box-sizing: border-box;
-  border: 3px solid red;
   display: block;
   /*header a {
       font-size: 1rem 20px;
@@ -372,11 +372,10 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .header-logo {
-  border: 3px solid red;
   background-color: #13534C;
   color: white;
   font-weight: bold;
-  height: 140px;
+  height: 120px;
   padding-left: 25px;
   padding-top: 25px;
   display: flex;
@@ -391,7 +390,6 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .header-logo__title {
-  border: 3px solid red;
   font-family: "Parisienne";
   font-weight: normal;
   font-size: 48px;
@@ -522,7 +520,7 @@ font-family: 'Open Sans', sans-serif;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  height: 85px;
+  height: 100px;
   background-color: #13534c;
   position: relative;
   display: flex;
@@ -533,14 +531,39 @@ font-family: 'Open Sans', sans-serif;
 .banner-logo {
   color: white;
   padding-left: 20px;
+  line-height: .8;
+  padding-top: 5px;
   font-family: "Parisienne";
   font-weight: normal;
   font-size: 48px;
 }
 
+@media screen and (max-width: 450px) {
+  .banner-logo {
+    font-size: 36px;
+  }
+}
+
 .banner-logo .s-font {
   font-family: "Great Vibes", cursive;
   font-weight: normal;
+}
+
+.banner-logo .special-font {
+  font-family: "Great Vibes", cursive;
+  font-weight: normal;
+}
+
+.banner .sub-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 450px) {
+  .banner .sub-title {
+    font-size: 10px;
+  }
 }
 
 .banner-menu-wide {
@@ -972,7 +995,7 @@ and open the template in the editor.
   color: white;
   font-weight: bold;
   background-color: #13534C;
-  height: 140px;
+  height: 120px;
   /*.dropdown-content a:hover {background-color: #f1f1f1}*/
 }
 
@@ -1025,7 +1048,7 @@ and open the template in the editor.
 .header .nav .nav__narrow {
   z-index: 10;
   flex-direction: column;
-  height: 140px;
+  height: 120px;
   text-align: right;
   align-self: right;
   padding-bottom: 25px;
@@ -1104,6 +1127,11 @@ main {
   font-size: 28px;
   /*word-spacing: -5px;*/
   /*letter-spacing: 20px;*/
+  border: 1px solid black;
+  background-image: url("../images/Boothbay-Harbor-1-b-780x585.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
   font-family: "Dancing Script", cursive;
   font-size: 64px;
   font-weight: bold;
@@ -1116,38 +1144,15 @@ main .top-section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgba(19, 83, 76, 0.3);
   margin: 0 auto;
-  background-image: url("../images/hero_1_sliceocountry.jpg");
 }
 
 main .top-section .top-content {
   padding: 20px;
   padding-top: 100px;
-  color: white;
-  max-width: 800px;
-  min-width: 720px;
+  color: #13534C;
   width: 100%;
   margin: 0 auto;
-  display: grid;
-  grid-template-areas: "tag-line tag-line tag-line tag-line" "bheading bheading bheading bheading" "boothbay boothbay sarah-pic sarah-pic" "boothbay boothbay sarah-pic sarah-pic" "boothbay boothbay sarah-cert sarah-cert";
-}
-
-@media screen and (max-width: 690px) {
-  main .top-section .top-content {
-    grid-template-areas: "tag-line" "bheading" "sarah-pic" "boothbay";
-    min-width: 250px;
-  }
-}
-
-@media screen and (max-width: 925px) {
-  main .top-section .top-content {
-    padding-left: 0;
-  }
-}
-
-main .top-section .top-content .top-box {
-  grid-area: top-box;
 }
 
 main .top-section .top-content .tag-line1 {
@@ -1164,30 +1169,83 @@ main .top-section .top-content .tag-line1 {
 }
 
 main .top-section .top-content .boards-heading {
-  width: 100%;
-  grid-area: bheading;
-  font-size: 44px;
+  min-width: 250px;
   font-family: "Raleway", sans-serif;
   text-align: center;
   font-weight: bold;
+  font-size: 44px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 700px) {
+  main .top-section .top-content .boards-heading {
+    font-size: 28px;
+  }
 }
 
 main .top-section .top-content .boothbay {
-  grid-area: boothbay;
   width: 100%;
-  text-align: left;
+  text-align: center;
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
-  align-self: center;
-  padding-left: 20px;
+  bottom: 10%;
+  left: 10%;
+  margin-bottom: 25px;
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 700px) {
   main .top-section .top-content .boothbay {
-    font-size: 22px;
-    padding-left: 15px;
-    text-align: center;
+    font-size: 20px;
   }
+}
+
+main .top-section .top-content .sarah-info {
+  display: none;
+  width: 280px;
+  height: 300px;
+  bottom: 25%;
+  right: 0px;
+}
+
+@media screen and (max-height: 600px) {
+  main .top-section .top-content .sarah-info {
+    width: 180px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  main .top-section .top-content .sarah-info {
+    bottom: 10%;
+  }
+}
+
+main .top-section .top-content .sarah-info .sarah-image {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  color: white;
+}
+
+main .top-section .top-content .sarah-info .sarah-image .box32 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main .top-section .top-content .sarah-info .sarah-image img {
+  width: 240px;
+  width: 7em;
+  width: 90%;
+}
+
+main .top-section .top-content .sarah-info .sarah-text {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  font: Regular 24px/29px Raleway;
+  background-color: rgba(19, 83, 76, 0.5);
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
 }
 
 main .top-section .top-content .sarah-pic {
@@ -1232,7 +1290,7 @@ main .boards {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  max-width: 1600px;
+  max-width: 1200px;
 }
 
 @media screen and (max-width: 1450px) {
@@ -1277,44 +1335,118 @@ main .boards .board-box {
   }
 }
 
-@media screen and (max-width: 350px) {
-  main .image {
-    padding-left: 0;
+main .boards1 {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+}
+
+@media screen and (max-width: 1000px) {
+  main .boards1 {
+    width: 80%;
   }
 }
 
-main .image img {
+@media screen and (max-width: 900px) {
+  main .boards1 {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main .boards1 {
+    width: 100%;
+  }
+}
+
+main .boards1 .board-block {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 750px) {
+  main .boards1 .board-block {
+    flex-direction: column;
+  }
+}
+
+main .boards1 .board-block .board-box {
+  height: 350px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding-left: 0px;
+  margin: 0 auto;
+  justify-items: center;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 750px) {
+  main .boards1 .board-block .board-box {
+    width: 350px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main .boards1 .image {
+    max-width: 300px;
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+main .boards1 .image img {
   height: 350px;
   width: 350px;
 }
 
 @media screen and (max-width: 350px) {
-  main .image img {
+  main .boards1 .image img {
     height: 300px;
     width: 300px;
   }
 }
 
-main .copy {
-  max-width: 350px;
+main .boards1 .copy {
+  background-color: white;
+  opacity: 1;
+  width: 60%;
   text-align: left;
   border: 1px solid black;
   padding-left: 10px;
+  padding-right: 10px;
   padding-top: 20px;
   margin-bottom: 50px;
   height: 100%;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 350px) {
-  main .copy {
-    height: 350px;
+  main .boards1 .copy {
+    max-width: 300px;
+    padding-left: 0;
+    text-align: left;
+    justify-items: left;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main .boards1 .copy {
     width: 300px;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 700px) {
-  main .copy {
+  main .boards1 .copy {
     padding-left: 0px;
     text-align: left;
     justify-items: left;
@@ -1323,12 +1455,12 @@ main .copy {
   }
 }
 
-main .copy .small-logo {
+main .boards1 .copy .small-logo {
   padding-left: 15px;
   padding-right: 5px;
 }
 
-main .copy .name {
+main .boards1 .copy .name {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 32px;
   font-weight: bold;
@@ -1337,24 +1469,24 @@ main .copy .name {
 }
 
 @media screen and (max-width: 350px) {
-  main .copy .name {
+  main .boards1 .copy .name {
     font-size: 28px;
   }
 }
 
-main .copy .text {
+main .boards1 .copy .text {
   font-size: 16px;
   padding-left: 15px;
   padding-right: 5px;
 }
 
-main .copy .button-box {
+main .boards1 .copy .button-box {
   text-align: center;
   margin: 0 auto;
   align-items: center;
 }
 
-main .copy .button-box .board-button {
+main .boards1 .copy .button-box .board-button {
   background-color: #13534c;
   width: 250px;
   height: 30px;

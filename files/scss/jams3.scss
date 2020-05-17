@@ -92,7 +92,7 @@ main {
         // background-image: linear-gradient(to right bottom, rgba(19, 83, 76, 0.5), rgba(19, 83, 76, 0.65)),
         //     url("../images/rake2.png");
         background-image: url("../images/rake2.png");
-        @include max-mixin(600px) {
+        @include max-width-mixin(600px) {
             background-image: url("../images/blueberry copy.png");
         }
         // background-color: rgba(19, 83, 76, .65);
@@ -126,7 +126,7 @@ main {
                 "bheading bheading top-box top-box"
                 "boothbay boothbay boothbay boothbay";
 
-            // @include max-mixin(600px) {
+            // @include max-width-mixin(600px) {
             //     grid-template-areas:
             //         "tag-line tag-line"
             //         "bheading bheading"
@@ -134,7 +134,7 @@ main {
             //         "boothbay sarah-pic";
             //     min-width: 250px;
             // }
-            @include max-mixin(600px) {
+            @include max-width-mixin(600px) {
                 grid-template-areas:
                     "tag-line"
                     "bheading"
@@ -142,12 +142,12 @@ main {
                     "boothbay";
                 min-width: 250px;
             }
-            @include max-mixin(925px) {
+            @include max-width-mixin(925px) {
                 padding-left: 0;
             }
-            @include max-mixin(740px) {
+            @include max-width-mixin(740px) {
             }
-            @include max-mixin(400px) {
+            @include max-width-mixin(400px) {
                 // width: 100%;
             }
 
@@ -179,17 +179,17 @@ main {
                 // padding-left: 10px;
                 // padding-left: 10px;
 
-                @include max-mixin(600px) {
+                @include max-width-mixin(600px) {
                 }
-                // @include max-mixin(550px) {
+                // @include max-width-mixin(550px) {
                 //     font-size: 20px;
                 // }
-                // @include max-mixin(400px) {
+                // @include max-width-mixin(400px) {
                 //     font-size: 16px;
                 //     width: 90%;
                 //     // padding-left: 10px;
                 // }
-                // @include max-mixin(320px) {
+                // @include max-width-mixin(320px) {
                 //     width: 80%;
                 // }
             }
@@ -209,11 +209,11 @@ main {
                 .jams-heading__text {
                     background-color: rgba(19, 83, 76, 0.5);
                 }
-                @include max-mixin(800px) {
+                @include max-width-mixin(800px) {
                     padding-left: 0px;
                     font-size: 36px;
                 }
-                @include max-mixin(600px) {
+                @include max-width-mixin(600px) {
                     padding-left: 0px;
                     font-size: 32px;
                     width: 100%;
@@ -222,7 +222,7 @@ main {
                     text-align: center;
                     padding-top: 40px;
                 }
-                @include max-mixin(500px) {
+                @include max-width-mixin(500px) {
                     font-size: 24px;
                 }
             }
@@ -243,16 +243,16 @@ main {
                     background-color: rgba(19, 83, 76, 0.5);
                 }
 
-                @include max-mixin(600px) {
+                @include max-width-mixin(600px) {
                     font-size: 22px;
                     padding-left: 15px;
                     text-align: center;
                 }
-                // @include max-mixin(500px) {
+                // @include max-width-mixin(500px) {
                 //     display: none;
                 //     font-size: 16px;
                 // }
-                // @include max-mixin(400px) {
+                // @include max-width-mixin(400px) {
                 //     font-size: 16px;
                 //     padding-left: 10px;
                 // }
@@ -271,7 +271,7 @@ main {
                     min-width: 150px;
                     max-width: 200px;
                 }
-                @include max-mixin(600px) {
+                @include max-width-mixin(600px) {
                     text-align: right;
                 }
                 .sarah-cert {
@@ -288,10 +288,10 @@ main {
                     flex-direction: column;
                     justify-content: flex-start;
                     // padding-left: 400px;
-                    @include max-mixin(900px) {
+                    @include max-width-mixin(900px) {
                         // padding-left: 300px;
                     }
-                    @include max-mixin(600px) {
+                    @include max-width-mixin(600px) {
                         // display: none;
                     }
                 }
@@ -316,11 +316,11 @@ main {
         font-weight: normal;
         text-align: center;
         // padding-left: 25px;
-        @include max-mixin($breakPt2) {
+        @include max-width-mixin($breakPt2) {
             display: block;
             height: auto;
         }
-        @include min-mixin($breakPt3) {
+        @include min-width-mixin($breakPt3) {
             padding-bottom: 60px;
         }
     }
@@ -334,19 +334,19 @@ main {
         grid-template-rows: 1fr 1fr;
         align-content: end;
         column-gap: 25px;
-        @include max-mixin(750px) {
+        @include max-width-mixin(750px) {
             column-gap: 2px;
         }
         max-width: 1100px;
         max-height: 500px;
 
-        @include max-mixin($breakPt2) {
+        @include max-width-mixin($breakPt2) {
             max-height: 180px;
         }
-        @include max-mixin(550px) {
+        @include max-width-mixin(550px) {
             max-height: 180px;
         }
-        @include max-mixin(400px) {
+        @include max-width-mixin(400px) {
             max-height: 150px;
         }
 
@@ -369,17 +369,17 @@ main {
             justify-content: end;
             align-self: center;
 
-            @include max-mixin(1020px) {
+            @include max-width-mixin(1020px) {
                 font-size: 28px;
             }
-            // @include max-mixin(900px) {
+            // @include max-width-mixin(900px) {
             //     font-size: 22px;
             // }
-            // @include max-mixin(750px) {
+            // @include max-width-mixin(750px) {
             //     font-size: 18px;
             // }
 
-            @include max-mixin($breakPt2) {
+            @include max-width-mixin($breakPt2) {
                 display: none;
             }
         }
@@ -400,7 +400,7 @@ main {
                 width: 75%;
                 height: auto;
                 align-self: center;
-                @include max-mixin($breakPt3) {
+                @include max-width-mixin($breakPt3) {
                     // display: none;
                 }
             }
@@ -419,7 +419,7 @@ main {
                 width: 75%;
                 height: auto;
                 align-self: center;
-                @include max-mixin($breakPt3) {
+                @include max-width-mixin($breakPt3) {
                     // display: none;
                 }
             }
@@ -440,7 +440,7 @@ main {
                 width: 100%;
                 height: auto;
                 align-self: center;
-                @include max-mixin($breakPt3) {
+                @include max-width-mixin($breakPt3) {
                     // display: none;
                 }
             }
@@ -451,14 +451,14 @@ main {
             font-size: 24px;
             color: #000000;
             font-weight: normal;
-            @include max-mixin(800px) {
+            @include max-width-mixin(800px) {
                 font-size: 20px;
             }
-            @include max-mixin(500px) {
+            @include max-width-mixin(500px) {
                 font-size: 16px;
             }
 
-            @include max-mixin($breakPt2) {
+            @include max-width-mixin($breakPt2) {
                 // display: none;
             }
         }
@@ -473,18 +473,18 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         max-width: 1600px;
-        @include max-mixin(1450px) {
+        @include max-width-mixin(1450px) {
             grid-template-columns: 1fr 1fr;
             max-width: 770px;
         }
-        @include max-mixin($breakpt1) {
+        @include max-width-mixin($breakpt1) {
             padding-left: 0px;
             grid-template-columns: 1fr;
             margin: 0 auto;
             text-align: center;
             justify-items: center;
         }
-        @include max-mixin(350px) {
+        @include max-width-mixin(350px) {
             justify-items: left;
             text-align: left;
         }
@@ -501,7 +501,7 @@ main {
             margin: 0 auto;
             text-align: left;
             justify-items: center;
-            @include max-mixin($breakpt1) {
+            @include max-width-mixin($breakpt1) {
                 padding-left: 0px;
                 text-align: left;
                 justify-items: left;
@@ -512,13 +512,13 @@ main {
     }
     
     .image {
-        @include max-mixin(350px) {
+        @include max-width-mixin(350px) {
             padding-left: 0;
         }
         img {
             height: 350px;
             width: 350px;
-            @include max-mixin(350px) {
+            @include max-width-mixin(350px) {
                 height: 300px;
                 width: 300px;
             }
@@ -533,17 +533,17 @@ main {
         padding-top: 20px;
         margin-bottom: 50px;
         height: 350px;
-        @include max-mixin(350px) {
+        @include max-width-mixin(350px) {
             // max-width: 300px;
             // padding-left: 0;
             // text-align: left;
             // justify-items: left;
         }
-        @include max-mixin(350px) {
+        @include max-width-mixin(350px) {
             height: 340px;
             width: 300px;
         }
-        @include max-mixin($breakpt1) {
+        @include max-width-mixin($breakpt1) {
             padding-left: 0px;
             text-align: left;
             justify-items: left;
@@ -561,7 +561,7 @@ main {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 32px;
             font-weight: bold;
-            @include max-mixin(350px) {
+            @include max-width-mixin(350px) {
                 font-size: 28px;
             }
             padding-left: 15px;

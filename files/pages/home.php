@@ -1,8 +1,7 @@
 <?php
 if (!session_id())
     session_start();
-    require __DIR__ . '/../includes/root.php';
-$_SESSION['pagename'] = "index";
+$_SESSION['pagename'] = "home";
 ?>
 <!DOCTYPE html>
 <!--
@@ -13,8 +12,8 @@ and open the template in the editor.
 <html>
 
 <head>
-<?php
-    require '../includes/globalSiteTag.html';
+    <?php
+    // require '../includes/globalSiteTag.html';
     ?>
 
     <meta charset="UTF-8">
@@ -34,91 +33,62 @@ and open the template in the editor.
 
     <?php
     //  require './files/includes/menu2.php'; 
-    require '../includes/header1.php';
+    // require '../includes/header1.php';
+    require '../includes/banner.php'
     ?>
     <main>
-        <!-- <div class="spacer20"></div> -->
-        <!-- <div class="spacer20"></div> -->
-        <div class="spacer20"></div>
-        <div class="spacer20"></div>
 
-        <div class="content">
-            <div class="inner-box">
-                <div class="box box0">
-                    <!-- box0 -->
-                </div>
+        <div class="container">
+            <h1>A Taste of Home and a Touch of Country</h1>
 
-                <div class="box box1">
-                    <div class="title">
-                        <!-- <span class="special-font">S</span>lice O&#39; Country -->
-                        <!-- <?php require '../includes/logo.php';     ?> -->
-                    </div>
-                    <!-- <div class="spacer20"></div> -->
-                    <div class="tag-line">
-                        <span>A&nbsp;Taste&nbsp;of&nbsp;Home </span>
-                        <span>and&nbsp;a </span>
-                        <span>Touch&nbsp;of&nbsp;Country</span>
-                    </div>
-                </div>
+            <div class="content">
 
-                <div class="box box2">
-                    <img src="../images/products.png" alt="Cutting board and jars of jam." <?php echo $styleSarah; ?>>
-                </div>
+                <img id="products" src="../images/products.png" alt="Cutting board and jars of jam.">
 
-                <div class="box box21">
-                    <div class="outside-box">
-                        <div class="inside-box">
-                            Local<br>Specials
-                        </div>
+                <div class="local-specials">
+                    <div class="inside-box">
+                        Local<br>Specials
                     </div>
                 </div>
-                <div class="box box3">
-                    <img src="../images/sarah_circle.png" alt="Sarah Brewer owner of Slice o' Country." <?php echo $styleSarah; ?>>
-                    <div class="box32">
-                        <div class="small">Sarah Brewer, </div>
-                        <div class="small">certified home&nbsp;processor</div>
-                    </div>
+                <?php
+                require '../includes/sarah-info.php'
+            ?>
+
+                <div class="wild-gathered">
+                    Wild Gathered and Farm&nbsp;Fresh<br>Ingredients&nbsp;are&nbsp;My&nbsp;Secret.
                 </div>
-                <div class="box box31">
-                    <img src="../images/sarah_circle.png" alt="Sarah Brewer" <?php echo $styleSarah; ?>>
-                    <div class="box32">
-                        <div class="small">Sarah Brewer, </div>
-                        <div class="small">certified home&nbsp;processor</div>
-                    </div>
-                    <div class="spacer20"></div>
-                </div>
-                <div class="box box4">
-                    <div>Wild Gathered and Farm&nbsp;Fresh Ingredients&nbsp;are&nbsp;My&nbsp;Secret.</div>
-                    <!-- <div class="small">Sarah Brewer, certified home processor</div> -->
-                </div>
-                <!-- <div class="box box5">
-                    <div class="small">Sarah Brewer, </div>
-                    <div class="small">certified home&nbsp;processor</div>
-                </div> -->
             </div>
         </div>
 
-        <!-- Lower content -->
-
         <div class="links">
-            <a href="jams.php">
-                <div class="box-links jams-mobile" title="Link to the jams page." <?php echo $styleSarah ?>>
-                    <div class=" spacer20"></div>
+            <!-- <a href="jams.php">
+                <div class="box-links jams-mobile">
                     Jams & Preserves
                 </div>
             </a>
 
-            <div class="spacer10"></div>
             <a href="boards.php">
-                <div class="box-links boards-mobile" title="Link to the cutting boards page." <?php echo $styleSarah ?>>
-                    <div class="spacer20"></div>
+                <div class="box-links boards-mobile">
                     Maine Made Cutting Boards
                 </div>
-            </a>
+            </a> -->
+
+            <div class="link-block">
+                <a href="jams.php">
+                    <img src="../images/jamsa.jpg" alt="">
+                    <h2>Jams & Preserves</h2>
+                </a>
+            </div>
+            <div class="link-block">
+                <a href="boards.php">
+                    <img src="../images/pig_board3a.jpg" alt="">
+                    <h2>Maine Made Cutting Boards</h2>
+                </a>
+            </div>
+
         </div>
 
         <div class="content-lower">
-            <div class="spacer10"></div>
             <div class="box-lower visit">
                 <div class="heading">
                     Visit Sarah!
@@ -147,12 +117,27 @@ and open the template in the editor.
     <?php
     require '../includes/footer1.php'
     ?>
-    <div class="spacer20"></div>
-    <div class="spacer20"></div>
-    <div class="spacer20"></div>
-    <div class="spacer20"></div>
-    <div class="spacer20"></div>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script>
+        // var x = 0;
+        // $(document).ready(function() {
+        //     $(window).resize(function() {
+        //         $(".content").css("border", "3px solid red");
+        //         // "ul.topnav > li"
+        //         $(".container > h1").css("border", "3px solid red");
+        //         $(".container > h1").css("font-size", "30px");
+        //     });
+        // });
+    </script>
+    <script>
+        // var tagLine = document.getElementsByClassName('header-logo__sub-title');
+        // tagLine[0].style.display = "none";
 
+        // var menuItems = document.getElementsByClassName('nav');
+        // for ( var i=0; i < menuItems.length; i++ ) {
+        //     menuItems[i].style.height = "50px";
+        // }
+    </script>
 </body>
 
 </html>

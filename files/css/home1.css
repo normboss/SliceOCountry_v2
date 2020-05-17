@@ -25,6 +25,7 @@ and open the template in the editor.
 @import url("https://fonts.googleapis.com/css?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Chilanka|Raleway:400,700&display=swap");
 .html {
+  font-size: 62.5%;
   box-sizing: border-box;
 }
 
@@ -137,7 +138,7 @@ font-family: 'Open Sans', sans-serif;
 .header .elemental-shift {
   font-family: Zapfino, arial;
   font-size: 120px;
-  /*    @include max-mixin(650px) {
+  /*    @include max-width-mixin(650px) {
           font-size: 64px;
           color: blue;
         }    */
@@ -180,7 +181,6 @@ font-family: 'Open Sans', sans-serif;
 
 .nav {
   box-sizing: border-box;
-  border: 3px solid red;
   display: block;
   /*header a {
       font-size: 1rem 20px;
@@ -373,11 +373,10 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .header-logo {
-  border: 3px solid red;
   background-color: #13534C;
   color: white;
   font-weight: bold;
-  height: 140px;
+  height: 120px;
   padding-left: 25px;
   padding-top: 25px;
   display: flex;
@@ -392,7 +391,6 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .header-logo__title {
-  border: 3px solid red;
   font-family: "Parisienne";
   font-weight: normal;
   font-size: 48px;
@@ -523,7 +521,7 @@ font-family: 'Open Sans', sans-serif;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  height: 85px;
+  height: 100px;
   background-color: #13534c;
   position: relative;
   display: flex;
@@ -534,14 +532,39 @@ font-family: 'Open Sans', sans-serif;
 .banner-logo {
   color: white;
   padding-left: 20px;
+  line-height: .8;
+  padding-top: 5px;
   font-family: "Parisienne";
   font-weight: normal;
   font-size: 48px;
 }
 
+@media screen and (max-width: 450px) {
+  .banner-logo {
+    font-size: 36px;
+  }
+}
+
 .banner-logo .s-font {
   font-family: "Great Vibes", cursive;
   font-weight: normal;
+}
+
+.banner-logo .special-font {
+  font-family: "Great Vibes", cursive;
+  font-weight: normal;
+}
+
+.banner .sub-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 450px) {
+  .banner .sub-title {
+    font-size: 10px;
+  }
 }
 
 .banner-menu-wide {
@@ -973,7 +996,7 @@ and open the template in the editor.
   color: white;
   font-weight: bold;
   background-color: #13534C;
-  height: 140px;
+  height: 120px;
   /*.dropdown-content a:hover {background-color: #f1f1f1}*/
 }
 
@@ -1026,7 +1049,7 @@ and open the template in the editor.
 .header .nav .nav__narrow {
   z-index: 10;
   flex-direction: column;
-  height: 140px;
+  height: 120px;
   text-align: right;
   align-self: right;
   padding-bottom: 25px;
@@ -1121,7 +1144,6 @@ body {
 }
 
 .header-logo__title {
-  border: 3px solid red;
   font-family: "Parisienne";
   font-weight: normal;
   font-size: 48px;
@@ -1228,19 +1250,6 @@ main .small-text {
   font-weight: bold;
 }
 
-main .tag-line2 {
-  font-size: 20px;
-  font-weight: bold;
-  font-family: "Chilanka", cursive;
-  font-weight: bold;
-  padding-left: 10px;
-  padding-top: 17px;
-  height: 50px;
-  text-align: left;
-  background-color: rgba(19, 83, 76, 0.5);
-  color: white;
-}
-
 main .container {
   max-width: 1200px;
   background-image: url("../images/country river scene.jpg");
@@ -1248,7 +1257,7 @@ main .container {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right bottom;
-  height: 94vh;
+  height: 89vh;
   position: relative;
 }
 
@@ -1261,7 +1270,36 @@ main .container h1 {
   opacity: 1;
   position: absolute;
   top: 119px;
-  left: 128px;
+  top: 12vh;
+  left: 120px;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1000px) {
+  main .container h1 {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main .container h1 {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .container h1 {
+    top: 5vh;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  main .container h1 {
+    top: 1rem;
+  }
 }
 
 main .container .content {
@@ -1270,16 +1308,27 @@ main .container .content {
   width: 780px;
   position: relative;
   top: 21%;
+  top: 16rem;
+  top: 17vh;
   left: 50%;
   transform: translateX(-50%);
   height: 600px;
 }
 
+@media screen and (max-height: 850px) {
+  main .container .content {
+    top: 5%;
+  }
+}
+
 main .container .content #products {
   width: 390px;
+  width: 6em;
   position: absolute;
   left: 190px;
   top: 68px;
+  top: 1.4em;
+  left: 2.9em;
 }
 
 main .container .content .sarah-info {
@@ -1288,6 +1337,8 @@ main .container .content .sarah-info {
   position: absolute;
   left: 520px;
   top: 50%;
+  top: 5em;
+  left: 8em;
 }
 
 main .container .content .sarah-info .sarah-image {
@@ -1304,6 +1355,8 @@ main .container .content .sarah-info .sarah-image .box32 {
 
 main .container .content .sarah-info .sarah-image img {
   width: 240px;
+  width: 7em;
+  width: 90%;
 }
 
 main .container .content .sarah-info .sarah-text {
@@ -1320,6 +1373,8 @@ main .container .content .wild-gathered {
   position: absolute;
   left: 20px;
   top: 80%;
+  left: 0.5em;
+  top: 14.6em;
   text-align: left;
   font-family: "Raleway", sans-serif;
   font-size: 35px;
@@ -1361,14 +1416,12 @@ main .container .content .local-specials .inside-box {
 }
 
 main .container .content .inner-box {
-  border: 3px solid red;
   margin: 0 auto;
   max-width: 700px;
   margin-bottom: 10px;
 }
 
 main .container .content .inner-box .box {
-  border: 3px solid red;
   width: 70%;
   height: auto;
   color: white;
@@ -1708,27 +1761,48 @@ main .links {
   color: white;
   display: flex;
   justify-content: space-around;
-  min-width: 900px;
+}
+
+@media screen and (max-width: 600px) {
+  main .links {
+    flex-direction: column;
+  }
 }
 
 main .links a:link {
   text-decoration: none;
 }
 
-main .links .spacer10 {
-  display: none;
+main .links .link-block {
+  width: 100%;
+  position: relative;
 }
 
-@media screen and (max-width: 700px) {
-  main .links .spacer10 {
-    display: block;
-  }
+main .links .link-block h2 {
+  width: 100%;
+  color: white;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+main .links .link-block img {
+  width: 100%;
+}
+
+main .links .link-block:first-child {
+  padding-right: 20px;
 }
 
 main .links .box-links {
   border: 1px dashed black;
-  width: 600px;
+  max-width: 600px;
+  width: 50vw;
   height: 375px;
+  height: 35vh;
   color: white;
   font-size: 28px;
   font-family: Arial, Helvetica, sans-serif;
@@ -1739,55 +1813,10 @@ main .links .box-links {
   background-position: center;
 }
 
-main .links .jams-mobile {
-  background-image: url("../images/jams.jpg");
-}
-
-main .links .boards-mobile {
-  background-image: url("../images/pig_board3.jpg");
-}
-
 main .content-lower {
-  display: none;
   width: 100%;
   margin: 0 auto;
   margin-top: 25px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-@media screen and (max-width: 750px) {
-  main .content-lower {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 600px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  main .content-lower {
-    max-width: 400px;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  main .content-lower {
-    justify-content: left;
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  main .content-lower {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  main .content-lower {
-    grid-template-columns: 1fr;
-    margin: 0 auto;
-  }
 }
 
 main .content-lower .visit {
@@ -1795,7 +1824,7 @@ main .content-lower .visit {
   border: 1px solid black;
   margin-top: 25px;
   padding-top: 25px;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   text-align: left;
   padding-left: 100px;
