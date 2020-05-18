@@ -241,7 +241,8 @@ main {
                     width: 250px;
                 }
                 @include max-height-mixin(750px) {
-                    width: 200px;
+                    // width: 200px;
+                    display: none;
                 }
 
 
@@ -356,127 +357,6 @@ main {
                 }
             }
 
-            .inner-box {
-                // border: 3px solid red;
-                margin: 0 auto;
-                max-width: 700px;
-
-                .box {
-                    // border: 3px solid red;
-                    width: 70%;
-                    height: auto;
-                    color: white;
-                    font-family: Arial, Helvetica, sans-serif;
-                }
-
-                margin-bottom: 10px;
-                @include max-width-mixin(600px) {
-                    margin-bottom: 3px;
-                }
-                .box0 {
-                }
-
-                .box1 {
-                    // border: 2px solid black;
-                    grid-column: 1 / span 4;
-                    grid-row: 2 / span 1;
-                    font-family: Parisienne;
-                    font-size: 72px;
-                    font-weight: bold;
-                    text-align: center;
-                    width: 100%;
-                    color: #13534c;
-                    // height: 200px;
-                    height: auto;
-                    line-height: 42.5px;
-                    padding-top: 50px;
-                    @include max-width-mixin(550px) {
-                        font-size: 56px;
-                    }
-                    @include max-width-mixin(400px) {
-                        font-size: 40px;
-                        padding-left: 0;
-                        margin-left: 0;
-                        // width: 80%;
-                    }
-
-                    @include max-width-mixin(320px) {
-                        // width: 80%;
-                        text-align: center;
-                    }
-
-                    @include max-width-mixin(750px) {
-                        text-align: center;
-                        width: 100%;
-                        // justify-self: center;
-                    }
-
-                    .title {
-                        font-family: Parisienne;
-                        font-size: 72px;
-                        font-weight: bold;
-                        @include max-width-mixin(525px) {
-                            font-size: 52px;
-                        }
-                        @include max-width-mixin(400px) {
-                            font-size: 40px;
-                            padding-left: 0;
-                            margin-left: 0;
-                            width: 90%;
-                        }
-                    }
-                    @include max-width-mixin(320px) {
-                        width: 80%;
-                        margin: 0 auto;
-                    }
-                    .sub-title {
-                        font-family: "Open Sans", sans-serif;
-                        font-weight: 400;
-                        font-size: 32px;
-                        @include max-width-mixin(400px) {
-                            font-size: 28px;
-                        }
-                    }
-                    .special-font {
-                        font-family: "Great Vibes", cursive;
-                        font-weight: normal;
-                    }
-                    .tag-line {
-                        display: none;
-                        // border: 2px solid red;
-                        font-size: 36px;
-                        font-weight: bold;
-                        // font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-                        font-family: "Chilanka", cursive;
-                        font-weight: bold;
-                        @include max-width-mixin(900px) {
-                            font-size: 32px;
-                        }
-                        @include max-width-mixin(800px) {
-                            font-size: 28px;
-                        }
-                        @include max-width-mixin(700px) {
-                            // text-align: left;
-                            // padding-left: 50px;
-                            // font-size: 24px;
-                        }
-                        @include max-width-mixin(500px) {
-                            font-size: 28px;
-                        }
-                        @include max-width-mixin(400px) {
-                            // font-size: 16px;
-                            width: 90%;
-                            // padding-left: 10px;
-                        }
-                        @include max-width-mixin(320px) {
-                            // width: 100%;
-                            text-align: center;
-                        }
-                    }
-
-                    padding-bottom: 20px;
-                }
-            }
         }
     }
     //*******************************************************
