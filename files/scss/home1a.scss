@@ -7,6 +7,7 @@ and open the template in the editor.
     Created on : Aug 29, 2018, 10:01:37 AM
     Author     : Norm
 */
+
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap"); // $menu-background-color: #13534C;
 @import "common";
@@ -129,6 +130,27 @@ main {
         font-weight: bold;
     }
     @include dancing-font;
+    /*  font-family: 'Allura', cursive;
+      font-family: 'Zeyada', cursive;*/
+
+    // .tag-line2 {
+    //     // border: 3px solid blue;
+    //     // width: 45%;
+    //     font-size: 20px;
+    //     font-weight: bold;
+    //     // font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    //     font-family: "Chilanka", cursive;
+    //     font-weight: bold;
+    //     // display: flex;
+    //     padding-left: 10px;
+    //     padding-top: 17px;
+    //     height: 50px;
+    //     // padding-left: 10px;
+    //     text-align: left;
+    //     background-color: rgba(19, 83, 76, 0.5);
+    //     // border-radius: 15px;
+    //     color: white;
+    // }
 
     .container {
         // border: 3px solid red;
@@ -144,63 +166,70 @@ main {
 
         h1 {
             // border: 3px solid blue;
-            // text-align: left;
+            text-align: left;
             // font: Regular 50px/55px Chilanka;
             font-family: "Chilanka", cursive;
             font-size: 50px;
-            @include max-width-mixin(500px) {
-                font-size: 40px;
+            @include max-width-mixin(1000px) {
+                text-align: left;
             }
             letter-spacing: 0px;
             color: #13534c;
             opacity: 1;
             position: absolute;
-            top: 10%;
-            width: 80%;
-            margin: 0 auto;
+            top: 119px;
+            top: 12vh;
+
+            left: 120px;
+            left: 50%;
+            width: 100%;
+            @include max-width-mixin(1200px) {
+                // font-size: calc(4vw + 3px);
+                // width: 80%;
+                font-size: 4vw;
+            }
             text-align: center;
+            transform: translateX(-50%);
+            @include max-width-mixin(1000px) {
+                // top: 15vw;
+                top: 5vh;
+            }
+            @include max-height-mixin(800px) {
+                top: 1rem;
+            }
         }
 
         .content {
-            // border: 3px solid blue;
+            border: 3px solid blue;
             margin: 0;
             padding: 0;
             width: 780px;
             position: relative;
-            top: 15%;
-            top: 25%;
-            // top: 16rem;
-            // top: 17vh;
-            // @include max-height-mixin(850px) {
-            //     top: 5%;
+            top: 21%;
+            top: 16rem;
+            // top: 25vw;
+            // @include max-width-mixin(1000px) {
+            //     // top: 15vw;
+            //     top: 5vh;
             // }
-            @include max-width-mixin(750px) {
-                display: flex;
-                flex-direction: column;
-            }
-
-
-
-            @include max-width-mixin(525px) {
-                width: 80%;
-                margin: 0 auto;
-            }
-            @include max-width-mixin(350px) {
-                width: 90%;            
+            top: 17vh;
+            @include max-height-mixin(850px) {
+                top: 5%;
+                // font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
             }
 
 
             left: 50%;
+            // left: 0;
             transform: translateX(-50%);
-            @include max-width-mixin(750px) {
-                transform: translateX(0);
-            }
-            @include max-width-mixin(650px) {
-                left: 40vw;
-            }
-
             height: 600px;
             // height: 65vh;
+
+            @include max-width-mixin(750px) {
+                transform: translateX(0%);
+                height: 90vh;
+                width: 100%;
+            }
 
             // width: 100%;
             @include max-width-mixin(800px) {
@@ -222,6 +251,7 @@ main {
 
                 top: 1.4em;
                 left: 2.9em;
+
                 @include max-width-mixin(750px) {
                     display: none;
                 }
@@ -230,10 +260,6 @@ main {
             .sarah-info {
                 // border: 3px solid black;
                 width: 250px;
-                @include max-width-mixin(800px) {
-                    width: 200px;
-                }
-
                 height: 300px;
                 position: absolute;
                 left: 520px;
@@ -241,11 +267,11 @@ main {
 
                 top: 5em;
                 left: 8em;
-                @include max-width-mixin(525px) {
+                @include max-width-mixin(750px) {
+                    top: 40%;
+                    left: 50%;
+                    transform: translateX(-50%);
                     width: 250px;
-                    left: 10%;
-                    transform: translateY(-50%);
-                    top: 50%;
                 }
 
                 .sarah-image {
@@ -282,40 +308,28 @@ main {
                     color: #ffffff;
                 }
             }
-
             .wild-gathered {
-                border: 3px solid red;
+                // border: 3px solid red;
                 // width: 50%;
                 position: absolute;
                 left: 20px;
                 top: 80%;
 
-                left: 4%;
-                top: 85%;
+                left: 0.5em;
+                top: 14.6em;
 
                 text-align: left;
                 font-family: "Raleway", sans-serif;
                 font-size: 35px;
-                @include max-width-mixin(800px) {
-                    font-size: 30px;
-                    top: 100%;
-                    left: 0;
-                    text-align: center;
-                    width: 100%;
-                }
-                @include max-width-mixin(525px) {
-                    font-size: 25px;
-                    top: 90%;
-                    left: 0;
-                    text-align: center;
-                    width: 100%;
-                }
-                @include max-width-mixin(350px) {
-                    top: 80%;
-                }
                 font-weight: 600;
                 letter-spacing: 0px;
                 color: #ffffff;
+
+                @include max-width-mixin(750px) {
+                    top: 80%;
+                    width: 100%;
+                    text-align: center;
+                }
             }
 
             .local-specials {
@@ -353,7 +367,8 @@ main {
                     font-size: 28px;
                     padding-top: 5px;
                 }
-                @include max-width-mixin(800px) {
+
+                @include max-width-mixin(750px) {
                     display: none;
                 }
             }
@@ -749,6 +764,29 @@ main {
         // max-width: 750px;
         margin: 0 auto;
         margin-top: 25px;
+        // @include max-width-mixin(750px) {
+        //     margin: 0 auto;
+        //     width: 100%;
+        //     max-width: 600px;
+        // }
+        // @include max-width-mixin(600px) {
+        //     max-width: 400px;
+        // }
+        // // padding-top: 50px;
+        // display: grid;
+
+        // @include max-width-mixin(750px) {
+        //     justify-content: left;
+        //     width: 90%;
+        // }
+        // @include max-width-mixin(400px) {
+        //     width: 100%;
+        // }
+        // grid-template-columns: 1fr 1fr;
+        // @include max-width-mixin(750px) {
+        //     grid-template-columns: 1fr;
+        //     margin: 0 auto;
+        // }
 
         .visit {
             font-family: "Raleway";

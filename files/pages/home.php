@@ -19,7 +19,7 @@ and open the template in the editor.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="../css/home.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/home1.css" media="screen" rel="stylesheet" type="text/css">
     <!-- <script src="//code.jquery.com/jquery-1.10.2.js"></script> -->
     <!--<link href=".files/fonts/Wizards Magic.ttf" rel="stylesheet">-->
     <!--<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">-->
@@ -39,11 +39,11 @@ and open the template in the editor.
     <main>
 
         <div class="container">
-            <h1>A Taste of Home and a Touch of Country</h1>
+            <h1>A Taste of Home and a<br> Touch of Country</h1>
 
             <div class="content">
 
-                <img id="products" src="../images/products.png" alt="Cutting board and jars of jam.">
+                <img class="products" src="../images/products.png" alt="Cutting board and jars of jam.">
 
                 <div class="local-specials">
                     <div class="inside-box">
@@ -52,10 +52,10 @@ and open the template in the editor.
                 </div>
                 <?php
                 require '../includes/sarah-info.php'
-            ?>
+                ?>
 
                 <div class="wild-gathered">
-                    Wild Gathered and Farm&nbsp;Fresh<br>Ingredients&nbsp;are&nbsp;My&nbsp;Secret.
+                    Wild Gathered and Farm&nbsp;Fresh<br>Ingredients are My&nbspSecret.
                 </div>
             </div>
         </div>
@@ -118,16 +118,42 @@ and open the template in the editor.
     require '../includes/footer1.php'
     ?>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
-        // var x = 0;
-        // $(document).ready(function() {
-        //     $(window).resize(function() {
-        //         $(".content").css("border", "3px solid red");
-        //         // "ul.topnav > li"
-        //         $(".container > h1").css("border", "3px solid red");
-        //         $(".container > h1").css("font-size", "30px");
-        //     });
-        // });
+        $(document).ready(function() {
+            var classOff = false;
+            $(window).resize(handleResize);
+            handleResize();
+
+            // $(window).resize(function() {
+            function handleResize() {
+                var vw = window.innerWidth;
+                var vh = window.innerHeight;
+                if (vw <= 750 && classOff === false) {
+                    classOff = true;
+                    // $("main > .container").toggleClass("content");
+                    // $("main > .container > .content").css("border", "3px solid red");
+                    // $("main > .container ").css("border", "3px solid red");
+                    $("main > .container > .content").css("position", "static");
+                    // $("main > .container > .content > .products").css("position", "static");
+                    // $("main > .container > .content > .sarah-info").css("position", "static");
+                    // $("main > .container > .content > .wild-gathered ").css("position", "static");
+                    // $("main > .container > .content > .local-specials").css("position", "static");
+                } else if (vw > 750 && classOff === true) {
+                    classOff = false;
+                    // $("main > .container").toggleClass("content");
+                    // $("main > .container ").css("border", "3px solid green");
+                    $("main > .container > .content").css("position", "relative");
+                    // $("main > .container > .content > .products").css("position", "absolute");
+                    // $("main > .container > .content > .sarah-info").css("position", "absolute");
+                    // $("main > .container > .content > .wild-gathered ").css("position", "absolute");
+                    // $("main > .container > .content > .local-specials").css("position", "absolute");
+                }
+
+                // $(".container > h1").css("border", "3px solid red");
+                // $(".container > h1").css("font-size", "30px");
+            };
+        });
     </script>
     <script>
         // var tagLine = document.getElementsByClassName('header-logo__sub-title');
