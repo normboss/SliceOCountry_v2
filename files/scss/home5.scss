@@ -276,9 +276,14 @@ main {
                 // }
                 @include max-height-mixin(450px) {
                     @include max-width-mixin(350px) {
-                        border: 3px solid red;
+                        // border: 3px solid red;
                         width: 150px;
                     }
+                }
+
+                @include max-width-mixin(350px) {
+                    // border: 3px solid red;
+                    left: 25%;
                 }
 
     
@@ -361,9 +366,12 @@ main {
                     }    
                 // }
                 @include max-height-mixin(650px) {
-                    font-size: 20px;
+                    font-size: 18px;
                     top: 250px;
                     left: 10%;
+                    width: 92vw;
+                    // border: 3px solid red;
+                    text-align: center;
                 }
                 @include max-height-mixin(450px) {
                     top: 60px;
