@@ -19,7 +19,7 @@ and open the template in the editor.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="../css/home1.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/home5.css" media="screen" rel="stylesheet" type="text/css">
     <!-- <script src="//code.jquery.com/jquery-1.10.2.js"></script> -->
     <!--<link href=".files/fonts/Wizards Magic.ttf" rel="stylesheet">-->
     <!--<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">-->
@@ -41,21 +41,21 @@ and open the template in the editor.
         <div class="container">
             <h1>A Taste of Home and a Touch of Country</h1>
 
-            <div class="content">
-                <div class=products">
-                    <img src="../images/products.png" alt="Cutting board and jars of jam.">
-                </div>
+            <!-- <div class="content"> -->
+            <div class="products">
+                <img id="products" src="../images/products.png" alt="Cutting board and jars of jam.">
+                <?php require '../includes/sarah-info.php' ?>
                 <div class="local-specials">
                     <div class="inside-box">
                         Local<br>Specials
                     </div>
                 </div>
-                <?php require '../includes/sarah-info.php' ?>
-
                 <div class="wild-gathered">
                     Wild Gathered and Farm&nbsp;Fresh<br>Ingredients are My&nbspSecret.
                 </div>
             </div>
+
+            <!-- </div> -->
         </div>
 
         <div class="links">
@@ -116,7 +116,7 @@ and open the template in the editor.
     require '../includes/footer1.php'
     ?>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
         $(document).ready(function() {
             var classOff = false;
@@ -152,7 +152,7 @@ and open the template in the editor.
                 // $(".container > h1").css("font-size", "30px");
             };
         });
-    </script>
+    </script> -->
     <script>
         // var tagLine = document.getElementsByClassName('header-logo__sub-title');
         // tagLine[0].style.display = "none";

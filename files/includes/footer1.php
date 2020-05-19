@@ -40,13 +40,26 @@
     </div>
 
 </footer>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 
 <script>
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
 
     window.onorientationchange = function() {
         let vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', `${vh}px`);
     };
+
+    $(document).ready(function() {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+        $(window).resize(handleResize);
+        handleResize();
+
+        // $(window).resize(function() {
+        function handleResize() {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+    });
 </script>

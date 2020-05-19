@@ -544,6 +544,12 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
+@media screen and (max-width: 350px) {
+  .banner-logo {
+    font-size: 32px;
+  }
+}
+
 .banner-logo .s-font {
   font-family: "Great Vibes", cursive;
   font-weight: normal;
@@ -1216,6 +1222,12 @@ main .top-section .top-content .jams-heading .jams-heading__text {
 @media screen and (max-width: 800px) {
   main .top-section .top-content .jams-heading {
     left: 5%;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  main .top-section .top-content .jams-heading {
+    top: 55%;
   }
 }
 

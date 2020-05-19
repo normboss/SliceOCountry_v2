@@ -544,6 +544,12 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
+@media screen and (max-width: 350px) {
+  .banner-logo {
+    font-size: 32px;
+  }
+}
+
 .banner-logo .s-font {
   font-family: "Great Vibes", cursive;
   font-weight: normal;

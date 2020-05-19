@@ -545,6 +545,12 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
+@media screen and (max-width: 350px) {
+  .banner-logo {
+    font-size: 32px;
+  }
+}
+
 .banner-logo .s-font {
   font-family: "Great Vibes", cursive;
   font-weight: normal;
@@ -1268,30 +1274,46 @@ main .container h1 {
   opacity: 1;
   position: absolute;
   top: 10%;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1200px) {
   main .container h1 {
-    font-size: 40px;
+    font-size: 4vw;
+    font-size: calc(4vw + 10px);
+  }
+}
+
+@media screen and (max-height: 900px) {
+  main .container h1 {
+    font-size: 5vmin;
+    font-size: calc(5vmin + 10px);
   }
 }
 
 main .container .content {
+  border: 3px solid blue;
   margin: 0;
   padding: 0;
   width: 780px;
   position: relative;
-  top: 15%;
   top: 25%;
   left: 50%;
   transform: translateX(-50%);
   height: 600px;
+  height: 55vh;
 }
 
 @media screen and (max-width: 750px) {
+  main .container .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-height: 750px) {
   main .container .content {
     display: flex;
     flex-direction: column;
@@ -1315,7 +1337,7 @@ main .container .content {
 
 main .container .content .products {
   width: 390px;
-  width: 6em;
+  width: 50%;
   position: absolute;
   left: 190px;
   top: 68px;
@@ -1341,7 +1363,7 @@ main .container .content .sarah-info {
 
 @media screen and (max-width: 750px) {
   main .container .content .sarah-info {
-    top: 40%;
+    top: 25%;
     left: 50%;
     transform: translateX(-50%);
     width: 250px;
@@ -1350,7 +1372,17 @@ main .container .content .sarah-info {
 
 @media screen and (max-height: 750px) {
   main .container .content .sarah-info {
-    display: none;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  main .container .content .sarah-info {
+    width: 200px;
+    top: 25%;
   }
 }
 
@@ -1382,12 +1414,6 @@ main .container .content .sarah-info .sarah-text {
   color: #ffffff;
 }
 
-@media screen and (max-height: 650px) {
-  main .container .content .sarah-info {
-    display: none;
-  }
-}
-
 main .container .content .wild-gathered {
   position: absolute;
   left: 20px;
@@ -1402,6 +1428,18 @@ main .container .content .wild-gathered {
   color: #ffffff;
 }
 
+@media screen and (max-height: 900px) {
+  main .container .content .wild-gathered {
+    font-size: 5vmin;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main .container .content .wild-gathered {
+    font-size: 3vw;
+  }
+}
+
 @media screen and (max-width: 750px) {
   main .container .content .wild-gathered {
     padding: 0;
@@ -1411,14 +1449,7 @@ main .container .content .wild-gathered {
     width: 100%;
     height: auto;
     text-align: center;
-    font-size: 30px;
-  }
-}
-
-@media screen and (max-height: 500px) {
-  main .container .content .wild-gathered {
-    font-size: 30px;
-    top: 70%;
+    font-size: 35px;
   }
 }
 

@@ -171,30 +171,18 @@ main {
             text-align: center;
         }
 
+
         .content {
             border: 3px solid blue;
             margin: 0;
             padding: 0;
-            width: 780px;
+            // width: 780px;
+            width: 40vw;
             position: relative;
             top: 25%;
-            // top: 16rem;
-            // top: 17vh;
-            // @include max-height-mixin(850px) {
-            //     top: 5%;
-            // }
             @include max-width-mixin(750px) {
                 display: flex;
                 flex-direction: column;
-            }
-            @include max-height-mixin(750px) {
-                display: flex;
-                flex-direction: column;
-            }
-
-            @include max-width-mixin(525px) {
-                width: 80%;
-                margin: 0 auto;
             }
 
             left: 50%;
@@ -228,8 +216,11 @@ main {
                 left: 190px;
                 top: 68px;
 
-                top: 1.4em;
+                top: 0;
+
                 left: 2.9em;
+                left: 28%;
+
 
                 @include max-width-mixin(750px) {
                     display: none;
@@ -239,13 +230,19 @@ main {
             .sarah-info {
                 // border: 3px solid black;
                 width: 250px;
+                width: 35%;
+
                 height: 300px;
                 position: absolute;
                 left: 520px;
                 top: 50%;
 
                 top: 5em;
+                top: 45%;
+
                 left: 8em;
+                left: 70%;
+
                 @include max-width-mixin(750px) {
                     top: 25%;
                     left: 50%;
@@ -355,11 +352,13 @@ main {
                 width: 100%;
                 height: 400px;
                 position: absolute;
-                top: 300px;
+                top: 40%;
                 left: 0%;
 
                 width: 193px;
+                width: 30%;
                 height: 125px;
+                height: 28%;
                 background-color: #fae0e0;
                 // width: 160px;
                 // height: 110px;
@@ -374,14 +373,17 @@ main {
                     left: 16px;
                     box-sizing: border-box;
                     background-color: #fae0e0;
-                    width: 80%;
+                    width: 85%;
                     height: 80%;
                     border: 3px solid #13534c;
                     color: #13534c;
                     opacity: 1;
                     font-weight: bold;
                     font-size: 28px;
+                    font-size: 90%;
                     padding-top: 5px;
+
+                    width: 5em;
                 }
 
                 @include max-width-mixin(750px) {

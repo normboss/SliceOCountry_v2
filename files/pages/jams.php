@@ -106,7 +106,7 @@ and open the template in the editor.
                     <div class="spacer10"></div>
 
                     <div class="button-box">
-                        <button class="jam-button">Order from Sarah</button>
+                        <button class="jam-button" onclick="window.location.href = 'mailto:norm.bosse0@gmail.com';">Order from Sarah</button>
                     </div>
                 </div>
             </div>

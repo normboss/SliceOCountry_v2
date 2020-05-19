@@ -27,6 +27,9 @@ $breakPoint1: 700px;
         @include max-width-mixin(450px) {
             font-size: 36px;
         }
+        @include max-width-mixin(350px) {
+            font-size: 32px;
+        }
         .s-font {
             font-family: "Great Vibes", cursive;
             font-weight: normal;

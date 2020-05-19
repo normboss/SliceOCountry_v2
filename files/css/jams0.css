@@ -1127,6 +1127,7 @@ and open the template in the editor.
 }
 
 main {
+  max-width: 1400px;
   margin: 0 auto;
   text-align: center;
   font-size: 28px;
@@ -1139,30 +1140,54 @@ main {
       font-family: 'Zeyada', cursive;*/
 }
 
+main .php-output {
+  color: red;
+  font-family: Arial;
+  font-size: 22px;
+}
+
+main .text .large-text {
+  font-size: 62px;
+}
+
+main .text .under-construction {
+  font-size: 16px;
+}
+
+main .small-text {
+  font-size: 28px;
+  letter-spacing: 2px;
+  word-spacing: -10px;
+  font-weight: bold;
+}
+
 main .top-section {
   width: 100%;
+  height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgba(19, 83, 76, 0.3);
-  margin: 0 auto;
-  background-image: url("../images/hero_1_sliceocountry.jpg");
-  height: 700px;
+  background-image: url("../images/rake2.png");
+}
+
+@media screen and (max-width: 600px) {
+  main .top-section {
+    background-image: url("../images/blueberry copy.png");
+  }
 }
 
 main .top-section .top-content {
   padding: 20px;
-  padding-top: 100px;
   color: white;
-  max-width: 800px;
-  min-width: 720px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-areas: "tag-line tag-line tag-line tag-line" "bheading bheading bheading bheading" "boothbay boothbay sarah-pic sarah-pic" "boothbay boothbay sarah-pic sarah-pic" "boothbay boothbay sarah-cert sarah-cert";
+  padding-left: 100px;
+  grid-template-areas: "tag-line tag-line sarah-pic sarah-pic" "bheading bheading sarah-pic sarah-pic" "bheading bheading top-box top-box" "bheading bheading top-box top-box" "boothbay boothbay boothbay boothbay";
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 600px) {
   main .top-section .top-content {
     grid-template-areas: "tag-line" "bheading" "sarah-pic" "boothbay";
     min-width: 250px;
@@ -1175,13 +1200,10 @@ main .top-section .top-content {
   }
 }
 
-main .top-section .top-content .top-box {
-  grid-area: top-box;
-}
-
 main .top-section .top-content .tag-line1 {
   display: none;
   width: 100%;
+  height: 300px;
   grid-area: tag-line;
   font-size: 24px;
   font-weight: bold;
@@ -1192,26 +1214,60 @@ main .top-section .top-content .tag-line1 {
   text-align: left;
 }
 
-main .top-section .top-content .boards-heading {
+main .top-section .top-content .jams-heading {
   width: 100%;
+  width: auto;
   grid-area: bheading;
-  font-size: 44px;
+  font-size: 40px;
   font-family: "Raleway", sans-serif;
   text-align: center;
   font-weight: bold;
 }
 
+main .top-section .top-content .jams-heading .jams-heading__text {
+  background-color: rgba(19, 83, 76, 0.5);
+}
+
+@media screen and (max-width: 800px) {
+  main .top-section .top-content .jams-heading {
+    padding-left: 0px;
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .top-section .top-content .jams-heading {
+    padding-left: 0px;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .top-section .top-content .jams-heading {
+    font-size: 24px;
+  }
+}
+
 main .top-section .top-content .boothbay {
   grid-area: boothbay;
+  background-color: rgba(19, 83, 76, 0.5);
   width: 100%;
-  text-align: left;
+  text-align: center;
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
   align-self: center;
-  padding-left: 20px;
 }
 
-@media screen and (max-width: 690px) {
+main .top-section .top-content .boothbay .boothbay__span {
+  height: auto;
+  width: auto;
+  background-color: rgba(19, 83, 76, 0.5);
+}
+
+@media screen and (max-width: 600px) {
   main .top-section .top-content .boothbay {
     font-size: 22px;
     padding-left: 15px;
@@ -1222,41 +1278,145 @@ main .top-section .top-content .boothbay {
 main .top-section .top-content .sarah-pic {
   grid-area: sarah-pic;
   width: 100%;
-  text-align: left;
+  text-align: right;
   margin: 0 auto;
   justify-self: center;
-  padding-top: 20px;
 }
 
 main .top-section .top-content .sarah-pic img {
   min-width: 150px;
-  max-width: 250px;
+  max-width: 200px;
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 600px) {
   main .top-section .top-content .sarah-pic {
-    text-align: center;
+    text-align: right;
   }
 }
 
 main .top-section .top-content .sarah-pic .sarah-cert {
+  background-color: rgba(19, 83, 76, 0.5);
   grid-area: sarah-cert;
   width: 100%;
-  font-size: 20px;
+  font-size: 16px;
   font-family: Helvetica Neue;
   padding-left: 0px;
   justify-self: right;
-  text-align: left;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-@media screen and (max-width: 690px) {
-  main .top-section .top-content .sarah-pic .sarah-cert {
-    text-align: center;
-    padding-bottom: 10px;
+main .size-text-narrow {
+  border: 3px solid green;
+  display: none;
+  height: 0;
+  font-family: Raleway;
+  font-size: 24px;
+  color: #000000;
+  font-weight: normal;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  main .size-text-narrow {
+    display: block;
+    height: auto;
   }
 }
 
-main .boards {
+@media screen and (min-width: 500px) {
+  main .size-text-narrow {
+    padding-bottom: 60px;
+  }
+}
+
+main .middle-section {
+  padding-top: 25px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 50px;
+}
+
+main .middle-section h2 {
+  font-size: 32px;
+  font-family: Raleway;
+  font-weight: normal;
+  text-align: center;
+}
+
+main .middle-section .middle-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  main .middle-section .middle-box {
+    flex-direction: column;
+  }
+}
+
+main .middle-section .middle-box .jar-size {
+  width: 100%;
+}
+
+main .middle-section .middle-box .jar-size img {
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width: 1200px) {
+  main .middle-section .middle-box .jar-size img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main .middle-section .middle-box .jar-size img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .middle-section .middle-box .jar-size img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .middle-section .middle-box .jar-size {
+    margin-bottom: 20px;
+  }
+}
+
+main .middle-section .spec-text {
+  font-family: Raleway;
+  font-size: 24px;
+  color: #000000;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 800px) {
+  main .middle-section .spec-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .middle-section .spec-text {
+    font-size: 16px;
+  }
+}
+
+main .jams {
+  margin-top: 0;
   width: 100%;
   margin: 0 auto;
   display: grid;
@@ -1265,14 +1425,14 @@ main .boards {
 }
 
 @media screen and (max-width: 1450px) {
-  main .boards {
+  main .jams {
     grid-template-columns: 1fr 1fr;
     max-width: 770px;
   }
 }
 
 @media screen and (max-width: 700px) {
-  main .boards {
+  main .jams {
     padding-left: 0px;
     grid-template-columns: 1fr;
     margin: 0 auto;
@@ -1282,13 +1442,13 @@ main .boards {
 }
 
 @media screen and (max-width: 350px) {
-  main .boards {
+  main .jams {
     justify-items: left;
     text-align: left;
   }
 }
 
-main .boards .board-box {
+main .jams .jam-box {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -1299,7 +1459,7 @@ main .boards .board-box {
 }
 
 @media screen and (max-width: 700px) {
-  main .boards .board-box {
+  main .jams .jam-box {
     padding-left: 0px;
     text-align: left;
     justify-items: left;
@@ -1331,7 +1491,7 @@ main .copy {
   padding-left: 10px;
   padding-top: 20px;
   margin-bottom: 50px;
-  height: 98.5%;
+  height: 350px;
 }
 
 @media screen and (max-width: 350px) {
@@ -1351,10 +1511,17 @@ main .copy {
   }
 }
 
+main .copy .small-logo {
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
 main .copy .name {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 32px;
   font-weight: bold;
+  padding-left: 15px;
+  padding-right: 5px;
 }
 
 @media screen and (max-width: 350px) {
@@ -1365,6 +1532,19 @@ main .copy .name {
 
 main .copy .text {
   font-size: 16px;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+main .copy .text--special {
+  width: 350px;
+  font-size: 16px;
+  text-align: center;
+}
+
+main .copy .text--special a {
+  text-decoration: inherit;
+  color: inherit;
 }
 
 main .copy .button-box {
@@ -1373,25 +1553,13 @@ main .copy .button-box {
   align-items: center;
 }
 
-main .copy .button-box .board-button {
+main .copy .button-box .jam-button {
   background-color: #13534c;
-  width: 193px;
+  width: 250px;
   height: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   border-radius: 15px;
   color: white;
 }
-
-main .filler {
-  display: none;
-}
-
-@media screen and (max-width: 1450px) {
-  main .filler {
-    padding-left: 0px;
-    grid-template-columns: 1fr;
-    display: none;
-  }
-}
-/*# sourceMappingURL=boards1.css.map */
+/*# sourceMappingURL=jams0.css.map */

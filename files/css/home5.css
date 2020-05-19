@@ -8,6 +8,7 @@ and open the template in the editor.
     Author     : Norm
 */
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -1126,7 +1127,102 @@ and open the template in the editor.
   display: block;
 }
 
+body {
+  background-color: #f0f0f0;
+}
+
+.header-logo {
+  background-color: #13534C;
+  color: white;
+  font-weight: bold;
+  height: 120px;
+  padding-left: 25px;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 400px) {
+  .header-logo {
+    padding-left: 0px;
+  }
+}
+
+.header-logo__title {
+  font-family: "Parisienne";
+  font-weight: normal;
+  font-size: 48px;
+}
+
+@media screen and (max-width: 450px) {
+  .header-logo__title {
+    font-size: 44px;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header-logo__title {
+    font-size: 42px;
+    text-align: left;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header-logo__title {
+    text-align: left;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header-logo__title {
+    font-size: 36px;
+    text-align: left;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .header-logo__title {
+    font-size: 34px;
+    text-align: left;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+}
+
+.header-logo__title .s-font {
+  font-family: "Great Vibes", cursive;
+  font-weight: normal;
+}
+
+.header-logo__sub-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 450px) {
+  .header-logo__sub-title {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header-logo__sub-title {
+    font-size: 10px;
+  }
+}
+
 main {
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
   font-size: 28px;
@@ -1135,263 +1231,449 @@ main {
   font-family: "Dancing Script", cursive;
   font-size: 64px;
   font-weight: bold;
-  /*  font-family: 'Allura', cursive;
-      font-family: 'Zeyada', cursive;*/
 }
 
-main .top-section {
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgba(19, 83, 76, 0.3);
-  margin: 0 auto;
-  background-image: url("../images/hero_1_sliceocountry.jpg");
-  height: 700px;
+main .php-output {
+  color: red;
+  font-family: Arial;
+  font-size: 22px;
 }
 
-main .top-section .top-content {
-  padding: 20px;
-  padding-top: 100px;
-  color: white;
-  max-width: 800px;
-  min-width: 720px;
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-areas: "tag-line tag-line tag-line tag-line" "bheading bheading bheading bheading" "boothbay boothbay sarah-pic sarah-pic" "boothbay boothbay sarah-pic sarah-pic" "boothbay boothbay sarah-cert sarah-cert";
+main .text .large-text {
+  font-size: 62px;
 }
 
-@media screen and (max-width: 690px) {
-  main .top-section .top-content {
-    grid-template-areas: "tag-line" "bheading" "sarah-pic" "boothbay";
-    min-width: 250px;
-  }
-}
-
-@media screen and (max-width: 925px) {
-  main .top-section .top-content {
-    padding-left: 0;
-  }
-}
-
-main .top-section .top-content .top-box {
-  grid-area: top-box;
-}
-
-main .top-section .top-content .tag-line1 {
-  display: none;
-  width: 100%;
-  grid-area: tag-line;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: "Chilanka", cursive;
-  font-weight: bold;
-  justify-content: left;
-  justify-self: left;
-  text-align: left;
-}
-
-main .top-section .top-content .boards-heading {
-  width: 100%;
-  grid-area: bheading;
-  font-size: 44px;
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-  font-weight: bold;
-}
-
-main .top-section .top-content .boothbay {
-  grid-area: boothbay;
-  width: 100%;
-  text-align: left;
-  font-size: 24px;
-  font-family: Arial, Helvetica, sans-serif;
-  align-self: center;
-  padding-left: 20px;
-}
-
-@media screen and (max-width: 690px) {
-  main .top-section .top-content .boothbay {
-    font-size: 22px;
-    padding-left: 15px;
-    text-align: center;
-  }
-}
-
-main .top-section .top-content .sarah-pic {
-  grid-area: sarah-pic;
-  width: 100%;
-  text-align: left;
-  margin: 0 auto;
-  justify-self: center;
-  padding-top: 20px;
-}
-
-main .top-section .top-content .sarah-pic img {
-  min-width: 150px;
-  max-width: 250px;
-}
-
-@media screen and (max-width: 690px) {
-  main .top-section .top-content .sarah-pic {
-    text-align: center;
-  }
-}
-
-main .top-section .top-content .sarah-pic .sarah-cert {
-  grid-area: sarah-cert;
-  width: 100%;
-  font-size: 20px;
-  font-family: Helvetica Neue;
-  padding-left: 0px;
-  justify-self: right;
-  text-align: left;
-}
-
-@media screen and (max-width: 690px) {
-  main .top-section .top-content .sarah-pic .sarah-cert {
-    text-align: center;
-    padding-bottom: 10px;
-  }
-}
-
-main .boards {
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  max-width: 1600px;
-}
-
-@media screen and (max-width: 1450px) {
-  main .boards {
-    grid-template-columns: 1fr 1fr;
-    max-width: 770px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  main .boards {
-    padding-left: 0px;
-    grid-template-columns: 1fr;
-    margin: 0 auto;
-    text-align: center;
-    justify-items: center;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  main .boards {
-    justify-items: left;
-    text-align: left;
-  }
-}
-
-main .boards .board-box {
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  padding-left: 0px;
-  margin: 0 auto;
-  text-align: left;
-  justify-items: center;
-}
-
-@media screen and (max-width: 700px) {
-  main .boards .board-box {
-    padding-left: 0px;
-    text-align: left;
-    justify-items: left;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  main .image {
-    padding-left: 0;
-  }
-}
-
-main .image img {
-  height: 350px;
-  width: 350px;
-}
-
-@media screen and (max-width: 350px) {
-  main .image img {
-    height: 300px;
-    width: 300px;
-  }
-}
-
-main .copy {
-  max-width: 350px;
-  text-align: left;
-  border: 1px solid black;
-  padding-left: 10px;
-  padding-top: 20px;
-  margin-bottom: 50px;
-  height: 98.5%;
-}
-
-@media screen and (max-width: 350px) {
-  main .copy {
-    height: 340px;
-    width: 300px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  main .copy {
-    padding-left: 0px;
-    text-align: left;
-    justify-items: left;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-main .copy .name {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 32px;
-  font-weight: bold;
-}
-
-@media screen and (max-width: 350px) {
-  main .copy .name {
-    font-size: 28px;
-  }
-}
-
-main .copy .text {
+main .text .under-construction {
   font-size: 16px;
 }
 
-main .copy .button-box {
-  text-align: center;
-  margin: 0 auto;
-  align-items: center;
+main .small-text {
+  font-size: 28px;
+  letter-spacing: 2px;
+  word-spacing: -10px;
+  font-weight: bold;
 }
 
-main .copy .button-box .board-button {
-  background-color: #13534c;
-  width: 193px;
-  height: 30px;
+main .container {
+  max-width: 1200px;
+  background-image: url("../images/country-river-scene.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 89vh;
+  position: relative;
+}
+
+main .container h1 {
+  font-family: "Chilanka", cursive;
+  font-size: 50px;
+  letter-spacing: 0px;
+  color: #13534c;
+  color: white;
+  opacity: 1;
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-height: 800px) {
+  main .container h1 {
+    top: 4%;
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  main .container h1 {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main .container h1 {
+    font-size: 22px;
+  }
+}
+
+main .container .products {
+  position: absolute;
+  width: 30%;
+  width: 350px;
+  top: 25%;
+  left: 35%;
+}
+
+@media screen and (max-width: 1200px) {
+  main .container .products {
+    left: 30vw;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  main .container .products {
+    top: 15%;
+  }
+  main .container .products img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  main .container .products img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main .container .products {
+    left: 25vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .container .products {
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main .container .products {
+    left: 0;
+  }
+  main .container .products img {
+    width: 80%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  main .container .products {
+    left: -10%;
+    left: -10vw;
+  }
+  main .container .products img {
+    left: -10vw;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  main .container .products #products {
+    display: none;
+    position: static;
+  }
+}
+
+main .container .products .sarah-info {
+  display: flex;
+  flex-direction: column;
+  width: 225px;
+  position: absolute;
+  left: 520px;
+  top: 50%;
+  top: 5em;
+  left: 8em;
+  top: 60%;
+  left: 90%;
+}
+
+@media screen and (max-height: 350px) {
+  main .container .products .sarah-info {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  main .container .products .sarah-info {
+    width: 200px;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  main .container .products .sarah-info {
+    width: 150px;
+    left: 80%;
+  }
+}
+
+@media screen and (max-height: 350px) {
+  main .container .products .sarah-info {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  main .container .products .sarah-info {
+    left: 35vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .container .products .sarah-info {
+    width: 200px;
+  }
+}
+
+@media screen and (max-height: 450px) and (max-width: 350px) {
+  main .container .products .sarah-info {
+    border: 3px solid red;
+    width: 150px;
+  }
+}
+
+main .container .products .sarah-info .sarah-image {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  border-radius: 15px;
+  font-size: 36px;
+  font-weight: normal;
   color: white;
 }
 
-main .filler {
-  display: none;
+main .container .products .sarah-info .sarah-image .box32 {
+  font-size: 16px;
+  font-weight: bold;
 }
 
-@media screen and (max-width: 1450px) {
-  main .filler {
-    padding-left: 0px;
-    grid-template-columns: 1fr;
+main .container .products .sarah-info .sarah-image img {
+  width: 240px;
+  width: 7em;
+  width: 90%;
+}
+
+@media screen and (max-height: 350px) {
+  main .container .products .sarah-info .sarah-image img {
+    width: 100px;
+  }
+}
+
+main .container .products .sarah-info .sarah-text {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  font: Regular 24px/29px Raleway;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+@media screen and (max-height: 350px) {
+  main .container .products .sarah-info .sarah-text {
+    align-self: center;
+  }
+}
+
+main .container .products .wild-gathered {
+  position: absolute;
+  left: 20px;
+  top: 80%;
+  left: -25%;
+  top: 105%;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 710px) {
+  main .container .products .wild-gathered {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .container .products .wild-gathered {
+    font-size: 16px;
+    top: 135%;
+    top: 200%;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main .container .products .wild-gathered {
+    top: 150%;
+    left: 20%;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  main .container .products .wild-gathered {
+    font-size: 20px;
+    top: 250px;
+    left: 10%;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  main .container .products .wild-gathered {
+    top: 60px;
+    left: -20%;
+  }
+}
+
+@media screen and (max-height: 350px) {
+  main .container .products .wild-gathered {
+    top: 100px;
+  }
+}
+
+@media screen and (max-height: 450px) and (max-width: 600px) {
+  main .container .products .wild-gathered {
+    top: 100px;
+    left: 0;
+    width: 80vw;
+    text-align: center;
+  }
+}
+
+main .container .products .local-specials {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: #93999a;
+  width: 100%;
+  height: 380px;
+  position: absolute;
+  top: 65%;
+  left: -50%;
+  width: 185px;
+  height: 120px;
+  background-color: #fae0e0;
+  transform: rotate(-20deg);
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  main .container .products .local-specials {
     display: none;
   }
 }
-/*# sourceMappingURL=boards1.css.map */
+
+@media screen and (max-height: 650px) {
+  main .container .products .local-specials {
+    left: -30%;
+    transform: scale(75%, 75%);
+  }
+}
+
+@media screen and (max-height: 650px) {
+  main .container .products .local-specials {
+    display: none;
+  }
+}
+
+main .container .products .local-specials .inside-box {
+  position: relative;
+  top: 12px;
+  left: 16px;
+  box-sizing: border-box;
+  background-color: #fae0e0;
+  width: 80%;
+  height: 80%;
+  border: 3px solid #13534c;
+  color: #13534c;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 28px;
+  padding-top: 5px;
+}
+
+main .links {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 25px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+  main .links {
+    flex-direction: column;
+  }
+}
+
+main .links a:link {
+  text-decoration: none;
+}
+
+main .links .link-block {
+  width: 100%;
+  position: relative;
+}
+
+main .links .link-block h2 {
+  width: 100%;
+  color: white;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+main .links .link-block img {
+  width: 100%;
+}
+
+main .links .link-block:first-child {
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  main .links .link-block:first-child {
+    padding-right: 0;
+  }
+}
+
+main .links .box-links {
+  border: 1px dashed black;
+  max-width: 600px;
+  width: 50vw;
+  height: 375px;
+  height: 35vh;
+  color: white;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 20px;
+  border: 1px solid white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main .content-lower {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+main .content-lower .visit {
+  font-family: "Raleway";
+  border: 1px solid black;
+  margin-top: 25px;
+  padding-top: 25px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  main .content-lower .visit {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+main .content-lower .visit .heading {
+  text-align: center;
+  font-size: 32px;
+}
+/*# sourceMappingURL=home5.css.map */

@@ -75,6 +75,23 @@ $banner-height: 120px; //140px;
     }
 }
 
+
+// @media screen and (color), print and not (color) {...}
+// @media (min-width: 640px) and (max-width: 767px) {...}
+// @media (max-width: 639px), (min-width: 768px) {...}
+
+@mixin min-ht-or-wt-mixin($arg) {
+    @media screen and (min-width: $arg ) , (min-height: $arg ){
+        @content;
+    }
+}
+
+@mixin max-ht-or-wt-mixin($arg) {
+    @media screen and (max-width: $arg ) , (max-height: $arg ){
+        @content;
+    }
+}
+
 .menu-icon > .line {
     background-color: #292929;
     height: 2px;

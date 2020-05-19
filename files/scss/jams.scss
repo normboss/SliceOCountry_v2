@@ -103,6 +103,9 @@ main {
                 @include max-width-mixin(800px) {
                     left: 5%;
                 }
+                @include max-height-mixin(650px) {
+                    top: 55%;
+                }
             }
 
             .small-batches {
