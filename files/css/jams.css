@@ -1261,6 +1261,14 @@ main .top-section .top-content .small-batches {
   }
 }
 
+@media screen and (max-width: 400px) {
+  main .top-section .top-content .small-batches {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+
 main .top-section .top-content .sarah-info {
   width: 280px;
   height: 300px;

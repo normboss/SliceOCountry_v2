@@ -21,9 +21,12 @@ main {
     /*word-spacing: -5px;*/
     /*letter-spacing: 20px;*/
     border: 1px solid black;
-    
+
     // background-image: url("../images/hero_1_sliceocountry.jpg");
-    background-image: url("../images/Boothbay-Harbor-1-b-780x585.jpg");
+    background-image: url("../images/Boothbay-Harbor-1c.jpg");
+    // @include max-width-mixin(900px) {
+    //     background-image: url("../images/Boothbay-Harbor-2.jpg");
+    // }
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -35,49 +38,18 @@ main {
     .top-section {
         // background-image: url("../images/pig_board_background.jpg");
         width: 100%;
-        // height: 89vh;
-        // height: 400px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        // background-color: rgba(19, 83, 76, 0.3);
         margin: 0 auto;
-        // background-image: url("../images/hero_1_sliceocountry.jpg");
-        // position: relative;
-        
+
         .top-content {
             // border: 3px solid green;
-
-            padding: 20px;
-            padding-top: 100px;
-            // color: rgba(19, 83, 76, 1);
-            color: #13534C; //white;
-            // max-width: 800px;
-            // min-width: 720px;
+            padding: 30px 20px 0px 20px;
+            padding-bottom: 50px;
+            color: white;
             width: 100%;
             margin: 0 auto;
-
-            .top-box {
-                // border: 3px solid red;
-            }
-
-            .tag-line1 {
-                display: none;
-                // border: 3px solid blue;
-                width: 100%;
-                // grid-column: 1 / span 4;
-                // grid-row: 1 / span 1;
-                grid-area: tag-line;
-                font-size: 24px;
-                font-weight: bold;
-                // font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-                font-family: "Chilanka", cursive;
-                font-weight: bold;
-                // display: flex;
-                justify-content: left;
-                justify-self: left;
-                text-align: left;
-            }
 
             .boards-heading {
                 // border: 3px solid blue;
@@ -100,7 +72,7 @@ main {
                 // position: absolute;
                 bottom: 10%;
                 left: 10%;
-                margin-bottom: 25px;;
+                // margin-bottom: 25px;;
                 @include max-width-mixin(700px) {
                     font-size: 20px;
                 }
@@ -158,8 +130,6 @@ main {
                 }
             }
 
-
-
             .sarah-pic {
                 // border: 3px solid red;
                 grid-area: sarah-pic;
@@ -199,7 +169,6 @@ main {
             }
         }
     }
-
 
     $breakpt1: 700px;
     .boards {
@@ -312,8 +281,8 @@ main {
 
         .copy {
             background-color: white;
-            opacity: .8;
-                // max-width: 350px;
+            opacity: 0.8;
+            // max-width: 350px;
             width: 60%;
             text-align: left;
             border: 1px solid black;
@@ -328,8 +297,6 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-
-
 
             @include max-width-mixin(350px) {
                 max-width: 300px;

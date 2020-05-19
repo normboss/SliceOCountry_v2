@@ -34,17 +34,8 @@ and open the template in the editor.
     ?>
     <main>
 
-        <!-- <div class="spacer20"></div>
-        <div class="spacer20"></div> -->
         <section class="top-section">
             <div class="top-content">
-
-                <!-- <div class="top-box tag-line1">
-                    <span>A&nbsp;Taste&nbsp;of&nbsp;Home </span>
-                    <span>and&nbsp;a </span>
-                    <span>Touch&nbsp;of&nbsp;Country</span>
-                    <div class="spacer20"></div>
-                </div> -->
 
                 <div class="boards-heading">CUTTING & CHEESE BOARDS</div>
 
