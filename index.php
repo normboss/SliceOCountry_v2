@@ -17,7 +17,7 @@
 <body>
     <a href="./files/pages/home.php">Click to enter</a>
     <script>
-        window.location.href = "./files/pages/home5.php";
+        window.location.href = "./files/pages/home.php";
     </script>
 </body>
 </html>
