@@ -71,6 +71,7 @@
     }
 
     function buttonHandler() {
-        window.open("contact.php");
+        // window.open("mailto:SliceOCountry@gmail.com");
+        window.location.href = "mailto:SliceOCountry@gmail.com";
     };
 </script>

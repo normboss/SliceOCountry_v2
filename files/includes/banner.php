@@ -24,9 +24,7 @@ $styleJars = 'style="margin: 0 auto; width: 100%; height: auto; text-align: cent
     ?>
 
     <div class="banner-menu">
-
-
-
+        
         <div class="banner-menu-wide">
             <ul>
                 <span class="menu-item"><a href="home.php">Home</a></span>

@@ -64,27 +64,25 @@ and open the template in the editor.
             <div class="board-block">
                 <div class="board-box image">
                     <img src="../images/pig_board2.jpg" alt="Pig shaped cutting board." <?php echo $styleSarah ?>>
-                    <!-- <img src="../images/more/layer1.png" alt="Pig shaped cutting board." <?php echo $styleSarah ?>> -->
                 </div>
                 <div class="board-box copy">
                     <!-- <div class="logo">Slice O’ Country</div> -->
                     <?php
                     require '../includes/small-logo.php'
                     ?>
-                    <div class="name">Classic Pig&nbsp;Board</div><br><br>
-                    <!-- <div class="spacer10"></div> -->
+                    <div class="name">Classic Pig&nbsp;Board</div>
+                    <div class="spacer10"></div>
                     <div class="text">
                         Decorative country pig is made from Hardwood Maple
                         for years of service as a cutting board. Pig can stand on his own
                         two feet for display on a counter and is an attractive serving
                         board for snacks as well. This big guy is 16 x 8 1/2 x 3/4 inches.
                         <br>
-                        <div class="spacer10"></div>
                         <div class="price">$35.00 each</div>
                         <div class="spacer10"></div>
                     </div>
                     <div class="button-box">
-                        <button class="button">Order from Sarah</button>
+                        <button class="button" onclick="mailto:SliceOCountry@gmail.com">Order from Sarah</button>
                     </div>
                 </div>
             </div>
@@ -93,7 +91,6 @@ and open the template in the editor.
             <div class="board-block">
                 <div class="board-box image">
                     <img src="../images/little_pig_board2.jpg" alt="Rounded pig cutting board." <?php echo $styleSarah ?>>
-                    <!-- <img src="../images/more/little_pig_board.png" alt="Rounded pig cutting board." <?php echo $styleSarah ?>> -->
                 </div>
                 <div class="board-box copy">
                     <?php

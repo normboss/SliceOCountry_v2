@@ -108,7 +108,7 @@ and open the template in the editor.
                     <div class="spacer10"></div>
 
                     <div class="button-box">
-                        <button class="button" onclick="window.location.href = 'contact.php';">Order from Sarah</button>
+                        <button class="button">Order from Sarah</button>
                     </div>
                 </div>
             </div>
