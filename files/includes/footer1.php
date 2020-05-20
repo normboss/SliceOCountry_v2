@@ -43,7 +43,6 @@
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 
 <script>
-
     window.onorientationchange = function() {
         let vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -62,4 +61,16 @@
             document.documentElement.style.setProperty('--vh', `${vh}px`);
         }
     });
+</script>
+
+<script>
+    var elements = document.getElementsByClassName("button");
+
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].addEventListener('click', buttonHandler, false);
+    }
+
+    function buttonHandler() {
+        window.open("contact.php");
+    };
 </script>

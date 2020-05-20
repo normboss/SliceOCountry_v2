@@ -178,6 +178,20 @@ font-family: 'Open Sans', sans-serif;
   src: url("../fonts/Wizards Magic.ttf");
 }
 
+.button {
+  background-color: #13534c;
+  width: 250px;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border-radius: 15px;
+  color: white;
+}
+
+.button:hover {
+  height: 40px;
+}
+
 .nav {
   box-sizing: border-box;
   display: block;
@@ -1631,15 +1645,5 @@ main .jams1 .jam-copy .button-box {
   margin-bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-}
-
-main .jams1 .jam-copy .button-box .jam-button {
-  background-color: #13534c;
-  width: 250px;
-  height: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  border-radius: 15px;
-  color: white;
 }
 /*# sourceMappingURL=jams.css.map */

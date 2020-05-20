@@ -2,7 +2,7 @@
 if (!session_id())
     session_start();
     require __DIR__ . '/../includes/root.php';
-$_SESSION['pagename'] = "index";
+$_SESSION['pagename'] = "home";
 ?>
 <!DOCTYPE html>
 <!--
@@ -34,14 +34,10 @@ and open the template in the editor.
 
     <?php
     //  require './files/includes/menu2.php'; 
-    require '../includes/header1.php';
-    // require '../includes/banner.php';
+    // require '../includes/header1.php';
+    require '../includes/banner.php';
     ?>
     <main>
-        <!-- <div class="spacer20"></div> -->
-        <!-- <div class="spacer20"></div> -->
-        <div class="spacer20"></div>
-        <div class="spacer20"></div>
 
         <div class="content">
             <div class="inner-box">

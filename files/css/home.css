@@ -8,7 +8,6 @@ and open the template in the editor.
     Author     : Norm
 */
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -177,6 +176,20 @@ font-family: 'Open Sans', sans-serif;
 @font-face {
   font-family: "WizardsMagic";
   src: url("../fonts/Wizards Magic.ttf");
+}
+
+.button {
+  background-color: #13534c;
+  width: 250px;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border-radius: 15px;
+  color: white;
+}
+
+.button:hover {
+  height: 40px;
 }
 
 .nav {
@@ -1127,107 +1140,10 @@ and open the template in the editor.
   display: block;
 }
 
-body {
-  background-color: #f0f0f0;
-}
-
-.header-logo {
-  background-color: #13534C;
-  color: white;
-  font-weight: bold;
-  height: 120px;
-  padding-left: 25px;
-  padding-top: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-@media screen and (max-width: 400px) {
-  .header-logo {
-    padding-left: 0px;
-  }
-}
-
-.header-logo__title {
-  font-family: "Parisienne";
-  font-weight: normal;
-  font-size: 48px;
-}
-
-@media screen and (max-width: 450px) {
-  .header-logo__title {
-    font-size: 44px;
-    text-align: left;
-    padding-top: 20px;
-    padding-left: 0px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .header-logo__title {
-    font-size: 42px;
-    text-align: left;
-    padding-top: 20px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .header-logo__title {
-    text-align: left;
-    padding-top: 20px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .header-logo__title {
-    font-size: 36px;
-    text-align: left;
-    padding-top: 20px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 315px) {
-  .header-logo__title {
-    font-size: 34px;
-    text-align: left;
-    padding-top: 20px;
-    margin: 0 auto;
-  }
-}
-
-.header-logo__title .s-font {
-  font-family: "Great Vibes", cursive;
-  font-weight: normal;
-}
-
-.header-logo__sub-title {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 800;
-  font-size: 13px;
-}
-
-@media screen and (max-width: 450px) {
-  .header-logo__sub-title {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .header-logo__sub-title {
-    font-size: 10px;
-  }
-}
-
 main {
-  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
   font-size: 28px;
-  /*word-spacing: -5px;*/
-  /*letter-spacing: 20px;*/
   font-family: "Dancing Script", cursive;
   font-size: 64px;
   font-weight: bold;
@@ -1254,235 +1170,45 @@ main .small-text {
   font-weight: bold;
 }
 
-main .container {
+main .content {
+  height: 90vh;
   max-width: 1200px;
+  margin: 0 auto;
   background-image: url("../images/country-river-scene.jpg");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right bottom;
-  height: 89vh;
-  position: relative;
+  background-position: right;
 }
 
-main .container h1 {
-  font-family: "Chilanka", cursive;
-  font-size: 50px;
-  letter-spacing: 0px;
-  color: #13534c;
-  opacity: 1;
-  position: absolute;
-  top: 10%;
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-@media screen and (max-width: 500px) {
-  main .container h1 {
-    font-size: 40px;
+@media screen and (max-height: 750px) {
+  main .content {
+    height: auto;
   }
-}
-
-main .container .content {
-  margin: 0;
-  padding: 0;
-  width: 780px;
-  position: relative;
-  top: 15%;
-  top: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 600px;
-}
-
-@media screen and (max-width: 750px) {
-  main .container .content {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 525px) {
-  main .container .content {
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  main .container .content {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  main .container .content {
-    transform: translateX(0);
-  }
-}
-
-@media screen and (max-width: 650px) {
-  main .container .content {
-    left: 40vw;
-  }
-}
-
-main .container .content .products {
-  width: 390px;
-  width: 6em;
-  position: absolute;
-  left: 190px;
-  top: 68px;
-  top: 1.4em;
-  left: 2.9em;
-}
-
-@media screen and (max-width: 750px) {
-  main .container .content .products {
-    display: none;
-  }
-}
-
-main .container .content .sarah-info {
-  width: 250px;
-  height: 300px;
-  position: absolute;
-  left: 520px;
-  top: 50%;
-  top: 5em;
-  left: 8em;
 }
 
 @media screen and (max-width: 800px) {
-  main .container .content .sarah-info {
-    width: 200px;
+  main .content {
+    background-position: center;
   }
 }
 
-@media screen and (max-width: 525px) {
-  main .container .content .sarah-info {
-    width: 250px;
-    left: 10%;
-    transform: translateY(-50%);
-    top: 50%;
-  }
-}
-
-main .container .content .sarah-info .sarah-image {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 36px;
-  font-weight: normal;
-  color: white;
-}
-
-main .container .content .sarah-info .sarah-image .box32 {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-main .container .content .sarah-info .sarah-image img {
-  width: 240px;
-  width: 7em;
-  width: 90%;
-}
-
-main .container .content .sarah-info .sarah-text {
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  font: Regular 24px/29px Raleway;
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 0px;
-  color: #ffffff;
-}
-
-main .container .content .wild-gathered {
-  border: 3px solid red;
-  position: absolute;
-  left: 20px;
-  top: 80%;
-  left: 4%;
-  top: 85%;
-  text-align: left;
-  font-family: "Raleway", sans-serif;
-  font-size: 35px;
-  font-weight: 600;
-  letter-spacing: 0px;
-  color: #ffffff;
-}
-
-@media screen and (max-width: 800px) {
-  main .container .content .wild-gathered {
-    font-size: 30px;
-    top: 100%;
-    left: 0;
-    text-align: center;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 525px) {
-  main .container .content .wild-gathered {
-    font-size: 25px;
-    top: 90%;
-    left: 0;
-    text-align: center;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  main .container .content .wild-gathered {
-    top: 80%;
-  }
-}
-
-main .container .content .local-specials {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  color: #93999a;
-  width: 100%;
-  height: 400px;
-  position: absolute;
-  top: 300px;
-  left: 0%;
-  width: 193px;
-  height: 125px;
-  background-color: #fae0e0;
-  transform: rotate(-20deg);
-  opacity: 1;
-}
-
-main .container .content .local-specials .inside-box {
-  position: relative;
-  top: 12px;
-  left: 16px;
-  box-sizing: border-box;
-  background-color: #fae0e0;
-  width: 80%;
-  height: 80%;
-  border: 3px solid #13534c;
-  color: #13534c;
-  opacity: 1;
-  font-weight: bold;
-  font-size: 28px;
-  padding-top: 5px;
-}
-
-@media screen and (max-width: 800px) {
-  main .container .content .local-specials {
-    display: none;
-  }
-}
-
-main .container .content .inner-box {
+main .content .inner-box {
+  padding-top: 10vh;
   margin: 0 auto;
   max-width: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 10px;
 }
 
-main .container .content .inner-box .box {
+@media screen and (max-width: 700px) {
+  main .content .inner-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+main .content .inner-box .box {
   width: 70%;
   height: auto;
   color: white;
@@ -1490,12 +1216,12 @@ main .container .content .inner-box .box {
 }
 
 @media screen and (max-width: 600px) {
-  main .container .content .inner-box {
+  main .content .inner-box {
     margin-bottom: 3px;
   }
 }
 
-main .container .content .inner-box .box1 {
+main .content .inner-box .box1 {
   grid-column: 1 / span 4;
   grid-row: 2 / span 1;
   font-family: Parisienne;
@@ -1511,13 +1237,13 @@ main .container .content .inner-box .box1 {
 }
 
 @media screen and (max-width: 550px) {
-  main .container .content .inner-box .box1 {
+  main .content .inner-box .box1 {
     font-size: 56px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  main .container .content .inner-box .box1 {
+  main .content .inner-box .box1 {
     font-size: 40px;
     padding-left: 0;
     margin-left: 0;
@@ -1525,32 +1251,32 @@ main .container .content .inner-box .box1 {
 }
 
 @media screen and (max-width: 320px) {
-  main .container .content .inner-box .box1 {
+  main .content .inner-box .box1 {
     text-align: center;
   }
 }
 
 @media screen and (max-width: 750px) {
-  main .container .content .inner-box .box1 {
+  main .content .inner-box .box1 {
     text-align: center;
     width: 100%;
   }
 }
 
-main .container .content .inner-box .box1 .title {
+main .content .inner-box .box1 .title {
   font-family: Parisienne;
   font-size: 72px;
   font-weight: bold;
 }
 
 @media screen and (max-width: 525px) {
-  main .container .content .inner-box .box1 .title {
+  main .content .inner-box .box1 .title {
     font-size: 52px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  main .container .content .inner-box .box1 .title {
+  main .content .inner-box .box1 .title {
     font-size: 40px;
     padding-left: 0;
     margin-left: 0;
@@ -1559,31 +1285,30 @@ main .container .content .inner-box .box1 .title {
 }
 
 @media screen and (max-width: 320px) {
-  main .container .content .inner-box .box1 {
+  main .content .inner-box .box1 {
     width: 80%;
     margin: 0 auto;
   }
 }
 
-main .container .content .inner-box .box1 .sub-title {
+main .content .inner-box .box1 .sub-title {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 32px;
 }
 
 @media screen and (max-width: 400px) {
-  main .container .content .inner-box .box1 .sub-title {
+  main .content .inner-box .box1 .sub-title {
     font-size: 28px;
   }
 }
 
-main .container .content .inner-box .box1 .special-font {
+main .content .inner-box .box1 .special-font {
   font-family: "Great Vibes", cursive;
   font-weight: normal;
 }
 
-main .container .content .inner-box .box1 .tag-line {
-  display: none;
+main .content .inner-box .box1 .tag-line {
   font-size: 36px;
   font-weight: bold;
   font-family: "Chilanka", cursive;
@@ -1591,45 +1316,46 @@ main .container .content .inner-box .box1 .tag-line {
 }
 
 @media screen and (max-width: 900px) {
-  main .container .content .inner-box .box1 .tag-line {
+  main .content .inner-box .box1 .tag-line {
     font-size: 32px;
   }
 }
 
 @media screen and (max-width: 800px) {
-  main .container .content .inner-box .box1 .tag-line {
+  main .content .inner-box .box1 .tag-line {
     font-size: 28px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  main .container .content .inner-box .box1 .tag-line {
+  main .content .inner-box .box1 .tag-line {
     font-size: 28px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  main .container .content .inner-box .box1 .tag-line {
+  main .content .inner-box .box1 .tag-line {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 320px) {
-  main .container .content .inner-box .box1 .tag-line {
+  main .content .inner-box .box1 .tag-line {
     text-align: center;
   }
 }
 
-main .container .content .inner-box .box2 {
-  padding-left: 140px;
-}
-
-main .container .content .inner-box .box2 .outside-box {
+main .content .inner-box .box2 {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 2;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   color: #93999a;
   width: 100%;
-  height: 75vh;
+  padding-left: 140px;
+}
+
+main .content .inner-box .box2 .outside-box {
   width: 200px;
   height: 180px;
   background-color: #fae0e0;
@@ -1640,7 +1366,7 @@ main .container .content .inner-box .box2 .outside-box {
   margin: 50px;
 }
 
-main .container .content .inner-box .box2 .outside-box .inside-box {
+main .content .inner-box .box2 .outside-box .inside-box {
   font-family: Helvetica, sans-serif;
   position: relative;
   top: 12px;
@@ -1653,35 +1379,37 @@ main .container .content .inner-box .box2 .outside-box .inside-box {
 }
 
 @media screen and (max-width: 700px) {
-  main .container .content .inner-box .box2 {
+  main .content .inner-box .box2 {
     display: none;
   }
 }
 
 @media screen and (max-width: 650px) {
-  main .container .content .inner-box .box2 {
+  main .content .inner-box .box2 {
     padding-left: 20%;
     margin-left: 0;
   }
 }
 
 @media screen and (max-width: 580px) {
-  main .container .content .inner-box .box2 {
+  main .content .inner-box .box2 {
     padding-left: 16%;
     margin-left: 0;
   }
 }
 
-main .container .content .inner-box .box21 {
-  margin-left: 120px;
-}
-
-main .container .content .inner-box .box21 .outside-box {
+main .content .inner-box .box21 {
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   color: #93999a;
   width: 100%;
   height: 400px;
+  margin-left: 120px;
+}
+
+main .content .inner-box .box21 .outside-box {
   position: relative;
   top: 170px;
   left: -145px;
@@ -1695,7 +1423,7 @@ main .container .content .inner-box .box21 .outside-box {
   margin: 50px;
 }
 
-main .container .content .inner-box .box21 .outside-box .inside-box {
+main .content .inner-box .box21 .outside-box .inside-box {
   position: relative;
   top: 12px;
   left: 16px;
@@ -1712,7 +1440,7 @@ main .container .content .inner-box .box21 .outside-box .inside-box {
 }
 
 @media screen and (max-width: 600px) {
-  main .container .content .inner-box .box21 .outside-box {
+  main .content .inner-box .box21 .outside-box {
     top: -20px;
     left: 50px;
     padding-left: 0px;
@@ -1720,12 +1448,15 @@ main .container .content .inner-box .box21 .outside-box .inside-box {
 }
 
 @media screen and (max-width: 700px) {
-  main .container .content .inner-box .box21 {
+  main .content .inner-box .box21 {
     display: none;
   }
 }
 
-main .container .content .inner-box .box3 {
+main .content .inner-box .box3 {
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 1;
+  grid-column-gap: 20px;
   width: 250px;
   height: 70%;
   font-family: Arial, Helvetica, sans-serif;
@@ -1737,42 +1468,44 @@ main .container .content .inner-box .box3 {
   right: 50px;
 }
 
-main .container .content .inner-box .box3 img {
+main .content .inner-box .box3 img {
   width: 250px;
 }
 
-main .container .content .inner-box .box3 .box32 {
+main .content .inner-box .box3 .box32 {
   font-size: 16px;
   font-weight: bold;
 }
 
 @media screen and (max-width: 700px) {
-  main .container .content .inner-box .box3 {
+  main .content .inner-box .box3 {
     display: none;
   }
 }
 
-main .container .content .inner-box .box31 {
+main .content .inner-box .box31 {
   grid-column: 1 / span 4;
   width: 100%;
 }
 
 @media screen and (min-width: 701px) {
-  main .container .content .inner-box .box31 {
+  main .content .inner-box .box31 {
     display: none;
   }
 }
 
-main .container .content .inner-box .box31 img {
+main .content .inner-box .box31 img {
   width: 200px;
 }
 
-main .container .content .inner-box .box31 .box32 {
+main .content .inner-box .box31 .box32 {
   font-size: 16px;
   font-weight: bold;
 }
 
-main .container .content .inner-box .box4 {
+main .content .inner-box .box4 {
+  grid-column: 1 / span 2;
+  grid-row: 5 / span 1;
   width: 100%;
   font-size: 22px;
   position: relative;
@@ -1780,11 +1513,34 @@ main .container .content .inner-box .box4 {
   padding-bottom: 10px;
 }
 
-main .container .content .inner-box .box4 .small {
+main .content .inner-box .box4 .small {
   font-size: 12px;
 }
 
-main .container .content .inner-box .box5 {
+@media screen and (max-width: 700px) {
+  main .content .inner-box .box4 {
+    grid-column: 1 / span 3;
+    padding-left: 20px;
+    text-align: center;
+    width: 100%;
+    position: inherit;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .content .inner-box .box4 {
+    padding-left: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .content .inner-box .box4 {
+    text-align: center;
+  }
+}
+
+main .content .inner-box .box5 {
   grid-column: 2 / span 2;
   grid-row: 6 / span 1;
   justify-self: center;
@@ -1793,12 +1549,12 @@ main .container .content .inner-box .box5 {
   padding-bottom: 20px;
 }
 
-main .container .content .inner-box .box5 .small {
+main .content .inner-box .box5 .small {
   font-size: 16px;
 }
 
 @media screen and (max-width: 700px) {
-  main .container .content .inner-box .box5 {
+  main .content .inner-box .box5 {
     padding-top: 10px;
     grid-column: 1 / span 3;
     padding-left: 0px;
@@ -1807,7 +1563,7 @@ main .container .content .inner-box .box5 .small {
 }
 
 @media screen and (max-width: 320px) {
-  main .container .content .inner-box .box5 {
+  main .content .inner-box .box5 {
     width: 70%;
     font-size: 20px;
     text-align: center;
@@ -1858,6 +1614,12 @@ main .links .link-block:first-child {
   padding-right: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  main .links .link-block:first-child {
+    padding-right: 0;
+  }
+}
+
 main .links .box-links {
   border: 1px dashed black;
   max-width: 600px;
@@ -1877,7 +1639,6 @@ main .links .box-links {
 main .content-lower {
   width: 100%;
   margin: 0 auto;
-  margin-top: 25px;
 }
 
 main .content-lower .visit {

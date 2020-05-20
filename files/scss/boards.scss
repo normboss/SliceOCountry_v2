@@ -7,7 +7,6 @@ and open the template in the editor.
     Created on : Aug 29, 2018, 10:01:37 AM
     Author     : Norm
 */
-
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
 // $menu-background-color: #13534C;
 @import "common";
@@ -23,9 +22,9 @@ main {
     border: 1px solid black;
 
     // background-image: url("../images/hero_1_sliceocountry.jpg");
-    background-image: url("../images/Boothbay-Harbor-1c.jpg");
+    // background-image: url("../images/Boothbay-Harbor-1c.jpg");
     // @include max-width-mixin(900px) {
-    //     background-image: url("../images/Boothbay-Harbor-2.jpg");
+        background-image: url("../images/Boothbay-Harbor-1-b-780x585.jpg");
     // }
     background-size: cover;
     background-repeat: no-repeat;
@@ -55,6 +54,7 @@ main {
                 // border: 3px solid blue;
                 min-width: 250px;
                 font-family: "Raleway", sans-serif;
+                font-family: "Chilanka", cursive;
                 text-align: center;
                 font-weight: bold;
                 font-size: 44px;
@@ -69,10 +69,9 @@ main {
                 text-align: center;
                 font-size: 24px;
                 font-family: Arial, Helvetica, sans-serif;
-                // position: absolute;
+                font-family: "Chilanka", cursive;
                 bottom: 10%;
                 left: 10%;
-                // margin-bottom: 25px;;
                 @include max-width-mixin(700px) {
                     font-size: 20px;
                 }
@@ -342,16 +341,6 @@ main {
                 text-align: center;
                 margin: 0 auto;
                 align-items: center;
-
-                .board-button {
-                    background-color: #13534c;
-                    width: 250px; //193px;
-                    height: 30px;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 20px;
-                    border-radius: 15px;
-                    color: white;
-                }
             }
         }
     }

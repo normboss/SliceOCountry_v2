@@ -16,14 +16,11 @@ and open the template in the editor.
 <?php
     // require '../includes/globalSiteTag.html';
     ?>
-    <title>Slice 'O Country / Homemade jams, preserves & cutting boards</title>
-    <meta name=="description" content="Jams & preserves from the freshest ingredients, plus novelty Maple hard-wood cutting boards. Sarah Brewer, owner & certified home processor.">
-
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="../css/home.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/home6.css" media="screen" rel="stylesheet" type="text/css">
     <!-- <script src="//code.jquery.com/jquery-1.10.2.js"></script> -->
     <!--<link href=".files/fonts/Wizards Magic.ttf" rel="stylesheet">-->
     <!--<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">-->
@@ -31,24 +28,13 @@ and open the template in the editor.
     <!--<link rel="icon" href="./images/Image7.gif">-->
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
 
-<!-- HOME
-Title: Slice 'O Country / Homemade jams, preserves & cutting boards
-Description: Jams & preserves from the freshest ingredients, plus novelty Maple hard-wood cutting boards. Sarah Brewer, owner & certified home processor.
-
-CUTTING BOARDS
-Title: Slice 'O Country / Quality Maple hardwood cutting boards
-Description: Decorative novelty cutting & cheese boards designed to impress - and entertain!
-
-JAMS & PRESERVES
-Title: Slice 'O Country / Sarah Brewer's small batch jams & preserves
-Description: Locally gathered blueberries, raspberries, strawberries & rhubarb transformed to deliciousness! Available in 3 sizes. Seasonal & custom orders available upon request. 
--->
-
 </head>
 
 <body>
 
     <?php
+    //  require './files/includes/menu2.php'; 
+    // require '../includes/header1.php';
     require '../includes/banner.php';
     ?>
     <main>
@@ -60,6 +46,13 @@ Description: Locally gathered blueberries, raspberries, strawberries & rhubarb t
                 </div>
 
                 <div class="box box1">
+                    <div class="title">
+                        <!-- <span class="special-font">S</span>lice O&#39; Country -->
+                        <!-- <?php 
+                        // require '../includes/logo.php';     
+                        ?> -->
+                    </div>
+                    <!-- <div class="spacer20"></div> -->
                     <div class="tag-line">
                         <span>A&nbsp;Taste&nbsp;of&nbsp;Home </span>
                         <span>and&nbsp;a </span>

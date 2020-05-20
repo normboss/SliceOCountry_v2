@@ -15,6 +15,8 @@ and open the template in the editor.
     <?php
     require '../includes/globalSiteTag.html';
     ?>
+    <title>Slice 'O Country / Sarah Brewer's small batch jams & preserves</title>
+    <meta name=="description" content="Locally gathered blueberries, raspberries, strawberries & rhubarb transformed to deliciousness! Available in 3 sizes. Seasonal & custom orders available upon request. ">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -106,7 +108,7 @@ and open the template in the editor.
                     <div class="spacer10"></div>
 
                     <div class="button-box">
-                        <button class="jam-button" onclick="window.location.href = 'mailto:norm.bosse0@gmail.com';">Order from Sarah</button>
+                        <button class="button" onclick="window.location.href = 'contact.php';">Order from Sarah</button>
                     </div>
                 </div>
             </div>
@@ -131,7 +133,7 @@ and open the template in the editor.
                     <div class="spacer10"></div>
                     <div class="spacer10"></div>
                     <div class="button-box">
-                        <button class="jam-button">Order from Sarah</button>
+                        <button class="button">Order from Sarah</button>
                     </div>
                 </div>
             </div>
@@ -153,7 +155,7 @@ and open the template in the editor.
                         <div class="spacer10"></div>
                         <div class="spacer10"></div>
                         <div class="button-box">
-                            <button class="jam-button">Order from Sarah</button>
+                            <button class="button">Order from Sarah</button>
                         </div>
                     </div>
                 </div>
@@ -178,7 +180,7 @@ and open the template in the editor.
                         <div class="spacer10"></div>
                         <div class="spacer10"></div>
                         <div class="button-box">
-                            <button class="jam-button">Order from Sarah</button>
+                            <button class="button">Order from Sarah</button>
                         </div>
                     </div>
                 </div>
@@ -202,7 +204,7 @@ and open the template in the editor.
                         brings back fond memories of grandma’s kitchen.
                         <div class="spacer10"></div>
                         <div class="button-box">
-                            <button class="jam-button">Order from Sarah</button>
+                            <button class="button">Order from Sarah</button>
                         </div>
                         <div class="spacer10"></div>
                     </div>
@@ -242,7 +244,7 @@ and open the template in the editor.
                             <div>
                                 <a href="mailto:SliceOCountry@gmail.com">
                                     <div class="button-box">
-                                        <button class="jam-button">Email me!</button>
+                                        <button class="button">Email me!</button>
                                     </div>
                                 </a>
                             </div>

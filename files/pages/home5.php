@@ -59,18 +59,6 @@ and open the template in the editor.
         </div>
 
         <div class="links">
-            <!-- <a href="jams.php">
-                <div class="box-links jams-mobile">
-                    Jams & Preserves
-                </div>
-            </a>
-
-            <a href="boards.php">
-                <div class="box-links boards-mobile">
-                    Maine Made Cutting Boards
-                </div>
-            </a> -->
-
             <div class="link-block">
                 <a href="jams.php">
                     <img src="../images/jamsa.jpg" alt="">

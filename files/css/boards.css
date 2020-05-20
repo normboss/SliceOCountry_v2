@@ -178,6 +178,20 @@ font-family: 'Open Sans', sans-serif;
   src: url("../fonts/Wizards Magic.ttf");
 }
 
+.button {
+  background-color: #13534c;
+  width: 250px;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border-radius: 15px;
+  color: white;
+}
+
+.button:hover {
+  height: 40px;
+}
+
 .nav {
   box-sizing: border-box;
   display: block;
@@ -1134,7 +1148,7 @@ main {
   /*word-spacing: -5px;*/
   /*letter-spacing: 20px;*/
   border: 1px solid black;
-  background-image: url("../images/Boothbay-Harbor-1c.jpg");
+  background-image: url("../images/Boothbay-Harbor-1-b-780x585.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -1164,6 +1178,7 @@ main .top-section .top-content {
 main .top-section .top-content .boards-heading {
   min-width: 250px;
   font-family: "Raleway", sans-serif;
+  font-family: "Chilanka", cursive;
   text-align: center;
   font-weight: bold;
   font-size: 44px;
@@ -1181,6 +1196,7 @@ main .top-section .top-content .boothbay {
   text-align: center;
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
+  font-family: "Chilanka", cursive;
   bottom: 10%;
   left: 10%;
 }
@@ -1476,16 +1492,6 @@ main .boards1 .copy .button-box {
   text-align: center;
   margin: 0 auto;
   align-items: center;
-}
-
-main .boards1 .copy .button-box .board-button {
-  background-color: #13534c;
-  width: 250px;
-  height: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  border-radius: 15px;
-  color: white;
 }
 
 main .filler {

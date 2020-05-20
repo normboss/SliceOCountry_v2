@@ -178,6 +178,20 @@ font-family: 'Open Sans', sans-serif;
   src: url("../fonts/Wizards Magic.ttf");
 }
 
+.button {
+  background-color: #13534c;
+  width: 250px;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border-radius: 15px;
+  color: white;
+}
+
+.button:hover {
+  height: 40px;
+}
+
 .nav {
   box-sizing: border-box;
   display: block;
@@ -1126,12 +1140,29 @@ and open the template in the editor.
   display: block;
 }
 
+.spacer30 {
+  height: 30px;
+}
+
+.spacer20 {
+  height: 20px;
+}
+
+.spacer10 {
+  height: 10px;
+}
+
+@font-face {
+  font-family: "WizardsMagic";
+  src: url("../fonts/Wizards Magic.ttf");
+}
+
 main {
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
   font-size: 28px;
-  /*word-spacing: -5px;*/
-  /*letter-spacing: 20px;*/
   font-family: "Dancing Script", cursive;
   font-size: 64px;
   font-weight: bold;
@@ -1139,259 +1170,140 @@ main {
       font-family: 'Zeyada', cursive;*/
 }
 
-main .top-section {
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgba(19, 83, 76, 0.3);
-  margin: 0 auto;
-  background-image: url("../images/hero_1_sliceocountry.jpg");
-  height: 700px;
+main .php-output {
+  color: red;
+  font-family: Arial;
+  font-size: 22px;
 }
 
-main .top-section .top-content {
-  padding: 20px;
-  padding-top: 100px;
-  color: white;
-  max-width: 800px;
-  min-width: 720px;
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-areas: "tag-line tag-line tag-line tag-line" "bheading bheading bheading bheading" "boothbay boothbay sarah-pic sarah-pic" "boothbay boothbay sarah-pic sarah-pic" "boothbay boothbay sarah-cert sarah-cert";
+main .text .large-text {
+  font-size: 62px;
 }
 
-@media screen and (max-width: 690px) {
-  main .top-section .top-content {
-    grid-template-areas: "tag-line" "bheading" "sarah-pic" "boothbay";
-    min-width: 250px;
-  }
-}
-
-@media screen and (max-width: 925px) {
-  main .top-section .top-content {
-    padding-left: 0;
-  }
-}
-
-main .top-section .top-content .top-box {
-  grid-area: top-box;
-}
-
-main .top-section .top-content .tag-line1 {
-  display: none;
-  width: 100%;
-  grid-area: tag-line;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: "Chilanka", cursive;
-  font-weight: bold;
-  justify-content: left;
-  justify-self: left;
-  text-align: left;
-}
-
-main .top-section .top-content .boards-heading {
-  width: 100%;
-  grid-area: bheading;
-  font-size: 44px;
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-  font-weight: bold;
-}
-
-main .top-section .top-content .boothbay {
-  grid-area: boothbay;
-  width: 100%;
-  text-align: left;
-  font-size: 24px;
-  font-family: Arial, Helvetica, sans-serif;
-  align-self: center;
-  padding-left: 20px;
-}
-
-@media screen and (max-width: 690px) {
-  main .top-section .top-content .boothbay {
-    font-size: 22px;
-    padding-left: 15px;
-    text-align: center;
-  }
-}
-
-main .top-section .top-content .sarah-pic {
-  grid-area: sarah-pic;
-  width: 100%;
-  text-align: left;
-  margin: 0 auto;
-  justify-self: center;
-  padding-top: 20px;
-}
-
-main .top-section .top-content .sarah-pic img {
-  min-width: 150px;
-  max-width: 250px;
-}
-
-@media screen and (max-width: 690px) {
-  main .top-section .top-content .sarah-pic {
-    text-align: center;
-  }
-}
-
-main .top-section .top-content .sarah-pic .sarah-cert {
-  grid-area: sarah-cert;
-  width: 100%;
-  font-size: 20px;
-  font-family: Helvetica Neue;
-  padding-left: 0px;
-  justify-self: right;
-  text-align: left;
-}
-
-@media screen and (max-width: 690px) {
-  main .top-section .top-content .sarah-pic .sarah-cert {
-    text-align: center;
-    padding-bottom: 10px;
-  }
-}
-
-main .boards {
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  max-width: 1600px;
-}
-
-@media screen and (max-width: 1450px) {
-  main .boards {
-    grid-template-columns: 1fr 1fr;
-    max-width: 770px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  main .boards {
-    padding-left: 0px;
-    grid-template-columns: 1fr;
-    margin: 0 auto;
-    text-align: center;
-    justify-items: center;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  main .boards {
-    justify-items: left;
-    text-align: left;
-  }
-}
-
-main .boards .board-box {
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  padding-left: 0px;
-  margin: 0 auto;
-  text-align: left;
-  justify-items: center;
-}
-
-@media screen and (max-width: 700px) {
-  main .boards .board-box {
-    padding-left: 0px;
-    text-align: left;
-    justify-items: left;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  main .image {
-    padding-left: 0;
-  }
-}
-
-main .image img {
-  height: 350px;
-  width: 350px;
-}
-
-@media screen and (max-width: 350px) {
-  main .image img {
-    height: 300px;
-    width: 300px;
-  }
-}
-
-main .copy {
-  max-width: 350px;
-  text-align: left;
-  border: 1px solid black;
-  padding-left: 10px;
-  padding-top: 20px;
-  margin-bottom: 50px;
-  height: 98.5%;
-}
-
-@media screen and (max-width: 350px) {
-  main .copy {
-    height: 340px;
-    width: 300px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  main .copy {
-    padding-left: 0px;
-    text-align: left;
-    justify-items: left;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-main .copy .name {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 32px;
-  font-weight: bold;
-}
-
-@media screen and (max-width: 350px) {
-  main .copy .name {
-    font-size: 28px;
-  }
-}
-
-main .copy .text {
+main .text .under-construction {
   font-size: 16px;
 }
 
-main .copy .button-box {
-  text-align: center;
+main .small-text {
+  font-size: 28px;
+  letter-spacing: 2px;
+  word-spacing: -10px;
+  font-weight: bold;
+}
+
+main .contact-container {
+  background-image: url("../images/hero_contact.png");
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 0 auto;
-  align-items: center;
+  text-align: center;
 }
 
-main .copy .button-box .board-button {
-  background-color: #13534c;
-  width: 193px;
-  height: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  border-radius: 15px;
-  color: white;
-}
-
-main .filler {
-  display: none;
-}
-
-@media screen and (max-width: 1450px) {
-  main .filler {
-    padding-left: 0px;
-    grid-template-columns: 1fr;
-    display: none;
+@media screen and (max-width: 350px) {
+  main .contact-container {
+    padding-left: 0;
   }
 }
-/*# sourceMappingURL=boards1.css.map */
+
+main .contact-container .form-container {
+  background-color: rgba(19, 83, 76, 0.7);
+  border-radius: 10px;
+  color: white;
+  text-align: left;
+  font-family: "Open Sans";
+  font-size: 14px;
+  width: 50%;
+  min-width: 250px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+}
+
+@media screen and (max-width: 350px) {
+  main .contact-container .form-container {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+main .contact-container .form-container .contactform {
+  border: 0px solid blue;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 350px) {
+  main .contact-container .form-container .contactform {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+main .contact-container .form-container .contactform .diagnostic {
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+}
+
+main .contact-container .form-container .contactform textarea {
+  height: 190px;
+  height: auto;
+  /*width: 400px;*/
+  width: 100%;
+}
+
+main .contact-container .form-container .contactform label {
+  width: 99%;
+  text-align: left;
+  font-style: italic;
+  display: block;
+  margin-bottom: 4px;
+}
+
+main .contact-container .form-container .contactform input {
+  width: 99%;
+  border: 1px #ccc solid;
+  background-color: #f5f5f5;
+  padding: 5px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+main .contact-container .form-container .contactform textarea {
+  width: 99%;
+  border: 1px #ccc solid;
+  background-color: #f5f5f5;
+  padding: 5px;
+  resize: none;
+  color: #000000;
+}
+
+main .contact-container .form-container .contactform input[type=text], main .contact-container .form-container .contactform select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+main .contact-container .form-container .contactform input[type=submit] {
+  width: 100%;
+  background-color: rgba(19, 83, 76, 0.5);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+main .contact-container .form-container .contactform input[type=submit]:hover {
+  background-color: #13534c;
+  border: 10px;
+}
+/*# sourceMappingURL=contact.css.map */
