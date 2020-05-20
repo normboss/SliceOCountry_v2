@@ -1536,6 +1536,14 @@ main .container .products .wild-gathered {
   }
 }
 
+@media screen and (max-height: 450px) {
+  main .container .products .wild-gathered {
+    width: 100%;
+    left: 32px;
+    top: 55vh;
+  }
+}
+
 main .container .products .local-specials {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;

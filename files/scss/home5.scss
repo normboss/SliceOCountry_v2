@@ -389,6 +389,13 @@ main {
                         text-align: center;
                     }
                 }
+
+                @include max-height-mixin(450px) {
+                    // border: 3px solid red;
+                    width: 100%;
+                    left: 32px;
+                    top: 55vh;
+                }
             }
 
             .local-specials {
