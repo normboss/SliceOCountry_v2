@@ -1638,6 +1638,7 @@ main .links .box-links {
 
 main .content-lower {
   width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
