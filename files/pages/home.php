@@ -14,7 +14,7 @@ and open the template in the editor.
 
 <head>
 <?php
-    // require '../includes/globalSiteTag.html';
+    require '../includes/globalSiteTag.html';
     ?>
     <title>Slice 'O Country / Homemade jams, preserves & cutting boards</title>
     <meta name=="description" content="Jams & preserves from the freshest ingredients, plus novelty Maple hard-wood cutting boards. Sarah Brewer, owner & certified home processor.">
