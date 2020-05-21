@@ -17,7 +17,7 @@ and open the template in the editor.
     require '../includes/globalSiteTag.html';
     ?>
     <title>Slice 'O Country / Homemade jams, preserves & cutting boards</title>
-    <meta name=="description" content="Jams & preserves from the freshest ingredients, plus novelty Maple hard-wood cutting boards. Sarah Brewer, owner & certified home processor.">
+    <meta name="description" content="Jams & preserves from the freshest ingredients, plus novelty Maple hard-wood cutting boards. Sarah Brewer, owner & certified home processor.">
 
 
     <meta charset="UTF-8">
