@@ -1196,7 +1196,7 @@ main .content {
 main .content .inner-box {
   padding-top: 10vh;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 800px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 10px;
@@ -1231,7 +1231,6 @@ main .content .inner-box .box1 {
   width: 100%;
   color: #13534c;
   height: auto;
-  line-height: 42.5px;
   padding-top: 50px;
   padding-bottom: 20px;
 }
@@ -1310,26 +1309,32 @@ main .content .inner-box .box1 .special-font {
 
 main .content .inner-box .box1 .tag-line {
   font-size: 36px;
+  font-size: 42px;
   font-weight: bold;
   font-family: "Chilanka", cursive;
   font-weight: bold;
+  word-spacing: normal;
+  letter-spacing: -2px;
 }
 
 @media screen and (max-width: 900px) {
   main .content .inner-box .box1 .tag-line {
     font-size: 32px;
+    font-size: calc(42px * (32/36));
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
   main .content .inner-box .box1 .tag-line {
     font-size: 28px;
+    font-size: calc(42px * (28/36));
   }
 }
 
 @media screen and (max-width: 500px) {
   main .content .inner-box .box1 .tag-line {
     font-size: 28px;
+    font-size: calc(42px * (28/36));
   }
 }
 

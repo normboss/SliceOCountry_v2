@@ -24,25 +24,10 @@ and open the template in the editor.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="../css/home.css" media="screen" rel="stylesheet" type="text/css">
-    <!-- <script src="//code.jquery.com/jquery-1.10.2.js"></script> -->
     <!--<link href=".files/fonts/Wizards Magic.ttf" rel="stylesheet">-->
     <!--<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Allura|Dancing+Script|Zeyada" rel="stylesheet">
-    <!--<link rel="icon" href="./images/Image7.gif">-->
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
-
-<!-- HOME
-Title: Slice 'O Country / Homemade jams, preserves & cutting boards
-Description: Jams & preserves from the freshest ingredients, plus novelty Maple hard-wood cutting boards. Sarah Brewer, owner & certified home processor.
-
-CUTTING BOARDS
-Title: Slice 'O Country / Quality Maple hardwood cutting boards
-Description: Decorative novelty cutting & cheese boards designed to impress - and entertain!
-
-JAMS & PRESERVES
-Title: Slice 'O Country / Sarah Brewer's small batch jams & preserves
-Description: Locally gathered blueberries, raspberries, strawberries & rhubarb transformed to deliciousness! Available in 3 sizes. Seasonal & custom orders available upon request. 
--->
 
 </head>
 
