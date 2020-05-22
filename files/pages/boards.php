@@ -16,7 +16,7 @@ and open the template in the editor.
     <?php
     require '../includes/globalSiteTag.html';
     ?>
-    <title>Slice 'O Country / Quality Maple hardwood cutting boards</title>
+    <title>Slice 'O Country | Quality Maple hardwood cutting boards</title>
     <meta name="description" content="Decorative novelty cutting & cheese boards designed to impress - and entertain!">
 
     <meta charset="UTF-8">
