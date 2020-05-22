@@ -1148,7 +1148,6 @@ main {
   /*word-spacing: -5px;*/
   /*letter-spacing: 20px;*/
   border: 1px solid black;
-  background-image: url("../images/Boothbay-Harbor-1-b-780x585.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -1160,11 +1159,15 @@ main {
 }
 
 main .top-section {
+  background-image: url("../images/Boothbay-Harbor-2.jpg");
   width: 100%;
+  height: auto;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: middle;
+  background-position-y: 40%;
   margin: 0 auto;
+  margin-bottom: 25px;
 }
 
 main .top-section .top-content {
@@ -1173,16 +1176,19 @@ main .top-section .top-content {
   color: white;
   width: 100%;
   margin: 0 auto;
+  position: static;
 }
 
 main .top-section .top-content .boards-heading {
+  margin: 0 auto;
   min-width: 250px;
   font-family: "Raleway", sans-serif;
-  font-family: "Chilanka", cursive;
   text-align: center;
   font-weight: bold;
   font-size: 44px;
   margin-bottom: 25px;
+  background-color: rgba(19, 83, 76, 0.5);
+  display: inline-block;
 }
 
 @media screen and (max-width: 700px) {
@@ -1192,13 +1198,12 @@ main .top-section .top-content .boards-heading {
 }
 
 main .top-section .top-content .boothbay {
-  width: 100%;
+  margin: 0 auto;
   text-align: center;
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
-  font-family: "Chilanka", cursive;
-  bottom: 10%;
-  left: 10%;
+  background-color: rgba(19, 83, 76, 0.5);
+  display: inline-block;
 }
 
 @media screen and (max-width: 700px) {

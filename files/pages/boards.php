@@ -39,9 +39,9 @@ and open the template in the editor.
         <section class="top-section">
             <div class="top-content">
 
-                <div class="boards-heading">CUTTING & CHEESE BOARDS</div>
-
-                <div class="boothbay">
+                <div class="boards-heading green-background">CUTTING & CHEESE BOARDS</div>
+                <br>
+                <div class="boothbay green-background">
                     <div>Made in Boothday&nbsp;Harbor,&nbsp;Maine.</div>
                     <div>Food Safe Finish</div>
                 </div>
