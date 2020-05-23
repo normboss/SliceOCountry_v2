@@ -14,8 +14,8 @@ and open the template in the editor.
 
 <head>
 
-    <title>Slice 'O Country | Contact | Homemade jams, preserves & cutting boards</title>
-    <meta name=="description" content="Contact Sarah Brewer for jams & preserves, plus novelty Maple hard-wood cutting boards.">
+    <title>Slice 'O Country | Contact Sarah Brewer</title>
+    <meta name=="description" content="Get in touch with Sarah for Maine made fruit preserves, jellies, cutting and cheese boards.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
