@@ -1246,6 +1246,12 @@ main .top-section .top-content .jams-heading .jams-heading__text {
   }
 }
 
+@media screen and (max-height: 450px) {
+  main .top-section .top-content .jams-heading {
+    top: 45%;
+  }
+}
+
 main .top-section .top-content .small-batches {
   background-color: rgba(19, 83, 76, 0.5);
   max-width: 1200px;
@@ -1285,8 +1291,7 @@ main .top-section .top-content .small-batches {
 }
 
 main .top-section .top-content .sarah-info {
-  width: 280px;
-  height: 300px;
+  width: 240px;
   position: absolute;
   top: 0%;
   right: 0px;
@@ -1294,7 +1299,13 @@ main .top-section .top-content .sarah-info {
 
 @media screen and (max-width: 700px) {
   main .top-section .top-content .sarah-info {
-    width: 225px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  main .top-section .top-content .sarah-info {
+    display: none;
   }
 }
 

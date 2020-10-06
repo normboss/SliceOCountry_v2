@@ -119,9 +119,14 @@ main {
                 @include max-height-mixin(650px) {
                     top: 55%;
                 }
+                @include max-height-mixin(350px) {
+                    top: 45%;
+                }
+
             }
 
             .small-batches {
+                // outline: 3px solid red;
                 background-color: rgba(19, 83, 76, 0.5);
                 // border: 3px solid red;
                 max-width: 1200px;
@@ -155,14 +160,25 @@ main {
                     text-align: center;
                     padding-bottom: 10px;
                 }
+                @include max-height-mixin(500px) {
+                    bottom: -25px;
+                    // color: red;
+                }
             }
 
             .sarah-info {
                 // border: 3px solid red;
                 width: 280px;
                 @include max-width-mixin(700px) {
-                    width: 225px;
+                    width: 200px;
                 }
+                @include max-width-mixin(600px) {
+                    width: 150px;
+                }
+                @include max-width-mixin(500px) {
+                    display: none;
+                }
+
                 height: 300px;
                 position: absolute;
 

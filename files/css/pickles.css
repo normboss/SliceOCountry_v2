@@ -1255,6 +1255,12 @@ main .top-section .top-content .pickles-heading__text {
   }
 }
 
+@media screen and (max-height: 350px) {
+  main .top-section .top-content .pickles-heading {
+    top: 45%;
+  }
+}
+
 main .top-section .top-content .small-batches {
   background-color: rgba(19, 83, 76, 0.5);
   max-width: 1200px;
@@ -1293,6 +1299,12 @@ main .top-section .top-content .small-batches {
   }
 }
 
+@media screen and (max-height: 500px) {
+  main .top-section .top-content .small-batches {
+    bottom: -25px;
+  }
+}
+
 main .top-section .top-content .sarah-info {
   width: 280px;
   height: 300px;
@@ -1303,7 +1315,19 @@ main .top-section .top-content .sarah-info {
 
 @media screen and (max-width: 700px) {
   main .top-section .top-content .sarah-info {
-    width: 225px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .top-section .top-content .sarah-info {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .top-section .top-content .sarah-info {
+    display: none;
   }
 }
 

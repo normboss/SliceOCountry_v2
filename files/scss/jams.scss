@@ -107,6 +107,9 @@ main {
                 @include max-height-mixin(650px) {
                     top: 55%;
                 }
+                @include max-height-mixin(450px) {
+                    top: 45%;                    
+                }
             }
 
             .small-batches {
@@ -143,15 +146,21 @@ main {
                     text-align: center;
                     padding-bottom: 10px;
                 }
+                @include max-height-mixin(450px) {
+                    // top: 45%;                    
+                }
             }
 
             .sarah-info {
                 // border: 3px solid red;
-                width: 280px;
+                width: 240px;
                 @include max-width-mixin(700px) {
-                    width: 225px;
+                    width: 150px;
                 }
-                height: 300px;
+                @include max-width-mixin(525px) {
+                    display: none;
+                }
+                // height: 300px;
                 position: absolute;
 
                 top: 0%;
