@@ -531,7 +531,7 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .banner {
-  max-width: 1200px;
+  max-width: 4200px;
   width: 100%;
   margin: 0 auto;
   height: 100px;
@@ -699,7 +699,8 @@ and open the template in the editor.
     Author     : Norm
 */
 .foot {
-  max-width: 1200px;
+  max-width: 4200px;
+  font-family: "Raleway";
   margin: 0 auto;
   display: grid;
   row-gap: 0;
@@ -917,7 +918,7 @@ and open the template in the editor.
 */
 .header {
   width: 100%;
-  max-width: 1200px;
+  max-width: 4200px;
   margin: 0 auto;
   display: grid;
   grid-template-areas: "banner menu-wide";
@@ -1157,17 +1158,55 @@ and open the template in the editor.
   src: url("../fonts/Wizards Magic.ttf");
 }
 
+body {
+  margin: 0 auto;
+  min-width: 200px;
+}
+
 main {
   width: 100%;
+  font-family: "Raleway";
   max-width: 1200px;
-  margin: 0 auto;
   text-align: center;
   font-size: 28px;
   font-family: "Dancing Script", cursive;
   font-size: 64px;
   font-weight: bold;
-  /*  font-family: 'Allura', cursive;
-      font-family: 'Zeyada', cursive;*/
+}
+
+main .heading {
+  margin-top: 25px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 50px/68px Parisienne;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal normal 50px/68px Parisienne;
+  letter-spacing: 0px;
+  color: #13534c;
+  opacity: 1;
+  line-height: normal;
+}
+
+@media screen and (max-width: 1000px) {
+  main .heading {
+    font-size: 36px;
+  }
+}
+
+main .contact-heading {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 64px/75px Raleway;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal normal 64px/75px Raleway;
+  letter-spacing: 0px;
+  line-height: normal;
+  color: #13534c;
+  opacity: 1;
+}
+
+@media screen and (max-width: 450px) {
+  main .contact-heading {
+    font-size: 48px;
+  }
 }
 
 main .php-output {
@@ -1192,53 +1231,90 @@ main .small-text {
 }
 
 main .contact-container {
-  background-image: url("../images/hero_contact.png");
+  max-width: 1200px;
+  min-width: 250px;
   width: 100%;
-  height: auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 0 auto;
-  text-align: center;
+  padding-left: 25px;
+  margin-bottom: 25px;
 }
 
 @media screen and (max-width: 350px) {
   main .contact-container {
-    padding-left: 0;
+    padding-left: 5px;
+  }
+}
+
+main .contact-container .sarah-info {
+  position: absolute;
+  right: 200px;
+  top: 200px;
+}
+
+main .contact-container .sarah-info .sarah-image .sarah-round {
+  width: 240px;
+}
+
+@media screen and (max-width: 600px) {
+  main .contact-container .sarah-info .sarah-image .sarah-round {
+    width: 180px;
+  }
+}
+
+main .contact-container .sarah-info .sarah-text {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  main .contact-container .sarah-info {
+    top: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .contact-container .sarah-info {
+    top: 300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .contact-container .sarah-info {
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main .contact-container .sarah-info {
+    display: none;
+    margin-bottom: 0;
   }
 }
 
 main .contact-container .form-container {
-  background-color: rgba(19, 83, 76, 0.7);
-  border-radius: 10px;
-  color: white;
+  opacity: 1;
   text-align: left;
   font-family: "Open Sans";
+  font-family: "Raleway";
   font-size: 14px;
-  width: 50%;
+  width: 95%;
   min-width: 250px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 25px;
-}
-
-@media screen and (max-width: 350px) {
-  main .contact-container .form-container {
-    width: 100%;
-    margin-left: 0;
-  }
+  top: 100px;
 }
 
 main .contact-container .form-container .contactform {
-  border: 0px solid blue;
+  padding-top: 200px;
+  font: normal normal bold 18px/22px Inria Sans;
+  letter-spacing: 0px;
+  color: #fcf7f7;
+  text-transform: uppercase;
+  opacity: 1;
+  min-width: 200px;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 @media screen and (max-width: 350px) {
   main .contact-container .form-container .contactform {
-    width: 100%;
-    margin-left: 0;
+    padding-top: 50px;
   }
 }
 
@@ -1253,23 +1329,31 @@ main .contact-container .form-container .contactform textarea {
   height: auto;
   /*width: 400px;*/
   width: 100%;
+  max-width: 800px;
+  min-width: 200px;
 }
 
 main .contact-container .form-container .contactform label {
+  font-family: "Raleway";
   width: 99%;
   text-align: left;
   font-style: italic;
   display: block;
   margin-bottom: 4px;
+  color: #fcfeffbf;
+  color: #13534c;
 }
 
 main .contact-container .form-container .contactform input {
-  width: 99%;
   border: 1px #ccc solid;
-  background-color: #f5f5f5;
+  background-color: #f5f5f8;
   padding: 5px;
   margin-bottom: 10px;
   color: #000000;
+  width: 100%;
+  height: 29px;
+  min-width: 150px;
+  max-width: 600px;
 }
 
 main .contact-container .form-container .contactform textarea {
@@ -1277,33 +1361,40 @@ main .contact-container .form-container .contactform textarea {
   border: 1px #ccc solid;
   background-color: #f5f5f5;
   padding: 5px;
-  resize: none;
   color: #000000;
+  height: 163px;
+  min-width: 150px;
+  max-width: 800px;
+  padding-right: 20px;
 }
 
-main .contact-container .form-container .contactform input[type=text], main .contact-container .form-container .contactform select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-main .contact-container .form-container .contactform input[type=submit] {
-  width: 100%;
-  background-color: rgba(19, 83, 76, 0.5);
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
+main .contact-container .form-container .contactform .submit {
+  width: 50%;
   cursor: pointer;
+  color: #444;
+  font-weight: normal;
+  padding: 2px 18px;
+  text-decoration: none;
+  background-color: #f8f8f8;
+  border: solid 1px #d8d8d8;
+  color: #f5f5f5;
+  border-radius: 5px;
+  width: 119px;
+  height: 35px;
+  color: #638991;
+  color: #13534c;
+  font-family: "Raleway";
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 5px;
 }
 
-main .contact-container .form-container .contactform input[type=submit]:hover {
+main .contact-container .form-container .contactform .submit:hover {
+  text-decoration: none;
+  color: #fff;
   background-color: #13534c;
-  border: 10px;
+  border: solid 1px #435299;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=contact.css.map */

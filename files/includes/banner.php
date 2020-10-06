@@ -28,8 +28,9 @@ $styleJars = 'style="margin: 0 auto; width: 100%; height: auto; text-align: cent
         <div class="banner-menu-wide">
             <ul>
                 <span class="menu-item"><a href="home.php">Home</a></span>
-                <span class="menu-item"><a href="boards.php">Cutting Boards</a></span>
                 <span class="menu-item"><a href="jams.php">Jams & Preserves</a></span>
+                <span class="menu-item"><a href="pickles.php">Pickles & Condiments</a></span>
+                <span class="menu-item"><a href="contact.php">Contact</a></span>
             </ul>
         </div>
 
@@ -43,8 +44,9 @@ $styleJars = 'style="margin: 0 auto; width: 100%; height: auto; text-align: cent
                     </a>
                     <div class="dropdown-content">
                         <a href="home.php">Home</a>
-                        <a href="boards.php">Cutting Boards</a>
                         <a href="jams.php">Jams & Preserves</a>
+                        <a href="pickles.php">Pickles & Condiments</a>
+                        <a href="contact.php">Contact</a>
                     </div>
                 </li>
             </ul>

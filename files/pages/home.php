@@ -99,9 +99,9 @@ and open the template in the editor.
                 </a>
             </div>
             <div class="link-block">
-                <a href="boards.php">
-                    <img src="../images/pig_board3a.jpg" alt="">
-                    <h2>Maine Made Cutting Boards</h2>
+                <a href="pickles.php">
+                    <img src="../images/pickles_group3.png" alt="">
+                    <h2>Pickles & Condiments</h2>
                 </a>
             </div>
         </div>

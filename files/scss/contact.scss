@@ -8,11 +8,10 @@ and open the template in the editor.
     Author     : Norm
 */
 
-
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
-$menu-background-color: #E1C37D; //#C3B78E; // #C2B993; // #d4cd96;
-$menu-background-color1: #E5D087; // #F6F8F9;
-$menu-background-color2: #CBB87C; // #F6F8F9;
+$menu-background-color: #e1c37d; //#C3B78E; // #C2B993; // #d4cd96;
+$menu-background-color1: #e5d087; // #F6F8F9;
+$menu-background-color2: #cbb87c; // #F6F8F9;
 %menu-background {
     // background-image: linear-gradient(to right, $menu-background-color1, $menu-background-color2);
     opacity: 1;
@@ -48,31 +47,53 @@ $max-page-width: 1200px;
     font-weight: bold;
 }
 
-@mixin min-mixin($arg) {
-    @media screen and (min-width: $arg) {
-        @content;
-    }
-}
-
-@mixin min-max-mixin($arg1, $arg2) {
-    @media screen and (min-width: $arg1) and (max-width: $arg2) {
-        @content;
-    }
-}
-
-@mixin max-mixin($arg) {
-    @media screen and (max-width: $arg) {
-        @content;
-    }
-}
 $font-size: 16px;
+
+body {
+    // max-width: 1200px;
+    margin: 0 auto;
+    min-width: 200px;;
+}
 
 main {
     width: 100%;
+    font-family: "Raleway";
     max-width: $max-page-width;
-    margin: 0 auto;
+    // margin: 0 auto;
     text-align: center;
     font-size: 28px;
+
+    .heading {
+        margin-top: 25px;
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 50px/68px Parisienne;
+        letter-spacing: var(--unnamed-character-spacing-0);
+        text-align: center;
+        font: normal normal normal 50px/68px Parisienne;
+        letter-spacing: 0px;
+        color: #13534c;
+        opacity: 1;
+        line-height: normal;
+        @include max-width-mixin(1000px) {
+            font-size: 36px;
+        }
+        @include max-width-mixin(600px) {
+
+        }
+    }
+
+    .contact-heading {
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 64px/75px Raleway;
+        letter-spacing: var(--unnamed-character-spacing-0);
+        text-align: center;
+        font: normal normal normal 64px/75px Raleway;
+        letter-spacing: 0px;
+        line-height: normal;
+        color: #13534c;
+        opacity: 1;
+        @include max-width-mixin(450px) {
+            font-size: 48px;
+        }
+    }
 
     .php-output {
         color: red;
@@ -96,60 +117,77 @@ main {
         font-weight: bold;
     }
     @include dancing-font;
-    /*  font-family: 'Allura', cursive;
-      font-family: 'Zeyada', cursive;*/
-
 
     .contact-container {
-        background-image: url("../images/hero_contact.png");
+        // outline: 3px solid red;
+        max-width: 1200px;
+        min-width: 250px;
         width: 100%;
-        // position: relative;
-        height: auto;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin: 0 auto;
-        text-align: center;
-        // padding-left: 15%;
-        @include max-mixin(350px) {
-            padding-left: 0;
+        padding-left: 25px; // 15%;
+        @include max-width-mixin(350px) {
+            padding-left: 5px;
+        }
+        margin-bottom: 25px;
+
+        .sarah-info {
+            position: absolute;
+            .sarah-image {
+                .sarah-round {
+                    width: 240px;
+                    @include max-width-mixin(600px) {
+                        width: 180px;
+                    }
+                }
+            }
+            .sarah-text {
+                display: none;
+            }
+            right: 200px;
+            top: 200px;
+            @include max-width-mixin(1200px) {
+                top: 250px;
+            }
+            @include max-width-mixin(600px) {
+                top: 300px;
+            }
+            @include max-width-mixin(500px) {
+                right: 50px;
+            }
+            @include max-width-mixin(350px) {
+                display: none;
+                margin-bottom: 0;
+            }
         }
 
         .form-container {
             // border: 3px solid red;
-            background-color: rgba(19,83,76,.7); 
-            // background-color: #ccc; //#13534c;
-            border-radius: 10px;
-            color: white;
+            // background-color: #F4E1B7;
+            opacity: 1;
             text-align: left;
             font-family: "Open Sans";
+            font-family: "Raleway";
             font-size: 14px;
-            width: 50%;
+            width: 95%;
             min-width: 250px;
-            padding-left: 25px;
-            padding-right: 25px;
-            padding-top: 25px;
-            @include max-mixin(350px) {
-                // padding-left: 5px;
-                width: 100%;
-                margin-left: 0;
-            }
+
+            // position: relative;
+            top: 100px;
 
             .contactform {
-                // padding-top: 25px;
-                // @include max-mixin(600px) {
-                //     padding-top: 20px;
-                //     padding-bottom: 20px;
-                // }
-                border: 0px solid blue;
-                width: 100%;
-                text-align: center;
-                @include max-mixin(350px) {
-                    // padding-left: 5px;
-                    width: 100%;
-                    margin-left: 0;
+                // outline: 3px solid red; 
+                padding-top: 200px;
+                @include max-width-mixin(350px) {
+                    padding-top: 50px;
                 }
-    
+                font: normal normal bold 18px/22px Inria Sans;
+                letter-spacing: 0px;
+                color: #fcf7f7;
+                text-transform: uppercase;
+                opacity: 1;
+                min-width: 200px;
+                width: 100%;
+                text-align: left;
+                
                 .diagnostic {
                     color: red;
                     font-weight: bold;
@@ -157,88 +195,83 @@ main {
                 }
 
                 textarea {
+                    // outline: 3px solid blue;
                     height: 190px;
                     height: auto;
                     /*width: 400px;*/
                     width: 100%;
+                    max-width: 800px;
+                    min-width: 200px;
                 }
+
                 label {
+                    // outline: 3px solid blue;
+                    font-family: "Raleway";
                     width: 99%;
                     text-align: left;
                     font-style: italic;
                     display: block;
                     margin-bottom: 4px;
+                    color: #fcfeffbf;
+                    color: #13534c;
                 }
 
                 input {
-                    width: 99%;
+                    // outline: 3px solid green;
                     border: 1px #ccc solid;
-                    background-color: #f5f5f5;
+                    background-color: #f5f5f8;
                     padding: 5px;
                     margin-bottom: 10px;
                     color: #000000;
+                    width: 100%;
+                    height: 29px;
+                    min-width: 150px;
+                    max-width: 600px;
                 }
                 textarea {
+                    // outline: 3px solid green;
                     width: 99%;
                     border: 1px #ccc solid;
                     background-color: #f5f5f5;
                     padding: 5px;
-                    resize: none;
                     color: #000000;
+                    height: 163px;
+                    min-width: 150px;
+                    max-width: 800px;
+                    // width: 600px;
+                    padding-right: 20px;
                 }
 
-                // .submit {
-                //     width: 50%;
-                //     /*margin: 10px 0 20px 0;*/
-                //     cursor: pointer;
-                //     color: #444;
-                //     color: red;
-                //     font: 16px "Oswald", Verdana, Helvetica, sans-serif;
-                //     font-weight: normal;
-                //     padding: 2px 18px;
-                //     text-decoration: none;
-                //     background-color: #13534c;
-                //     // background: linear-gradient(#f8f8f8, #d8d8d8);
-                //     // border: solid 1px #d8d8d8;
-                //     border-radius: 5px;
-                //     cursor: pointer;
-                // }
-                // .submit:hover {
-                //     text-decoration: none;
-                //     color: #fff;
-                //     color: #13534c;
-                //     // background-color: #7b88c5;
-                //     // background: linear-gradient(#7b88c5, #435299);
-                //     border: solid 1px #435299;
-                //     border-radius: 10px;
-                // }
-                input[type=text], select {
-                    width: 100%;
-                    padding: 12px 20px;
-                    margin: 8px 0;
-                    display: inline-block;
-                    border: 1px solid #ccc;
-                    border-radius: 4px;
-                    box-sizing: border-box;
-                  }
-                  
-                  input[type=submit] {
-                    width: 100%;
-                    // background-color: #4CAF50;
-                    background-color: rgba(19,83,76,.5); 
-                    color: white;
-                    padding: 14px 20px;
-                    margin: 8px 0;
-                    border: none;
-                    border-radius: 4px;
+                .submit {
+                    width: 50%;
                     cursor: pointer;
-                  }
-                  
-                  input[type=submit]:hover {
-                    background-color: rgba(19,83,76,1); 
-                    border: 10px;
-                  }
-                  
+                    color: #444;
+                    font-weight: normal;
+                    padding: 2px 18px;
+                    text-decoration: none;
+                    background-color: #f8f8f8;
+                    border: solid 1px #d8d8d8;
+                    color: #f5f5f5;
+                    border-radius: 5px;
+
+                    width: 119px;
+                    height: 35px;
+                    color: #638991;
+                    color: #13534c;
+                    font-family: "Raleway";
+                    font-size: 22px;
+                    font-style: italic;
+                    font-weight: bold;
+                    margin-top: 5px;
+                }
+                .submit:hover {
+                    text-decoration: none;
+                    color: #fff;
+                    // color: #13534c;
+                    background-color: #13534c; //#7b88c5;
+                    border: solid 1px #435299;
+                    border-radius: 5px;
+                }
             }
         }
     }

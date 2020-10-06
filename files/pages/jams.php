@@ -242,11 +242,10 @@ and open the template in the editor.
                             <div class="spacer10"></div>
                             <br>
                             <div>
-                                <a href="mailto:SliceOCountry@gmail.com">
+                                <!-- <a href="mailto:SliceOCountry@gmail.com"> -->
                                     <div class="button-box">
                                         <button class="button">Email me!</button>
                                     </div>
-                                </a>
                             </div>
                             <div class="spacer10"></div>
                         </div>

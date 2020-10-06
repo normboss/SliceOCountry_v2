@@ -2,6 +2,15 @@
 if (!session_id())
     session_start();
 $_SESSION['pagename'] = "contact";
+function generateFormToken($form)
+{
+    // generate a token from an unique value
+    $token = md5(uniqid(microtime(), true));
+    // Write the generated token to the session variable to check it against the hidden field when the form is sent
+    $_SESSION[$form . '_token'] = $token;
+    return $token;
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -23,39 +32,70 @@ and open the template in the editor.
     <link href="https://fonts.googleapis.com/css?family=Allura|Dancing+Script|Zeyada" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function onSubmit(token) {
+            pretty();
+            document.getElementById("contact-form").submit();
+        }
+    </script>
+
+
+
 </head>
 
 <body>
 
     <?php
-    // require '../includes/banner.php';
+    require '../includes/banner.php';
     ?>
     <main>
+        <div class="heading">A Taste of Home and a Touch&nbsp;of&nbsp;Country</div>
+
+        <div class="contact-heading">Contact Sarah</div>
 
         <div class="contact-container">
-            <div class="form-container">
-                <form method="post" class="contactform" action="https://www1.domain.com/scripts/formemail.bml" name="contactform">
-                    <input type="hidden" name="my_email" value="norm.bosse0@gmail.com">
-                    <label for="email">Your Email Address</label>
-                    <input maxlength="80" name="email" size="40" type="text">
-                    <label for="subject">Subject</label>
-                    <input maxlength="80" name="subject" size="40" type="text">
-                    <label for="message">Message</label>
-                    <textarea cols="40" maxlength="1000" name="message" rows="5"></textarea>
-                    <input type="hidden" name="required" value="email,message">
-                    <input type="hidden" name="thankyou_url" value="https://www.alchemywebdesigns.com/files/pages/thankyou.php">
-                    <label for="submit"></label>
-                    <input type="submit" name="submit" value="Send">
-                </form>
+            <!-- <br> -->
+            <div class="magic-block">
+            <?php
+                require '../includes/sarah-info.php'
+                ?>
 
             </div>
+
+            <div class="form-container">
+                <?php
+                // generate a new token for the $_SESSION superglobal and put them in a hidden field
+                $newToken = generateFormToken('form1');
+                ?>
+
+                <form id="contact-form" action="thankyou.html" class="contactform" method="post" name="contactform">
+                    <label for="name">YOUR NAME</label>
+                    <input maxlength="80" name="name" size="30" type="text">
+                    <input type="hidden" name="token" value="<?php echo $newToken; ?>">
+                    <label for="email">Your Email</label>
+                    <input maxlength="80" name="email" size="30" type="text">
+                    <label for="message">Leave us a note and we’ll get back to you!</label>
+                    <textarea cols="30" maxlength="1000" name="message" rows="5"></textarea><br>
+                    <!-- <input class="submit" type="submit" value="Submit »"> -->
+                    <button class="g-recaptcha submit" data-sitekey="6Ld82v0UAAAAAIUG_P-YM0zTf9eoRCGEC3WTcf8N" data-callback='onSubmit'>Send</button><br>
+                </form>
+
+
+            </div>
+
 
         </div>
     </main>
 
-    <!-- <?php 
-    // require '../includes/footer.php'
-     ?> -->
+    <?php
+    require '../includes/footer1.php'
+    ?>
+    <script>
+        function pretty() {
+            $("#contact-form").attr("action", "misc.php");
+        }
+    </script>
 
 
 </body>

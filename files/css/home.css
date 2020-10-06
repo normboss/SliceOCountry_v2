@@ -531,7 +531,7 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .banner {
-  max-width: 1200px;
+  max-width: 4200px;
   width: 100%;
   margin: 0 auto;
   height: 100px;
@@ -699,7 +699,8 @@ and open the template in the editor.
     Author     : Norm
 */
 .foot {
-  max-width: 1200px;
+  max-width: 4200px;
+  font-family: "Raleway";
   margin: 0 auto;
   display: grid;
   row-gap: 0;
@@ -917,7 +918,7 @@ and open the template in the editor.
 */
 .header {
   width: 100%;
-  max-width: 1200px;
+  max-width: 4200px;
   margin: 0 auto;
   display: grid;
   grid-template-areas: "banner menu-wide";
@@ -1144,6 +1145,7 @@ main {
   margin: 0 auto;
   text-align: center;
   font-size: 28px;
+  max-width: 4000px;
   font-family: "Dancing Script", cursive;
   font-size: 64px;
   font-weight: bold;
@@ -1172,7 +1174,7 @@ main .small-text {
 
 main .content {
   height: 90vh;
-  max-width: 1200px;
+  max-width: 4200px;
   margin: 0 auto;
   background-image: url("../images/country-river-scene.jpg");
   width: 100%;

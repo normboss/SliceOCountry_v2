@@ -8,7 +8,8 @@
 
     <div class="foot-box email stuff3">
         <!-- SliceOCountry@gmail.com -->
-        <a href="mailto:SliceOCountry@gmail.com">SliceOCountry@gmail.com</a>
+        <!-- <a href="mailto:SliceOCountry@gmail.com">SliceOCountry@gmail.com</a> -->
+        <a href="contact.php" title="SliceOCountry@gmail.com">SliceOCountry@gmail.com</a>
     </div>
     <div class="foot-box phone stuff4">
         <span>207-350-5275</span>
@@ -71,7 +72,7 @@
     }
 
     function buttonHandler() {
-        window.open("mailto:SliceOCountry@gmail.com");
-        // window.location.href = "mailto:SliceOCountry@gmail.com";
+        // window.open("mailto:SliceOCountry@gmail.com");
+        window.location.href = "contact.php";
     };
 </script>

@@ -13,7 +13,7 @@ and open the template in the editor.
 @import "common";
 
 main {
-    max-width: 1200px;
+    max-width: 3200px;
     margin: 0 auto;
     text-align: center;
     font-size: 28px;
@@ -34,6 +34,7 @@ main {
             font-size: 16px;
         }
     }
+
     .small-text {
         font-size: 28px;
         letter-spacing: 2px;
@@ -45,23 +46,24 @@ main {
       font-family: 'Zeyada', cursive;*/
 
     .top-section {
-        // border: 3px solid red;
+        // outline: 3px solid red;
         width: 100%;
-        height: calc(var(--vh, 1vh) * 89);
+        margin: 0 auto;
         height: 89vh;
 
         position: relative;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
-        background-image: url("../images/rake2.png");
+        background-position: left; //center;
+        background-image: url("../images/WalkingInGarden.png");
         @include max-width-mixin(600px) {
-            background-image: url("../images/blueberry copy.png");
+            background-image: url("../images/WalkingInGarden.png");
         }
 
         // *******************************************************************
 
         .top-content {
+            // outline: 3px solid red;
             // border-radius: 15px;
             color: white;
             max-width: 1200px;
@@ -83,26 +85,39 @@ main {
                 // display: flex;
             }
 
-            .jams-heading {
+            .pickles-heading {
                 // border: 3px solid blue;
+                font: var(--unnamed-font-style-normal) normal bold 42px/49px Raleway;
+                letter-spacing: var(--unnamed-character-spacing-0);
+                text-align: left;
+                font: normal normal bold 42px/49px Raleway;
+                letter-spacing: 0px;
+                color: #fffcfc;
+                text-transform: uppercase;
+
                 font-size: 38px;
                 @include max-width-mixin(700px) {
                     font-size: 30px;
                 }
                 font-family: "Raleway", sans-serif;
                 font-weight: bold;
-                .jams-heading__text {
+                &__text {
                     background-color: rgba(19, 83, 76, 0.5);
                 }
 
                 position: absolute;
                 top: 40%;
+                top: 180px;
                 @include max-width-mixin(700px) {
                     top: 45%;
                 }
-                    left: 14.8%;
+                left: 14.8%;
+                left: 55px;
                 @include max-width-mixin(800px) {
                     left: 5%;
+                }
+                @include max-height-mixin(650px) {
+                    top: 55%;
                 }
             }
 
@@ -121,6 +136,7 @@ main {
                 @include max-width-mixin(700px) {
                     font-size: 28px;
                 }
+
                 letter-spacing: 0px;
                 color: #ffffff;
                 text-align: left;
@@ -134,19 +150,11 @@ main {
                 @include max-width-mixin(800px) {
                     left: 5%;
                 }
-                // @include max-width-mixin(700px) {
-                //     top: 83%;
-                // }
-                // @include max-width-mixin(700px) {
-                //     top: 70%;
-                // }
-
-
-                // .boothbay__span {
-                //     height: auto;
-                //     width: auto;
-                //     background-color: rgba(19, 83, 76, 0.5);
-                // }
+                @include max-width-mixin(400px) {
+                    font-size: 24px;
+                    text-align: center;
+                    padding-bottom: 10px;
+                }
             }
 
             .sarah-info {
@@ -263,85 +271,14 @@ main {
         }
     }
 
-    .middle-section {
-        // border: 3px solid blue;
-        padding-top: 25px;
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        font-family: Arial, Helvetica, sans-serif;
-
-        h2 {
-            font-size: 32px;
-            // font-size: 60%;
-            font-family: Raleway;
-            font-weight: normal;
-            text-align: center;
-        }
-
-        .middle-box {
-            // border: 3px solid red;
-            display: flex;
-            justify-content: space-between;
-            @include max-width-mixin(600px) {
-                flex-direction: column;
-            }
-
-            .jar-size {
-                width: 100%;
-                img {
-                    width: 300px;
-                    height: 300px;
-                    @include max-width-mixin(1200px) {
-                        width: 200px;
-                        height: 200px;
-                    }
-                    @include max-width-mixin(800px) {
-                        width: 150px;
-                        height: 150px;
-                    }
-                    @include max-width-mixin(600px) {
-                        width: 200px;
-                        height: 200px;
-                    }
-                }
-                @include max-width-mixin(600px) {
-                    margin-bottom: 20px;
-                }
-            }
-        }
-
-        .size-text {
-        }
-
-        .spec-text {
-            font-family: Raleway;
-            font-size: 24px;
-            color: #000000;
-            font-weight: normal;
-            @include max-width-mixin(800px) {
-                font-size: 20px;
-            }
-            @include max-width-mixin(500px) {
-                font-size: 16px;
-            }
-
-            @include max-width-mixin($breakPt2) {
-                // display: none;
-            }
-        }
-
-        margin-bottom: 50px;
-    }
-
     // ********************************************************************
     $breakpt1: 700px;
 
     $brkpt2: 400px;
 
-    .jams1 {
+    .pickles {
         // border: 3px solid blue;
+        margin-top: 20px;
         width: 80%;
         @include max-width-mixin(1000px) {
             width: 80%;
@@ -360,7 +297,7 @@ main {
             max-width: 300px;
         }
 
-        .jam-block {
+        .pickle-block {
             // border: 3px solid red;
             margin: 0 auto;
             width: 100%;
@@ -374,9 +311,9 @@ main {
             @include max-width-mixin(400px) {
             }
 
-            .jam-box1 {
+            .pickle-box1 {
                 // border: 3px solid red;
-                height: 350px;
+                height: 325px;
                 @include max-width-mixin(750px) {
                     width: 350px;
                     height: auto;
@@ -404,8 +341,8 @@ main {
                 text-align: center;
             }
             img {
-                height: 350px;
-                width: 350px;
+                height: 325px;
+                width: 325px;
                 @include max-width-mixin($brkpt2) {
                     height: 300px;
                     width: 300px;
@@ -414,8 +351,10 @@ main {
             }
         }
 
-        .jam-copy {
+        .pickle-copy {
+            // outline: 3px solid red;
             // max-width: 350px;
+            margin: 0 auto;
             width: 60%;
             text-align: left;
             border: 1px solid black;
@@ -425,6 +364,7 @@ main {
             padding-top: 20px;
             // margin-bottom: 50px;
             height: 100%;
+            // height: 325px;
             padding-bottom: 20px;
             position: relative;
 
@@ -451,29 +391,53 @@ main {
                 padding-right: 10px;
             }
             .small-logo {
+                // outline: 3px solid red;
+                margin: 0 auto;
+                // padding-bottom: 25px;
                 padding-left: 15px;
                 padding-right: 5px;
             }
 
             .logo {
             }
+
+            .traditional {
+                font: var(--unnamed-font-style-normal) normal bold 18px/16px Raleway;
+                letter-spacing: var(--unnamed-character-spacing-0);
+                text-align: center;
+                font: normal normal bold 18px/16px Raleway;
+                letter-spacing: 0px;
+                color: #000000;
+            }
             .name {
+                margin: 0 auto;
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 32px;
                 font-weight: bold;
                 @include max-width-mixin($brkpt2) {
                     font-size: 28px;
                 }
-                padding-left: 15px;
-                padding-right: 5px;
-                margin-top: 10px;
+                // padding-left: 15px;
+                // padding-right: 5px;
+                text-align: center;
+                // margin-top: 10px;
                 margin-bottom: 10px;
             }
             .text {
+                // outline: 3px solid red;
+                font-weight: normal;
                 font-size: 16px;
-                padding-left: 15px;
-                padding-right: 5px;
+                // padding-left: 15px;
+                // padding-right: 5px;
+                margin: 0 auto;
                 margin-bottom: 20px;
+                // margin-top: 10px;
+                width: 80%;
+                overflow: hidden;
+            }
+            .text-centered {
+                margin: 0 auto;
+                text-align: center;
             }
             .text--special {
                 // border: 3px solid red;
@@ -487,29 +451,94 @@ main {
                     color: inherit;
                 }
             }
-    
+
             .button-box {
-                text-align: center;
+                // outline: 3px solid red;
                 margin: 0 auto;
+                text-align: center;
                 align-items: center;
                 position: absolute;
-                bottom: 0;
-                margin-top: 20px;
-                margin-bottom: 10px;
+                bottom: 10px;
+                // margin-top: 20px;
+                // margin-bottom: 10px;
                 left: 50%;
                 transform: translateX(-50%);
+            }
+        }
+        margin-top: 25px;
 
-                .jam-button {
-                    background-color: #13534c;
-                    width: 250px; //193px;
-                    height: 30px;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 20px;
-                    border-radius: 15px;
-                    color: white;
+        .bottom-block {
+            border: 6px solid #13534c;
+            border-radius: 56px;
+            opacity: 1;
+            margin: 0 auto;
+            width: 100%;
+            // height: 525px;
+            // max-height: 525px;
+            // // min-width: 200px;
+            // min-height: 200px;
+            margin-bottom: 20px;
+
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            @include max-width-mixin(750px) {
+                // display: flex;
+                // flex-direction: column;
+                grid-template-columns: 1fr;
+                border-radius: 0px;
+                border: 0px;
+            }
+
+            img {
+                // width: 70%;
+                // min-width: 250px;;
+                // height: auto;
+                // width: 350px;
+                // height: 350px;
+                width: 100%;
+            }
+            div {
+                font: var(--unnamed-font-style-normal) normal bold 29px/34px Raleway;
+                letter-spacing: var(--unnamed-character-spacing-0);
+                text-align: left;
+                font: normal normal bold 29px/34px Raleway;
+                letter-spacing: 0px;
+                color: #13534c;
+                opacity: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                padding-left: 25px;
+                padding-right: 25px;
+                @include max-width-mixin(1100px) {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    font-size: 25px;
+                }
+                @include max-width-mixin(400px) {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    font-size: 24px;
+                    align-items: center;
+                }
+
+                div {
+                    font: var(--unnamed-font-style-normal) normal bold 29px/34px Raleway;
+                    letter-spacing: var(--unnamed-character-spacing-0);
+                    text-align: left;
+                    font: normal normal bold 29px/34px Raleway;
+                    letter-spacing: 0px;
+                    color: #13534c;
+                    opacity: 1;
+                    padding: 10px;
+                }
+                .email-me {
+                    color: #13534c;
+                    text-decoration: none;
+                    text-decoration: underline;
                 }
             }
         }
     }
-
 }

@@ -11,11 +11,13 @@ and open the template in the editor.
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
 @import "common";
 
+
 main {
     margin: 0 auto;
     text-align: center;
     font-size: 28px;
     $breakpt1: 750px;
+    max-width: 4000px;
     
     .php-output {
         color: red;
@@ -46,7 +48,7 @@ main {
         @include max-height-mixin(750px) {
             height: auto;
         }
-        max-width: 1200px;
+        max-width: 4200px;
         margin: 0 auto;
         background-image: url("../images/country-river-scene.jpg");
         width: 100%;
