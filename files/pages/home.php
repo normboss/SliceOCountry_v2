@@ -112,21 +112,28 @@ and open the template in the editor.
                 <div class="heading">
                     Visit Sarah!
                 </div>
-                <div>Pick up my Seasonal Specials and fresh baked goodies while they last!</div>
-                <br>
-                <div>Tuesdays and Saturdays through September</div>
-                <div>Boothbay Memorial Library with</div>
-                <div>The Boothbay Crafters Group</div>
                 <br>
                 <div>October though December find Sarah at various festivals and holiday events.<br>
-                    Follow her on
-                    <a href="https://www.facebook.com/Slice-O-Country-2291668391082762/">Facebook</a>
-                    to see where you can find her.
+                    Follow her on Facebook
+                    <a href="https://www.facebook.com/Slice-O-Country-2291668391082762/">
+                        <img src="../images/facebook_2.png" alt="FB" style="width: 25px">
+                    </a><div class="fix357">&nbsp;and Twitter</div>
+                    <a href="https://twitter.com/country_o">
+                        <img id="twitter-image" src="../images/twitter-small-cropped.png" alt="Twitter">
+                    </a>
+                    to see where you can find her and what's happending at
+                    <!-- <?php
+                    // require '../includes/small-logo.php'
+                    ?> -->
+                    Slice&nbsp;O&#39;&nbsp;Country.
                 </div>
                 <br>
-                <div>Available at Browns Farm Stand in Boothbay Harbor, Capers Deli & Catering.
-                    Also featured at Shannon's Unshelled.</div>
-                <br>
+                <!-- <?php
+                    // require '../includes/small-logo.php'
+                    ?> -->
+                Slice&nbsp;O&#39;&nbsp;Country products are available at <a href="https://www.coastalmainepopcorn.com/">Coastal Maine Popcorn Co.</a>
+                 and seasonally at <a href="https://www.happycow.net/reviews/browns-farm-stand-boothbay-harbor-94233">
+                 Browns Farm Stand</a> both located in Boothbay&nbsp;Harbor.
 
             </div>
         </div>

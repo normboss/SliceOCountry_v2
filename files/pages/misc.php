@@ -68,7 +68,7 @@ if (verifyFormToken('form1'))
         // $email_to = "norm.bosse0@gmail.com";
         // $email_to = "viewscaper@gmail.com";
         // $email_to = "bosse.ann@gmail.com";
-        $email_to = "sliceocountry@gmail.com.com";
+        $email_to = "sliceocountry@gmail.com";
         $email_subject = "Slice O Country contact form message";
 
 

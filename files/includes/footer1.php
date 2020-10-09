@@ -7,26 +7,35 @@
     </div>
 
     <div class="foot-box email stuff3">
-        <!-- SliceOCountry@gmail.com -->
-        <!-- <a href="mailto:SliceOCountry@gmail.com">SliceOCountry@gmail.com</a> -->
         <a href="contact.php" title="SliceOCountry@gmail.com">SliceOCountry@gmail.com</a>
     </div>
+
     <div class="foot-box phone stuff4">
         <span>207-350-5275</span>
     </div>
 
     <div class="foot-box stuff-facebook">
         <span class="facebook-text">
+            Follow me:&nbsp;&nbsp;
+        </span>
+
+        <a href="https://twitter.com/country_o">
+            <img src="../images/twitter.png" alt="Twitter">
+        </a>
+        <a href="https://www.facebook.com/Slice-O-Country-2291668391082762/">
+            <img src="../images/facebook.png" alt="FB">
+        </a>
+    </div>
+
+    <!-- <div class="foot-box stuff-facebook">
+        <span class="facebook-text">
             Like me on Facebook.
         </span>
 
         <a href="https://www.facebook.com/Slice-O-Country-2291668391082762/">
-            <?php
-            // echo __DIR__;
-            echo '<img src="../images/facebook.png" alt="FB">';
-            ?>
+            <img src="../images/facebook.png" alt="FB">
         </a>
-    </div>
+    </div> -->
 
     <div class="foot-box alchemy">
         <a href="https://www.alchemywebdesigns.com">

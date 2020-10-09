@@ -50,18 +50,21 @@ and open the template in the editor.
     require '../includes/banner.php';
     ?>
     <main>
-        <div class="heading">A Taste of Home and a Touch&nbsp;of&nbsp;Country</div>
+        <!-- <div class="heading">A Taste of Home and a Touch&nbsp;of&nbsp;Country</div> -->
 
         <div class="contact-heading">Contact Sarah</div>
+        <img class="sarah-round" src="../images/sarah_circle.png" alt="Sarah Brewer owner of Slice o' Country.">
 
         <div class="contact-container">
             <!-- <br> -->
             <div class="magic-block">
             <?php
-                require '../includes/sarah-info.php'
+                // require '../includes/sarah-info.php'
                 ?>
 
             </div>
+
+
 
             <div class="form-container">
                 <?php

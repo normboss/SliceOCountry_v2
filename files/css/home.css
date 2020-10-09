@@ -712,6 +712,12 @@ and open the template in the editor.
   align-items: start;
 }
 
+@media screen and (max-width: 850px) {
+  .foot {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
 .foot a {
   text-decoration: inherit;
   color: inherit;
@@ -836,6 +842,10 @@ and open the template in the editor.
 }
 
 .foot .stuff-facebook {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   text-align: center;
 }
 
@@ -844,7 +854,7 @@ and open the template in the editor.
   color: white;
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 850px) {
   .foot .stuff-facebook .facebook-text {
     display: none;
   }
@@ -852,6 +862,7 @@ and open the template in the editor.
 
 .foot .stuff-facebook a img {
   width: 35px;
+  padding-bottom: 5px;
 }
 
 @media screen and (max-width: 500px) {
@@ -1654,11 +1665,19 @@ main .content-lower .visit {
   border: 1px solid black;
   margin-top: 25px;
   padding-top: 25px;
+  padding-bottom: 25px;
   width: 100%;
   margin: 0 auto;
   text-align: left;
   padding-left: 100px;
   padding-right: 100px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 20px/24px Raleway;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal normal 20px/24px Raleway;
+  letter-spacing: 0px;
+  color: #13534C;
+  font-weight: bold;
   font-size: 20px;
 }
 
@@ -1669,8 +1688,36 @@ main .content-lower .visit {
   }
 }
 
+main .content-lower .visit a #twitter-image {
+  padding-top: 5px;
+  width: 30px;
+}
+
 main .content-lower .visit .heading {
   text-align: center;
   font-size: 32px;
+}
+
+main .content-lower .visit .fix357 {
+  display: inline-block;
+}
+
+main .content-lower .visit a {
+  display: inline-block;
+}
+
+main .content-lower .visit a img {
+  width: 40px;
+}
+
+main .content-lower .visit .small-logo {
+  display: inline-block;
+  line-height: 1.5;
+}
+
+main .content-lower .visit .small-logo * {
+  font-size: 30px;
+  color: #13534C;
+  font-weight: bold;
 }
 /*# sourceMappingURL=home.css.map */

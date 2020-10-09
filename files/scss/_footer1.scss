@@ -16,6 +16,10 @@ $footBreakPt: 700px;
     display: grid;
     row-gap: 0;
     grid-template-columns: 1fr 1fr 1fr;
+    @include max-width-mixin(850px) {
+        grid-template-columns: 2fr 1fr 1fr;
+
+    }
     background-color: #13534c;
     width: 100%;
     height: auto; //250px;
@@ -131,18 +135,24 @@ $footBreakPt: 700px;
 
     .stuff-facebook {
         // border: 3px solid red;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
 
         .facebook-text {
             // border: 3px solid blue;
-            // display: inline-block;
             font-size: 20px;
             color: white;
-            @include max-width-mixin(870px) {
+            // margin-bottom: 25px;
+            // padding-top: 5px;
+            @include max-width-mixin(850px) {
                 display: none;
             }
         }
         a img {
             width: 35px;
+            padding-bottom: 5px;;
         }
         @include max-width-mixin(500px) {
             font-size: 16px;

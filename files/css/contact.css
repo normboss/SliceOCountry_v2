@@ -712,6 +712,12 @@ and open the template in the editor.
   align-items: start;
 }
 
+@media screen and (max-width: 850px) {
+  .foot {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
 .foot a {
   text-decoration: inherit;
   color: inherit;
@@ -836,6 +842,10 @@ and open the template in the editor.
 }
 
 .foot .stuff-facebook {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   text-align: center;
 }
 
@@ -844,7 +854,7 @@ and open the template in the editor.
   color: white;
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 850px) {
   .foot .stuff-facebook .facebook-text {
     display: none;
   }
@@ -852,6 +862,7 @@ and open the template in the editor.
 
 .foot .stuff-facebook a img {
   width: 35px;
+  padding-bottom: 5px;
 }
 
 @media screen and (max-width: 500px) {
@@ -1166,7 +1177,6 @@ body {
 main {
   width: 100%;
   font-family: "Raleway";
-  max-width: 1200px;
   text-align: center;
   font-size: 28px;
   font-family: "Dancing Script", cursive;
@@ -1197,10 +1207,12 @@ main .contact-heading {
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: center;
   font: normal normal normal 64px/75px Raleway;
+  font-size: 48px;
   letter-spacing: 0px;
   line-height: normal;
   color: #13534c;
   opacity: 1;
+  margin-top: 25px;
 }
 
 @media screen and (max-width: 450px) {
@@ -1230,62 +1242,23 @@ main .small-text {
   font-weight: bold;
 }
 
+main .sarah-round {
+  width: 30%;
+  min-width: 150px;
+  max-width: 250px;
+}
+
 main .contact-container {
-  max-width: 1200px;
   min-width: 250px;
   width: 100%;
-  padding-left: 25px;
+  margin: 0 auto;
   margin-bottom: 25px;
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 350px) {
   main .contact-container {
     padding-left: 5px;
-  }
-}
-
-main .contact-container .sarah-info {
-  position: absolute;
-  right: 200px;
-  top: 200px;
-}
-
-main .contact-container .sarah-info .sarah-image .sarah-round {
-  width: 240px;
-}
-
-@media screen and (max-width: 600px) {
-  main .contact-container .sarah-info .sarah-image .sarah-round {
-    width: 180px;
-  }
-}
-
-main .contact-container .sarah-info .sarah-text {
-  display: none;
-}
-
-@media screen and (max-width: 1200px) {
-  main .contact-container .sarah-info {
-    top: 250px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  main .contact-container .sarah-info {
-    top: 300px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  main .contact-container .sarah-info {
-    right: 50px;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  main .contact-container .sarah-info {
-    display: none;
-    margin-bottom: 0;
   }
 }
 
@@ -1296,12 +1269,32 @@ main .contact-container .form-container {
   font-family: "Raleway";
   font-size: 14px;
   width: 95%;
+  width: 50%;
   min-width: 250px;
+  max-width: 1200px;
+  margin: 0 auto;
   top: 100px;
 }
 
+@media screen and (max-width: 800px) {
+  main .contact-container .form-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .contact-container .form-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .contact-container .form-container {
+    width: 98%;
+  }
+}
+
 main .contact-container .form-container .contactform {
-  padding-top: 200px;
   font: normal normal bold 18px/22px Inria Sans;
   letter-spacing: 0px;
   color: #fcf7f7;
@@ -1310,12 +1303,6 @@ main .contact-container .form-container .contactform {
   min-width: 200px;
   width: 100%;
   text-align: left;
-}
-
-@media screen and (max-width: 350px) {
-  main .contact-container .form-container .contactform {
-    padding-top: 50px;
-  }
 }
 
 main .contact-container .form-container .contactform .diagnostic {

@@ -333,8 +333,7 @@ main {
                 height: 325px;
                 @include max-width-mixin(750px) {
                     width: 350px;
-                    width: 70%;
-                    // height: auto;
+                    height: auto;
                 }
                 color: black;
                 font-family: Arial, Helvetica, sans-serif;
@@ -414,17 +413,8 @@ main {
                 // padding-bottom: 25px;
                 padding-left: 15px;
                 padding-right: 5px;
-                @include max-width-mixin(600px) {
-
-                }
-            }
-            .small-logo * {
-                @include max-width-mixin(600px) {
-                    font-size: 35px;
-                }
             }
 
-            
             .logo {
             }
 
@@ -441,11 +431,8 @@ main {
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 32px;
                 font-weight: bold;
-                @include max-width-mixin(600px) {
-                    font-size: 25px;
-                }
-                @include max-width-mixin(600px) {
-                    font-size: 22px;
+                @include max-width-mixin($brkpt2) {
+                    font-size: 28px;
                 }
                 // padding-left: 15px;
                 // padding-right: 5px;
@@ -463,9 +450,6 @@ main {
                 margin-bottom: 20px;
                 // margin-top: 10px;
                 width: 80%;
-                @include max-width-mixin(600px) {
-                    width: 95%;
-                }
                 overflow: hidden;
             }
             .text-centered {

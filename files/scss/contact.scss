@@ -58,7 +58,7 @@ body {
 main {
     width: 100%;
     font-family: "Raleway";
-    max-width: $max-page-width;
+    // max-width: 3000px; //$max-page-width;
     // margin: 0 auto;
     text-align: center;
     font-size: 28px;
@@ -86,10 +86,12 @@ main {
         letter-spacing: var(--unnamed-character-spacing-0);
         text-align: center;
         font: normal normal normal 64px/75px Raleway;
+        font-size: 48px;
         letter-spacing: 0px;
         line-height: normal;
         color: #13534c;
         opacity: 1;
+        margin-top: 25px;
         @include max-width-mixin(450px) {
             font-size: 48px;
         }
@@ -118,46 +120,29 @@ main {
     }
     @include dancing-font;
 
+
+    .sarah-round {
+        width: 30%;
+        min-width: 150px;
+        max-width: 250px;
+    }
+
     .contact-container {
         // outline: 3px solid red;
-        max-width: 1200px;
+        // max-width: 1200px;
         min-width: 250px;
         width: 100%;
-        padding-left: 25px; // 15%;
+        // padding-left: 25px; // 15%;
         @include max-width-mixin(350px) {
             padding-left: 5px;
         }
+        margin: 0 auto;
         margin-bottom: 25px;
-
-        .sarah-info {
-            position: absolute;
-            .sarah-image {
-                .sarah-round {
-                    width: 240px;
-                    @include max-width-mixin(600px) {
-                        width: 180px;
-                    }
-                }
-            }
-            .sarah-text {
-                display: none;
-            }
-            right: 200px;
-            top: 200px;
-            @include max-width-mixin(1200px) {
-                top: 250px;
-            }
-            @include max-width-mixin(600px) {
-                top: 300px;
-            }
-            @include max-width-mixin(500px) {
-                right: 50px;
-            }
-            @include max-width-mixin(350px) {
-                display: none;
-                margin-bottom: 0;
-            }
-        }
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        justify-content: flex-end;
+    
 
         .form-container {
             // border: 3px solid red;
@@ -168,16 +153,28 @@ main {
             font-family: "Raleway";
             font-size: 14px;
             width: 95%;
+            width: 50%;
+            @include max-width-mixin(800px) {
+                width: 80%;
+            }
+            @include max-width-mixin(500px) {
+                width: 90%;
+            }
+            @include max-width-mixin(400px) {
+                width: 98%;
+            }
             min-width: 250px;
+            max-width: 1200px;
+            margin: 0 auto;
 
             // position: relative;
             top: 100px;
 
             .contactform {
                 // outline: 3px solid red; 
-                padding-top: 200px;
+                // padding-top: 200px;
                 @include max-width-mixin(350px) {
-                    padding-top: 50px;
+                    // padding-top: 50px;
                 }
                 font: normal normal bold 18px/22px Inria Sans;
                 letter-spacing: 0px;

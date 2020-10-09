@@ -712,6 +712,12 @@ and open the template in the editor.
   align-items: start;
 }
 
+@media screen and (max-width: 850px) {
+  .foot {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
 .foot a {
   text-decoration: inherit;
   color: inherit;
@@ -836,6 +842,10 @@ and open the template in the editor.
 }
 
 .foot .stuff-facebook {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   text-align: center;
 }
 
@@ -844,7 +854,7 @@ and open the template in the editor.
   color: white;
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 850px) {
   .foot .stuff-facebook .facebook-text {
     display: none;
   }
@@ -852,6 +862,7 @@ and open the template in the editor.
 
 .foot .stuff-facebook a img {
   width: 35px;
+  padding-bottom: 5px;
 }
 
 @media screen and (max-width: 500px) {
